@@ -1,5 +1,8 @@
 <?php  // Moodle configuration file
 
+defined('APPLICATION_ENV')
+|| define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
+
 unset($CFG);
 global $CFG;
 $CFG = new stdClass();
@@ -16,8 +19,14 @@ $CFG->dboptions = array (
   'dbsocket' => 0,
 );
 
-$CFG->wwwroot   = 'http://deecd.tech-savvy.com.au';
-$CFG->dataroot  = '/home/techsavv/moodledata_deecd';
+if (APPLICATION_ENV == 'production') {
+  $CFG->wwwroot   = 'http://deecd.tech-savvy.com.au';
+  $CFG->dataroot  = '/home/techsavv/moodledata_deecd';
+}
+else {
+  $CFG->wwwroot   = 'http://deecd.damiandennis.com';
+  $CFG->dataroot  = '/home/deecd/public_html/moodledata';
+}
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
