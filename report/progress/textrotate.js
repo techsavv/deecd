@@ -89,6 +89,16 @@ YUI().use('yui2-dom', function(Y) {
       textrotate_make_svg(el.firstChild);
     }
   }
+  var i = 1;
+  while($('.module'+i).length){
+    $('.module'+i).css('display','none');
+    $('.Mod'+i).attr('rowspan','999');
+    $('.Mod'+i).attr('colspan','1');
+    $('.Mod'+i).removeClass('open');
+    $('.Mod'+i).addClass('closed');
+    i++;
+  }
+  $('#completion-progress').addClass('loaded');
 });
 }
 
