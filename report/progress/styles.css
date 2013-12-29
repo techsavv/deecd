@@ -1,7 +1,13 @@
 #page-report-progress-index #completion-progress th,
-#page-report-progress-index #completion-progress td {padding:2px 4px;font-weight:normal;border-right: 1px solid #EEE;}
+#page-report-progress-index #completion-progress td {padding:2px 4px;font-weight:normal;border:1px solid black;}
 #page-report-progress-index .progress-actions {text-align:center;}
 #page-report-progress-index .completion_pagingbar {margin:1em 0;text-align:center;}
 #page-report-progress-index .completion_prev {display:inline;margin-right:2em;}
 #page-report-progress-index .completion_pagingbar p {display:inline;margin:0;}
 #page-report-progress-index .completion_next {display:inline;margin-left:2em;}
+#page-report-progress-index th.toggle{vertical-align:top; cursor:pointer;}
+#page-report-progress-index #completion-progress span {height:10px; width:10px; display:inline-block;}
+#page-report-progress-index .open span{background-image:url([[pix:theme|expanded]]); background-size:100% 100%;}
+#page-report-progress-index .closed span{background-image:url([[pix:theme|collapsed]]); background-size:100% 100%;}
+#page-report-progress-index #completion-progress{visibility:hidden;}
+#page-report-progress-index #completion-progress.loaded{visibility:visible;}
