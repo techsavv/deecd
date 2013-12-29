@@ -100,6 +100,9 @@ a.logo {
     padding: 0;
     width: 100%;
     background-size: contain !important;
+/**KA**Remove image as background and replace with grey colour background**/
+    background: #8E8E8E;
+/**END CHANGE**/
 }
 
 h1#title {
@@ -312,9 +315,6 @@ ul.breadcrumb li:last-child:after {
     border-radius: 0px;
     line-height: 0px;
     background-image: none;
-/**KA**Override background colour of navbar**/
-background-color: #5D5D5D !important;
-/**END CHANGE**/
 }
 
 .navbar .brand {
@@ -1453,11 +1453,10 @@ img.profilepicture
     border-bottom-color: transparent;
 }
 
-/**KA**Change colour of line at top of nav bar*/
 .nav-collapse {
 border: 1px solid #5d5d5d;
 }
-/**end change**/
+
 
 /* @end */
 
@@ -1817,3 +1816,13 @@ table.calendarmonth.calendartable {
 .back-to-top:hover{
     text-decoration: none;
 }
+
+/**KA** Change hyperlink colour - normal and hover**/
+a, a:visited {
+color: #027E8E;
+}
+
+a:hover {
+color: #027E8E;
+}
+/*END CHANGE*/
