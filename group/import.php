@@ -78,12 +78,15 @@ if ($mform_post->is_cancelled()) {
     // make arrays of valid fields for error checking
     $required = array("groupname" => 1);
     $optionalDefaults = array("lang" => 1);
-    $optional = array("coursename" => 1,
+     $optional = array("coursename" => 1,
             "idnumber" => 1,
             "groupidnumber" => 1,
             "description" => 1,
             "enrolmentkey" => 1,
-            "groupingname" => 1);
+            "groupingname" => 1,
+            "region" => 1,
+            "network" => 1,
+            "schooltype" => 1);
 
     // --- get header (field names) ---
     $header = explode($csv_delimiter, array_shift($rawlines));
