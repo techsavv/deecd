@@ -1,0 +1,1865 @@
+html {
+    background-color: #909090;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#909090));
+    background-image: -webkit-linear-gradient(top, #ffffff, #909090); 
+    background-image:    -moz-linear-gradient(top, #ffffff, #909090);
+    background-image:     -ms-linear-gradient(top, #ffffff, #909090);
+    background-image:      -o-linear-gradient(top, #ffffff, #909090);
+    background-attachment:fixed;
+}
+
+.modtype_label .mod-indent-outer{
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-left: 0 !important;
+}
+
+#page-enrol-index .box.generalbox.info{
+    display:none;
+}
+.activity.label .dimmed_text{
+    opacity: 1;
+    color:#000;
+}
+
+.Mod1, .module1{
+    background-color: #DFF2EF;
+}
+.Mod2, .module2{
+    background-color: #DFF0F9;
+}
+.Mod3, .module3{
+    background-color: #DFF2EF;
+}
+.Mod4, .module4{
+    background-color: #DFF0F9;
+}
+.Mod5, .module5{
+    background-color: #DFF2EF;
+}
+.Mod6, .module6{
+    background-color: #DFF0F9;
+}
+
+.coursebox > .info > .name a{
+    background-image:none;
+    padding-top: 5px;
+    padding-left: 60px;
+}
+.coursebox .enrolmenticons{
+    display: none;
+}
+.coursebox > .info > .name{
+    width: 100%;
+}
+
+#frontpage-course-list{
+    float: right;
+    width:60%;
+}
+
+.block_course_participants .message{
+    display:none;
+}
+
+#page-admin-tool-uploaduser-index div[role|=main]{
+    overflow-x:scroll;
+}
+
+.file-picker button{
+    color:#fff;
+}
+
+#page-enrol-users #searchbtn{
+    margin-left: 5px;
+}
+
+.block a:link,
+.block a:visited{
+    color:#2466B0;
+}
+.block a:hover{
+    color:#025285;
+}
+
+
+input[type=submit]+input[type=submit]{
+    margin-left: 5px;
+}
+a.customMenuLink,
+a.customMenuLink:visited{
+    color:#c5c4c4;
+}
+a.customMenuLink:hover,
+a.customMenuLink:active{
+    color:#808284;
+}
+
+.notifyproblem{
+    color: #000;
+    font-weight: bold;
+}
+.block_search_forums .helplink{
+    display:none;
+}
+.block_course_overview .content{
+    margin:0px !important;
+}
+.block_course_overview .coursebox{
+    border-bottom: none;
+    background-image: none;
+}
+.block_course_overview .coursebox:hover{
+    border-bottom: none;
+    background-image: none;
+    background-color: #fff;
+}
+#section-0 h3.sectionname{
+    display:none;
+}
+
+.courseHeader{
+    background:url('http://tech-savvy.com.au/deecdvic/theme/deecdables/pix/courseheaderbg.png') repeat-x top right;
+}
+.courseHeaderImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-navigation.mdl-bottom{
+    font-family: 'Signika';
+    font-size: 120%;
+}
+.section-navigation.mdl-bottom a:link,
+.section-navigation.mdl-bottom a:hover,
+.section-navigation.mdl-bottom a:active,
+.section-navigation.mdl-bottom a:visited{
+    color: #3c2f32;
+}
+
+
+.blocksBg{
+    position: fixed;
+    right: 0;
+    width: 250px;
+    top:0;
+}
+.deecdLogo{
+    position: absolute;
+    right:5px;
+}
+.headermenu{
+    margin-top:75px;
+}
+#page-wrapper {
+    width:1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page {
+    background: #fff;
+    width: auto;
+
+}
+
+#page-content {
+    min-width: inherit;
+}
+
+label{
+    font-family: 'Signika';
+    color: #221e1f;
+}
+.block button{
+    padding:5px;
+    color:#fff;
+    font-family:'Signika';
+    background:#025285;
+    border:2px solid #025285;
+}
+.block button:hover{
+    padding:5px;
+    color:#025285;
+    font-family:'Signika';
+    background:#fff;
+    border:2px solid #025285;
+    cursor:pointer;
+}
+button{
+    padding:5px;
+    color:#fff;
+    font-family:'Signika';
+    background:#3c2f32;
+    border:2px solid #3c2f32;
+}
+button:hover{
+    padding:5px;
+    color:#3c2f32;
+    font-family:'Signika';
+    background:#fff;
+    border:2px solid #3c2f32;
+    cursor:pointer;
+}
+input[type=text]{
+    background: #e6e6e6;
+    border: 1px solid #025285;
+    color:#2466B0;
+}
+input[type=password]{
+    background: #e6e6e6;
+    border: 1px solid #025285;
+    color:#2466B0;
+}
+
+.block input[type="submit"]{
+    padding:5px;
+    color:#fff;
+    font-family:'Signika';
+    background:#025285;
+    border:2px solid #025285;
+}
+.block input[type="submit"]:hover{
+    padding:5px;
+    color:#025285;
+    font-family:'Signika';
+    background:#fff;
+    border:2px solid #025285;
+    cursor:pointer;
+}
+
+input[type="submit"]{
+    padding:5px;
+    color:#fff;
+    font-family:'Signika';
+    background:#3c2f32;
+    border:2px solid #3c2f32;
+}
+input[type="submit"]:hover{
+    padding:5px;
+    color:#3c2f32;
+    font-family:'Signika';
+    background:#fff;
+    border:2px solid #3c2f32;
+    cursor:pointer;
+}
+input[type="button"]{
+    padding:5px;
+    color:#fff;
+    font-family:'Signika';
+    background:#3c2f32;
+    border:2px solid #3c2f32;
+}
+input[type="button"]:hover{
+    padding:5px;
+    color:#3c2f32;
+    font-family:'Signika';
+    background:#fff;
+    border:2px solid #3c2f32;
+    cursor:pointer;
+}
+
+.block_login #login_username, .block_login #login_password{
+    padding:5px;
+}
+
+.block_news_items .post{
+    padding-bottom: 15px;
+}
+
+.block_news_items .post .head{
+    margin-top: 0;
+}
+.block_news_items .post .date{
+    float: left;
+    text-align: left;
+    color: #808284;
+    font-style: normal;
+    margin-bottom:5px;
+}
+.block_news_items .name{
+    display:none;
+}
+.block_news_items .footer{
+    font-size:85%;
+}
+.block.block_html .content{
+    padding:5px 10px;
+}
+.block_html .no-overflow{
+    margin:0;
+    padding: 0 !important;
+}
+.block_html p{
+    margin:0;
+}
+
+/* Certificate report */
+#page-mod-certificate-report .generaltable .c2{
+    display:none;
+}
+
+#page-report-stats-index{
+    overflow-x:hidden;
+}
+#page-report-stats-index #page-wrapper{
+    width: 1500px;
+}
+.path-user.path-course.path-course-view #page-wrapper{
+    width: 1430px;
+}
+
+/* User profile */
+.userprofile dl{
+    display:inline-block;
+}
+.path-user .description{
+    border-bottom:none;
+}
+
+/* turn off remember username */
+.c1.rememberusername{
+    display:none;
+}
+
+/* front page course links */
+
+.info .name a{
+    font-family: 'Signika';
+    font-weight: 600 !important;
+}
+.info .name a:link{
+    color:#323232;
+}
+.info .name a:visited{
+    color:#323232;
+}
+.info .name a:hover{
+    color:#323232;
+}
+.info .name a:active{
+    color:#323232;
+}
+
+a:link,
+a:visited{
+    color: #084772;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #009a83;
+}
+
+.navbutton a:link,
+.navbutton a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbutton a:hover,
+.navbutton a:active {
+    color: #fff;
+}
+
+.forumheaderlist a:link,
+.forumheaderlist a:visited{
+    color: #084772;
+    text-decoration: none;
+}
+.forumheaderlist a:hover,
+.forumheaderlist a:active {
+    color: #009a83;
+}
+
+
+
+.rolelink {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.mform fieldset {
+    border-color: #e5e5e5;
+}
+
+.mform legend {
+    border: 1px solid #e5e5e5;
+    background: #e6f5f3;
+    padding: 0 5px;
+}
+
+.generalbox {
+    border-color: #e5e5e5;
+    padding: 5px;
+}
+
+/* column hack LHS */
+.box.generalbox.sitetopic{
+    display: inline-block;
+    width:20%;
+    position: absolute;
+    padding-left: 19px;
+}
+
+/* Header */
+.headermenu .logininfo{
+    font:120% arial, sans-serif;
+    padding-right: 10px;
+}
+#page-header {
+    background: #025285;
+    color: #c5c4c4;
+}
+
+#page-header a:link,
+#page-header a:visited {
+    color: #fff;
+}
+
+#page-header h1.headermain {
+    color: #fff;
+    font-weight: normal;
+    margin: 1em;
+    font-size: 2.75em;
+    font-family:'Signika';
+}
+
+.pagelayout-frontpage #page-header h1.headermain {
+    font-size: 2.75em;
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 5px;
+    font-size: 0.95em;
+    color: #333;
+    position: relative;
+    background-color: #4681C2;
+    min-height: 25px;
+}
+.breadcrumb{
+    color: #c5c4c4;
+    font-weight: bold;
+    top: 25%;
+    position: absolute;
+}
+.navbar .sep {
+    color: #808284;
+}
+.arrow.sep{
+    color:#fff;
+}
+.navbar .breadcrumb a:link,
+.navbar .breadcrumb a:active,
+.navbar .breadcrumb a:hover,
+.navbar .breadcrumb a:visited{
+    color:#fff;
+}
+
+/* Sideblock */
+
+.block {
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.block .header {
+    background-color: #2566b1;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#025285), to(#2566B1));
+    background-image: -webkit-linear-gradient(top, #025285, #2566B1); 
+    background-image:    -moz-linear-gradient(top, #025285, #2566B1);
+    background-image:     -ms-linear-gradient(top, #025285, #2566B1);
+    background-image:      -o-linear-gradient(top, #025285, #2566B1);
+    padding: 2px 5px;
+    text-align: left;
+}
+
+.block .header h2 {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1;
+    font-family: 'Signika';
+    font-weight: normal;
+}
+
+.block .content {
+    background: #fff;
+    border-width: 1px;
+    border-color: #025285;
+    border-style: solid;
+    padding: 5px 10px;
+}
+
+.block_js_expansion .block_tree {
+    overflow: auto;
+}
+
+.block_recent_activity h2,main,
+.block_recent_activity h3.main {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.block_calendar_month .content h3.eventskey {
+    font-size: 1em;
+    margin: 0.25em 0;
+}
+
+td.eventskey {
+    padding: 0 5px 3px;
+}
+
+.minicalendar td,
+.minicalendar th {
+    border-color: #e6f5f3;
+}
+
+.block_comments textarea {
+    width: 95%;
+    margin-bottom: 1em;
+}
+
+.block_comments .comment-area a {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.comment-delete-confirm {
+    background: #fff;
+}
+
+.block_messages .content {
+    font-size: 0.95em;
+}
+
+.block_messages .footer {
+    text-align: center;
+}
+
+/* Calendar */
+
+.calendarlayout .sidecalendar .block {
+  width:180px;
+}
+
+.calendarlayout .sidecalendar .block .content {
+  font-size:0.85em;
+ }
+
+.calendarlayout .minicalendarblock h3 {
+    font-size: 1.2em;
+    margin: 1em 0 0.25em;
+    text-align: center;
+}
+
+.calendarlayout .maincalendar .header {
+    padding: 5px;
+    margin: 1em 0 0;
+}
+
+.calendarlayout .maincalendar .eventlist .event {
+    border: none;
+}
+
+.calendarlayout .maincalendar .eventlist .event .topic {
+    background: #d6eebd;
+    border: 1px solid #a0c278;
+    padding: 5px 10px;
+}
+
+.calendarlayout .maincalendar .eventlist .event .description {
+    border-width: 0 1px 1px;
+    border-color: #a0c278;
+    border-style: solid;
+    padding: 5px 10px;
+}
+
+.calendarlayout .maincalendar .eventlist .event .picture {
+    text-align: center;
+}
+
+.maincalendar .calendar-controls {
+    padding: 10px 5px 0;
+    background: #e6f5f3;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.maincalendar .calendar-controls .previous,
+.maincalendar .calendar-controls .current,
+.maincalendar .calendar-controls .next {
+    width: 5%;
+    float: left;
+}
+
+.maincalendar .calendar-controls .previous {
+    float: left;
+}
+
+.maincalendar .calendar-controls h1.current {
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1;
+}
+
+.maincalendar .calendar-controls .next {
+    text-align: right;
+}
+
+.maincalendar .filters table td {
+    font-size: 0.9em;
+}
+
+.maincalendar .bottom {
+    margin-top: 25px;
+}
+
+.minicalendar th abbr {
+    border: none;
+}
+
+.sidecalendar .filters td,
+.minicalendar td,
+.minicalendar th {
+    padding: 2px;
+    font-size: 0.85em;
+}
+
+/* Course */
+
+#page-site-index .headingblock{
+    margin-bottom: 0px;
+}
+
+h2.headingblock {
+    font-weight: normal;
+}
+
+.coursebox {
+    border-bottom: 1px solid #2365B0;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url([[pix:theme|arrow]]);
+    background-repeat:no-repeat;
+    background-position: 20px center;
+}
+.coursebox:hover{
+    background-color:#E6E6E6;
+    background-image: url([[pix:theme|arrowHover]]);
+    background-repeat:no-repeat;
+    background-position: 20px center;
+}
+
+.coursebox .info {
+    width: 100%;
+}
+
+.coursebox .summary {
+    width: 63%;
+    display:none;
+}
+
+.coursebox h3.name {
+    margin: 0;
+    margin-left: 60px;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.coursebox .info .teachers {
+    margin-left: 0.6em;
+    font-size: 0.95em;
+}
+
+.categorybox {
+    border: none;
+}
+
+h2.headingblock {
+    border-bottom: 1px solid #eee;
+    font-size: 1.4em;
+    font-family:'Signika';
+    background-color: #025285;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#025285), to(#224e88));
+    background-image: -webkit-linear-gradient(top, #025285, #224e88); 
+    background-image:    -moz-linear-gradient(top, #025285, #224e88);
+    background-image:     -ms-linear-gradient(top, #025285, #224e88);
+    background-image:      -o-linear-gradient(top, #025285, #224e88);
+    color: #fff;
+    padding-left: 10px;
+    margin-bottom:0;
+    margin-left: 30%;
+}
+
+#region-main .unlist{
+    display: inline-block;
+    position: static;
+    float: right;
+    width: 70%;
+}
+
+
+#page-course-category .categorypicker {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.path-course-view .course-content li.section {
+    border: 1px solid #16abaa;
+}
+
+.path-course-view .course-content .side {
+    padding: 5px 0;
+}
+
+#page-course-view-weeks .weekdates {
+    font-size: 1em;
+    font-weight: normal;
+    color: #777;
+    padding: 2px;
+}
+
+.course-content .main {
+  background:#e6f5f3;
+ }
+
+.course-content .current {
+  background:#16abaa;
+ }
+
+.course-content .current .left {
+    color: #fff;
+}
+
+.course-content .main .content {
+    padding: 10px;
+    background:#fff;
+}
+
+/* Users */
+
+.userinfobox {
+    border: none;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.userinfobox .content {
+    border: 1px solid #dadfd5;
+    background: #e6f5f3;
+    padding: 10px;
+}
+
+#page-user-edit #id_moodle_optional{
+    display: none;
+}
+
+#page-user-view .buttons {
+    margin: 0 auto;
+    width: 250px;
+}
+
+#page-user-view .buttons div {
+    float: left;
+    padding: 10px;
+}
+
+#page-user-index .rolesform {
+    text-align: center;
+    margin: 15px;
+}
+
+#page-user-index .rolesform div,
+#page-user-index .rolesform form,
+#page-user-index .rolesform div div {
+    display: inline;
+}
+
+#page-user-index h3.main {
+    margin: 1em 0;
+}
+
+#page-user-index #participantsform {
+    text-align: center;
+}
+
+#page-user-index #participants {
+    margin: 25px auto;
+    width: 85%;
+}
+
+#page-user-index #participants th a:link,
+#page-user-index #participants th a:visited {
+    color: #fff;
+}
+
+#page-user-index .userinfobox .links a {
+    display: block;
+}
+
+#page-user-action_redir .generaltable {
+    margin: 15px auto 20px;
+    width: 80%;
+}
+
+#page-user-messageselect .generalbox,
+#page-user-action_redir .generalbox {
+    border-color: #e5e5e5;
+    padding: 10px;
+}
+
+#page-user-messageselect #theform table,
+#page-user-action_redir #theform table {
+    margin: auto;
+}
+
+#page-user-messageselect #theform .generalbox table,
+#page-user-action_redir #theform .generalbox table {
+
+}
+
+/* My Index */
+
+#page-my-index .generalbox {
+    border: none;
+    text-align: center;
+}
+
+/* Tabs */
+.tabtree{
+    line-height: 28px;
+}
+.tabtree .first a{
+    margin-left: 0px !important;
+}
+
+.tabtree ul {
+    text-align: left;
+}
+
+.tabtree .tabrow0 {
+    width: 100%;
+    margin: 1em 0px;
+}
+
+.tabtree .tabrow0 li {
+    margin-right: 0px;
+}
+
+.tabtree .tabrow0 li.here {
+    /*font-weight: bold;*/
+}
+
+.tabtree .tabrow0 li.here a {
+    position: relative;
+    z-index: 0;
+}
+
+.tabtree .tabrow0 li a {
+    background: #009a9d;
+    border-width: 1px 1px 0;
+    border-style: solid;
+    border-color: #009a9d;
+    padding: 6px 6px 5px;
+    margin-right: 3px;
+    color: #fff;
+    font-family: 'Signika';
+    font-size: 1.2em;
+    font-weight: normal !important;
+}
+
+.tabtree .tabrow0 li.here a {
+    background: #3c2f32;
+    border-color: #3c2f32;
+    border-bottom-width: 0;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Signika';
+    font-weight: normal !important;
+}
+
+.tabtree .tabrow0 li a:hover {
+    background: #3c2f32;
+    border-color: #3c2f32;
+    color: #fff;
+}
+
+.tabtree .tabrow0 ul,
+.tabtree .tabrow0 div {
+    font-weight: normal;
+    background: #fff;
+    border-top: 3px solid #3c2f32;
+    padding: 0;
+    margin: 0 !important;
+    margin-top: 1px;
+    bottom:-2px !important;
+}
+
+.tabtree tabrow2 ul {
+    border: none;
+}
+
+.tabtree .tabrow0 li.here .empty {
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    bottom: -4px !important;
+}
+
+
+.tabtree .tabrow1 li a,
+.tabtree .tabrow1 li a:hover,
+.tabtree .tabrow1 li a span,
+.tabtree .tabrow1 li a:hover span {
+    background: none !important;
+    border: none;
+    font-size: 0.95em;
+}
+
+.tabtree a.nolink,
+.tabtree .here ul a.nolink,
+.tabtree a.nolink:hover,
+.tabtree .here ul a.nolink:hover {
+    color: #888;
+    text-decoration: none;
+}
+
+.tabtree .here a.nolink,
+.tabtree .here ul .here a.nolink,
+.tabtree .here a.nolink:hover,
+.tabtree .here ul .here a.nolink:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ie7 .tabtree .tabrow0 li {
+    margin-left: 0;
+}
+
+.ie7 .tabtree .tabrow0 li.first {
+    margin-right: -4px;
+}
+
+.ie7 .tabtree .tabrow0 li.onerow {
+    margin-right: 0;
+}
+
+.ie7 .tabtree .tabrow0 a {
+    display: inline-block;
+    padding: 8px 0 0.35em 13px;
+    line-height: 1.5em;
+}
+
+.ie7 .tabtree .tabrow0 a span {
+    padding: 10px 1em 10px 0;
+}
+
+.ie7 .tabtree .tabrow0 div {
+    top: 2.6em;
+    padding: 0.2em 0;
+}
+
+.ie7 .tabtree .tabrow0 div.empty {
+    margin-right: 0;
+}
+
+.ie7.mod-quiz div.tabtree a span img.iconsmall {
+    margin: 0;
+    vertical-align: baseline;
+    position: relative;
+    top: 2px;
+}
+
+.ie6 .tabtree {
+    height: 100%;
+}
+
+.ie6 .tabtree .tabrow0 {
+    padding-top: 10px;
+}
+
+.ie6 .tabtree .tabrow0 li {
+    margin-left: 0;
+}
+
+.ie6 .tabtree .tabrow0 li.first {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.ie6 .tabtree .tabrow0 li.last a {
+    margin-right: 0;
+}
+
+.ie6 .tabtree .tabrow0 li.onerow {
+    margin-right: 0;
+}
+
+.ie6 .tabtree .tabrow0 a {
+    padding: 0 0 0 13px;
+}
+
+.ie6 .tabtree .tabrow0 a span {
+    padding: 12px 1em 4px 0;
+}
+
+.ie6 .tabtree .tabrow0 div {
+    top: 3.5em;
+    padding: 0.2em 0;
+}
+
+/* Mods */
+
+#intro {
+    width: 75%;
+    background: #e6f5f3;
+    border: 1px solid #3c2f32;
+    padding: 10px;
+    margin: 1em auto;
+}
+
+#notice,
+.redirectmessage {
+    text-align: center;
+    border-color: #e5e5e5;
+    padding: 5px;
+}
+
+.pagelayout-embedded #page-wrapper {
+    text-align: center;
+    margin: 3% 15%;
+}
+
+.pagelayout-embedded #content {
+    padding: 10px;
+}
+
+.notifysuccess {
+    text-align: center;
+    margin: 25px;
+    font-weight: bold;
+}
+
+/* Forum */
+
+.forumpost.clearfix{
+    margin-top: 10px;
+}
+
+table.forumheaderlist td{
+    vertical-align: middle !important;
+}
+
+.navbutton .forumsearch{
+    display: none;
+}
+
+.forumpost {
+    border: none;
+}
+
+.forumpost.unread .row.header{
+    background-color: #fff;
+}
+
+.forumpost .topic {
+    background: #009A9E;
+    border: 1px solid #3c2f32;
+    padding: 5px 10px;
+}
+
+.forumpost .starter {
+    background: #009A9E;
+}
+
+.forumpost .subject {
+    color: #221e1f;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.forumpost .author {
+    font-style: italic;
+    color: #c5c4c4;
+    font-size: 0.95em;
+}
+
+.forumpost .author a:link,
+.forumpost .author a:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.forumpost .author a:hover {
+    text-decoration: none;
+}
+
+.forumpost a:link,
+.forumpost a:visited{
+    color: #084772
+}
+.forumpost a:hover{
+    color: #009a83;
+}
+
+.forumpost .no-overflow,
+.forumpost .options {
+    border: 1px solid #3c2f32;
+}
+
+.forumpost .options,
+.forumpost .content .posting {
+    padding: 5px 10px;
+}
+
+.forumaddnew,
+.forumnodiscuss {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.path-mod-forum .forumheaderlist .picture {
+    border-right-width: 0;
+    padding-right: 0;
+    padding-top: 10px;
+}
+
+.path-mod-forum .forumheaderlist .replies {
+    text-align: center;
+}
+
+.path-mod-forum .forumheaderlist .replies .read {
+    background: #e6f5f3;
+    padding: 2px;
+}
+
+.path-mod-forum .unread .content {
+    background: #e6f5f3;
+}
+
+.path-course-view .section .forum .unread {
+    margin-left: 20px;
+}
+
+.path-course-view .section .forum .unread a:link,
+.path-course-view .section .forum .unread a:visited {
+    color: #888;
+    background: #e6f5f3;
+    font-size: 0.9em;
+}
+
+#page-mod-forum-search .generalbox {
+    width: 85%;
+}
+
+#page-mod-forum-search .searchbox {
+    margin: 25px auto;
+}
+
+#page-mod-forum-search .searchbox .submit {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Resource */
+
+.mod_introbox {
+    border-color: #eee;
+    background: #e6f5f3;
+    margin: 0 auto 15px;
+    width: 75%;
+}
+
+.path-mod-page .generalbox {
+    margin: 10px auto;
+    border: none;
+    padding: 0 25px;
+    text
+}
+
+.path-mod-page .modified {
+    color: #777;
+    font-size: 0.8em;
+    text-align: center;
+    display:none;
+}
+
+#page-mod-folder-view .foldertree {
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+}
+
+#page-mod-folder-view .foldertree ul {
+    margin-bottom: 0;
+}
+
+/* Assignment */
+
+#page-mod-assignment-view .reportlink a {
+    background-color: #e6f5f3;
+}
+
+#page-mod-assignment-view .generalbox {
+    border-color: #e5e5e5;
+}
+
+#page-mod-assignment-submissions .mform fieldset legend {
+    margin-top: 0.5em;
+}
+
+/* Choice */
+
+#page-mod-choice-view #notice {
+    width: 55%;
+    padding: 15px;
+    border: none;
+    margin: 0 auto;
+}
+
+#page-mod-choice-view h2.main {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.path-mod-choice .results td {
+    padding: 5px;
+}
+
+.path-mod-choice .results .count {
+    border-top: 1px solid #16abaa;
+}
+
+/* Feedback */
+
+.path-mod-feedback h4{
+    margin-top: 1em;
+    padding: 0.5em 0 1em;
+    text-align: center;
+}
+
+#page-mod-feedback-analysis th{
+    text-align: left;
+}
+
+.path-mod-feedback .box+.continuebutton{
+    display: none;
+}
+
+.path-mod-feedback button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.path-mod-feedback .box.generalbox.boxaligncenter.boxwidthwide{
+    text-align: left;
+}
+
+.feedback_form input[type=submit]{
+    margin-top: 10px;
+}
+
+.path-mod-feedback .mdl-align a,
+.path-mod-feedback .mdl-align a:visited{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #084772;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.path-mod-feedback .mdl-align a:hover{
+    color: #169b9e;
+}
+
+.feedback_items .generalbox{
+    padding-top: 20px;
+}
+
+.feedback_item_number_left{
+    font-weight: bold;
+    padding-left: 5px;
+
+}
+
+.feedback_required_mark{
+    text-align: right;
+    display:block;
+}
+
+.path-mod-feedback h4.main {
+    margin-top: 1em;
+}
+
+.path-mod-feedback .continuebutton {
+    text-align: center;
+    margin: 1em 0;
+}
+
+#page-mod-feedback-complete .box.mdl-align a{
+    display: none;
+}
+
+#page-mod-feedback-show_entries .generalbox {
+    width: 60%;
+}
+
+#page-mod-feedback-show_entries table {
+    margin: 0 auto;
+}
+
+#page-mod-feedback-analysis table {
+    margin: 0 auto;
+}
+
+#page-mod-feedback-analysis .form-buttons {
+    float: right;
+    padding-right: 5px;
+    margin: -15px 5px 0px 5px;
+}
+
+/* Glossary */
+
+#page-mod-glossary-view .glossarycontrol {
+    float: none;
+}
+
+#page-mod-glossary-view .singlebutton {
+    text-align: center;
+}
+
+#page-mod-glossary-view form .boxaligncenter td {
+    text-align: center;
+}
+
+#page-mod-glossary-view .entrybox {
+    text-align: center;
+}
+
+.path-mod-glossary .entrybox .glossarycategoryheader {
+    width: 100%;
+}
+
+.path-mod-glossary .entrybox .glossarycategoryheader th {
+    background: #e6f5f3;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.path-mod-glossary .entrybox .glossarycategoryheader th h2.main {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.path-mod-glossary .entrybox .entry .concept h3 {
+    display: inline;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.path-mod-glossary .entrybox .fullwithauthor .concept h3,
+.path-mod-glossary .entrybox .encyclopedia .concept h3 {
+    margin-bottom: 0.2em;
+}
+
+.path-mod-glossary .entrybox .glossarypost {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.path-mod-glossary .entrybox .entryheader {
+    font-weight: normal;
+}
+
+.path-mod-glossary .entrybox .entrylist {
+    width: 100%;
+}
+
+.path-mod-glossary .entrybox .entrylist .entrylowersection {
+    text-align: right;
+}
+
+#page-mod-glossary-editcategories .generalbox {
+    margin: 10px auto;
+    width: 50%;
+}
+
+#page-mod-glossary-editcategories .generalbox th {
+    border: none;
+}
+
+#page-mod-glossary-editcategories .generalbox .buttons {
+    padding: 15px;
+}
+
+#page-mod-glossary-editcategories .generalbox table .action {
+    border-left: 1px solid #eee;
+    text-align: center;
+}
+
+#page-mod-glossary-editcategories .generalbox .confirmbuttons,
+#page-mod-glossary-editcategories .generalbox .editbuttons {
+    margin: 0 auto;
+}
+
+.deletecatconfirm {
+    text-align: center;
+}
+
+/* Forms */
+
+.mform .fitem fieldset.felement {
+    margin: 0 auto 1em;
+    padding-left: 25px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.path-backup .mform .fitem fieldset.felement {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Tables */
+
+#page-mod-glossary-editcategories .generalbox,
+#page-user-action_redir .generaltable,
+#page-user-index #participants,
+.path-mod-forum .forumheaderlist {
+    border-width: 1px;
+    border-color: #3c2f32;
+    border-style: solid;
+}
+
+#page-mod-glossary-editcategories .generalbox th,
+#page-user-action_redir .generaltable th,
+#page-user-index #participants th,
+.path-mod-choice .results th,
+.path-mod-forum .forumheaderlist th {
+    border-width: 0 0 2px;
+    border-color: #3c2f32;
+    border-style: solid;
+    background: #009A9E;
+    padding-left: 5px;
+    color: #fff;
+}
+
+#page-user-action_redir .generaltable td,
+#page-user-index #participants td,
+.path-mod-forum .forumheaderlist td {
+    border-color: #3c2f32;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 2px 8px;
+}
+
+#page-user-action_redir .generaltable .r1 td,
+#page-user-index #participants .r0 td,
+.path-mod-choice .results .count,
+.path-mod-forum .forumheaderlist .r1 td {
+    background: #e6f5f3;
+}
+
+/* Footer */
+.footer-left{
+    font-size: 8pt;
+    text-align:center;
+    top:13px;
+    position:relative;
+    color:#e6e6e6;
+    width:100%;
+}
+.footer-left a{
+    color:#fff !important;
+}
+.footer-left a:visited{
+    color:#fff !important;
+}
+.footer-left a:hover{
+    color:#fff !important;
+    text-decoration:underline;
+}
+.footer-logo{
+    display:inline-block;
+    float:right;
+    top:-10px;
+    position:relative;
+    margin-right: 10px;
+}
+#page-footer .logininfo{
+    display:none;
+}
+#page-footer .homelink{
+    display:none;
+}
+#page-footer {
+    background: #025285;
+    color: #fff;
+    height: 40px;
+    margin-top: 20px;
+}
+#page-footer a {
+    color: #b3c79d;
+}
+#page-footer a:hover {
+    color: #fff;
+}
+#page-footer .logininfo {
+    float: left;
+    padding: 5px;
+    margin: 0;
+}
+#page-footer .helplink {
+    float: right;
+    padding: 5px;
+    margin: 0;
+    display:none;
+}
+#page-footer-bottom {
+    text-align: center;
+    margin: 10px 20%;
+    display:none;
+}
+
+.performanceinfo span {
+    display: block;
+}
+.validators {
+    margin-top: 40px;
+    padding-top: 5px;
+    border-top: 1px dotted gray;
+}
+
+.validators ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.validators ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.myclear {
+    clear: both;
+}
+
+#custommenu {
+    overflow:hidden;
+}
+#custommenu .yui3-menu-horizontal .yui3-menu-content,
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content,
+#custommenu .yui3-menu-horizontal .yui3-menu-content ul,
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content ul,
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content li li:hover > a,
+#custommenu .yui3-menu-horizontal .yui3-menu-label, .yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
+    border-width:0;
+}
+
+#custommenu .yui3-menu-horizontal .yui3-menu-content ul ul,
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content ul ul {
+    background-color:#3c2f32;
+}
+
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content li li:hover,
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content li li:hover a,
+#custommenu .yui3-menu .yui3-menuitem.yui3-menuitem-active .yui3-menuitem-content {
+    background-color:#4E6632;
+}
+
+#custommenu .yui3-menu-label-active,
+#custommenu .yui3-menu-label-menuvisible,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-active,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
+     background-color:#4E6632;
+
+}
+
+#custommenu .yui3-menu-content,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-content {
+    padding:0;
+}
+
+#custommenu .yui3-menuitem .yui3-menuitem-content {
+    border-width:0;
+}
+
+.block .header .commands .icon img {
+    background-color: #e6f5f3; /* adds light green background */
+    border: 2px solid #3c2f32; /* adds 2px dark green border */
+    border-radius: 5px; /* adds rounded corners in modern browsers */
+    height: 12px;
+    margin-right: 3px;
+    padding: 2px; /* adds padding to icon */
+    width: 12px;
+}
+
+/* Edit Profile - Hide Fields */
+
+#fitem_id_mailformat{
+    display:none;
+}
+#fitem_id_htmleditor{
+    display:none;
+}
+#fitem_id_timezone{
+    display:none;
+}
+#fitem_id_language{
+    display:none;
+}
+#moodle_interests{
+    display:none;
+}
+#moodle_optional{
+    display:none;
+}
+
+/* Report blog removal hack */
+
+.path-report-outline .header.c2{
+    display:none;
+}
+.blog.cell{
+    display:none;
+}
+
+/* SCORM content positioning and styling */
+
+#scorm_layout .yui-layout-bd{
+    border:none;
+}
+table tbody tr td{
+    vertical-align: top;
+}
+
+/* add block list was too wide */
+.block_adminblock select{
+    width:95%;
+}
+
+/* standard headers */
+h1{
+    font-family: 'Signika';
+    font-size:  24pt;
+    color: #3c2f32;
+    font-weight: 600;
+}
+h2{
+    font-family: 'Signika';
+    font-size: 18pt;
+    color: #3c2f32;
+    font-weight: 600;
+}
+/* redirect styling hack */
+.pagelayout-redirect h2 p{
+    font-family: 'Signika' !important;
+    font-weight: 600;
+    font-size: 18pt;
+    color: #3c2f32;
+}
+/*h2.main{
+    font-family: 'Signika';
+    font-size:  24pt;
+    color: #3c2f32;
+    text-align: center;
+    font-weight: 600;
+}*/
+/* custom welcome block */
+.block_deecd_welcome{
+    text-align: center;
+}
+
+.block_deecd_welcome .profilepicture{
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.block_deecd_welcome .fullname{
+    font-family: 'Signika';
+    color:#221e1f;
+    font-size: 1.2em;
+}
+
+.block_deecd_welcome .lastaccess{
+    color: #221e1f;
+}
+
+/* search forums block */
+.block_search_forums input[type=text]{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+
+/* activity intro box (displays info @ start of activity) */
+#intro.generalbox{
+    padding: 20px;
+}
+
+/* scorm width hack */
+
+#page-mod-scorm-player #page-wrapper{
+    width:1430px;
+}
+
+#page-report-progress-index #page-wrapper{
+    width:1430px;
+}
+
+
+/* course outline links */
+
+
+#page-course-view-onetopic .activity a:link,
+#page-course-view-onetopic .activity a:visited{
+    color:#084772;
+}
+#page-course-view-onetopic .activity a:hover{
+    color:#009a83;
+}
+
+#page-course-view-onetopic .conditionalhidden{
+    padding: 0;
+    display: block;
+    height: auto;
+}
+
+.sitetopic .section .activity:hover, .course-content .section .activity:hover{
+    background-color: #e6f5f3;
+}
+
+
+
+.cmid-29 .feedback_item_label_left .feedback_item_numinfo{
+    display: none;
+}
+
+.confirmation-buttons input{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.side-pre-only #page-content #region-main-box #region-post-box #region-main-wrap #region-main{
+    margin-right: 20px;
+}
+.side-pre-only .region-content{
+    padding-right: 10px !important;
+}
+
+.side-post-only .region-content{
+    padding-left: 10px !important;
+}
+
+.content-only .region-content{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.path-mod-url iframe{
+    border:none;
+    width:100% !important;
+    min-height: 723px;
+}
+
+.pagelayout-redirect .continuebutton{
+    display: none;
+}
+
+.quizattemptsummary .lastcol{
+    display: none;
+}
+
+.questionbankwindow.block {
+    width: 25%;
+}
+
+.box.quizattempt p{
+    display: none;
+}
+
+.path-report-progress #region-main{
+    overflow-x:scroll !important;
+}
+
+#confirmdialog button{
+    margin: 3px;
+}
+
+/* published module page sizing */
+
+.cmid-102 #page-wrapper{width:1430px;}
+.cmid-180 #page-wrapper{width:1430px;}
+.cmid-188 #page-wrapper{width:1430px;}
+.cmid-201 #page-wrapper{width:1430px;}
+.cmid-239 #page-wrapper{width:1430px;}
+.cmid-248 #page-wrapper{width:1430px;}
+.cmid-282 #page-wrapper{width:1430px;}
+
+/*Removing and aligning h2 headings in activity modules due to .main class being removed in Moodle 2.6 */
+
+.path-mod-url h2{
+    visibility: hidden;
+}
+
+.path-mod-resource h2{
+    visibility: hidden;
+}
+
+.path-mod-feedback h2{
+    text-align: center;
+    margin-bottom: 1.0em;
+}
+
+.path-mod-page h2 {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.path-mod-forum h2 {
+    text-align: center;
+    margin-top: 1.0em;
+    margin-bottom: 0.8em;
+}
+
+.path-mod-quiz h2 {
+    text-align: center;
+    margin-top: 1.0em;
+    margin-bottom: 0.8em;
+}
+
+.path-mod-quiz h2 {
+    text-align: center;
+    margin-top: 1.0em;
+    margin-bottom: 0.8em;
+}
+
+.path-mod-certificate h2 {
+    text-align: center;
+    margin-top: 1.0em;
+    margin-bottom: 0.8em;
+}
