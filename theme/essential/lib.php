@@ -133,7 +133,7 @@ function theme_essential_pluginfile($course, $cm, $context, $filearea, $args, $f
     $tag = '[[setting:pagewidth]]';
     $replacement = $pagewidth;
     if (is_null($replacement)) {
-        $replacement = '1300';
+        $replacement = '1200';
     }
     if ( $replacement == "100" ) {
 		$css = str_replace($tag, $replacement.'%', $css);
