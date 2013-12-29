@@ -66,6 +66,18 @@ class group_form extends moodleform {
         $mform->addHelpButton('enrolmentkey', 'enrolmentkey', 'group');
         $mform->setType('enrolmentkey', PARAM_RAW);
 
+        $mform->addElement('text', 'region', get_string('region','group'), 'maxlength="100"');
+        $mform->addRule('region', get_string('required'), 'required', null, 'client');
+        $mform->setType('region', PARAM_MULTILANG);
+        
+        $mform->addElement('text', 'network', get_string('network','group'), 'maxlength="100"');
+        $mform->addRule('network', get_string('required'), 'required', null, 'client');
+        $mform->setType('network', PARAM_MULTILANG);
+        
+        $mform->addElement('text', 'schooltype', get_string('schooltype','group'), 'maxlength="100"');
+        $mform->addRule('schooltype', get_string('required'), 'required', null, 'client');
+        $mform->setType('schooltype', PARAM_MULTILANG);
+
         $options = array(get_string('no'), get_string('yes'));
         $mform->addElement('select', 'hidepicture', get_string('hidepicture'), $options);
 
