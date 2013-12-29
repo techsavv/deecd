@@ -129,12 +129,19 @@ function theme_essential_pluginfile($course, $cm, $context, $filearea, $args, $f
  * @param mixed $pagewidth
  * @return string
  */
-    function essential_set_pagewidth($css, $pagewidth) {    $tag = '[[setting:pagewidth]]';    $replacement = $pagewidth;    if (is_null($replacement)) {        $replacement = '1200';    }
+    function essential_set_pagewidth($css, $pagewidth) {
+    $tag = '[[setting:pagewidth]]';
+    $replacement = $pagewidth;
+    if (is_null($replacement)) {
+        $replacement = '1200';
+    }
     if ( $replacement == "100" ) {
 		$css = str_replace($tag, $replacement.'%', $css);
 	} else {
 		$css = str_replace($tag, $replacement.'px', $css);
-	}    return $css;    }
+	}
+    return $css;
+    }
 
 /**
  * Displays the Font Awesome Edit Icons based on settings value
@@ -203,7 +210,12 @@ function essential_set_customcss($css, $customcss) {
 
 function theme_essential_process_css($css, $theme) {
 
-    if (!empty($theme->settings->pagewidth)) {       $pagewidth = $theme->settings->pagewidth;    } else {       $pagewidth = null;    }    $css = essential_set_pagewidth($css,$pagewidth);
+    if (!empty($theme->settings->pagewidth)) {
+       $pagewidth = $theme->settings->pagewidth;
+    } else {
+       $pagewidth = null;
+    }
+    $css = essential_set_pagewidth($css,$pagewidth);
     
     // Set the Fonts.
     if ($theme->settings->fontselect ==1) {
@@ -307,9 +319,9 @@ function theme_essential_process_css($css, $theme) {
         $bodysize = '13px';
         $bodyweight = '400';
     } else if ($theme->settings->fontselect ==21) {
-        $headingfont = 'Rancho';
-        $bodyfont = 'Gudea';
-        $bodysize = '13px';
+        $headingfont = 'Signika Negative';
+        $bodyfont = 'Arimo';
+        $bodysize = '14px';
         $bodyweight = '400';
     } else if ($theme->settings->fontselect ==22) {
         $headingfont = 'Helvetica';
