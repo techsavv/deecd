@@ -50,11 +50,6 @@ class block_recent_activity_renderer extends plugin_renderer_base {
                 get_string('activitysince', '', userdate($timestart)),
                 array('class' => 'activityhead'));
 
-        $output .= html_writer::tag('div',
-                html_writer::link(new moodle_url('/course/recent.php', array('id' => $course->id)),
-                    get_string('recentactivityreport')),
-                array('class' => 'activityhead'));
-
         $content = false;
 
         // Firstly, have there been any new enrolments?
