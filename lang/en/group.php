@@ -177,3 +177,11 @@ $string['toomanygroups'] = 'Insufficient users to populate this number of groups
 $string['usercount'] = 'User count';
 $string['usercounttotal'] = 'User count ({$a})';
 $string['usergroupmembership'] = 'Selected user\'s membership:';
+
+/*Three custom groups*/
+$string['region'] = 'Region';
+$string['network'] = 'Network';
+$string['schooltype'] = 'School type';
+$string['missingregion'] = 'Required';
+$string['missingnetwork'] = 'Required';
+$string['missingschooltype'] = 'Required';
