@@ -240,8 +240,8 @@ if ( (intval($feedback->publish_stats) == 1) AND
     if ($multiple_count = $DB->count_records('feedback_tracking', $params)) {
         $url_params = array('id'=>$id, 'courseid'=>$courseid);
         $analysisurl = new moodle_url('/mod/feedback/analysis.php', $url_params);
-        echo '<div class="mdl-align"><a href="'.$analysisurl->out().'">';
-        echo get_string('completed_feedbacks', 'feedback').'</a>';
+        echo '<div class="mdl-align"><button type="button" onclick=window.open("'.$analysisurl->out().'","_self") >';
+        echo get_string('completed_feedbacks', 'feedback').'</button>';
         echo '</div>';
     }
 }
