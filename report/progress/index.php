@@ -26,7 +26,7 @@
 require('../../config.php');
 require_once($CFG->libdir . '/completionlib.php');
 
-define('COMPLETION_REPORT_PAGE', 25);
+define('COMPLETION_REPORT_PAGE', 50);
 
 // Get course
 $id = required_param('course',PARAM_INT);
@@ -155,7 +155,9 @@ if ($csv && $grandtotal && count($activities)>0) { // Only show CSV if there are
     $PAGE->set_heading($course->fullname);
     echo $OUTPUT->header();
     $PAGE->requires->js('/report/progress/textrotate.js');
+    //$PAGE->requires->js('/lib/jquery/jquery-1.9.1.min.js');
     $PAGE->requires->js_function_call('textrotate_init', null, true);
+    $PAGE->requires->js('/report/progress/section.js');
 
     // Handle groups (if enabled)
     groups_print_course_menu($course,$CFG->wwwroot.'/report/progress/?course='.$course->id);
@@ -275,7 +277,33 @@ if (!$csv) {
     }
 
     print '<div id="completion-progress-wrapper" class="no-overflow">';
-    print '<table id="completion-progress" class="generaltable flexible boxaligncenter" style="text-align:left"><thead><tr style="vertical-align:top">';
+    print '<table id="completion-progress" class="generaltable flexible boxaligncenter" style="text-align:left"><tr style="vertical-align:top">';
+
+    // section th
+    print '<tr><th></th>';
+    $activityColSpan = 1;
+    $previousActivity = null;
+    $actIterator = 0;
+    $activityNum = count($activities);
+    foreach ($activities as $activity){
+        $actIterator++;
+        $realSection = $DB->get_record_sql('SELECT * FROM {course_sections} WHERE id = '.$activity->section);
+        if($realSection->section == $previousActivity->section){
+            $activityColSpan++;
+            if($actIterator == $activityNum){ // if last activity
+                print '<th data-depth="0" class="open toggle Mod'.($realSection->section).'" colspan="'.$activityColSpan.'">Module '.($realSection->section).'<span class="icon"></span></th>';
+                $activityColSpan = 1;
+            } 
+        }elseif($previousActivity != null){
+            print '<th data-depth="0" class="open toggle Mod'.($previousActivity->section).'" colspan="'.$activityColSpan.'">Module '.($previousActivity->section).'<span class="icon"></span></th>';
+            $activityColSpan = 1;
+            if($actIterator == $activityNum){ // if last activity
+                print '<th data-depth="0" class="open toggle Mod'.($realSection->section).'" colspan="'.$activityColSpan.'">Module '.($realSection->section).'<span class="icon"></span></th>';
+            }
+        }
+        $previousActivity = $realSection;
+    }
+    print '</tr>';
 
     // User heading / sort option
     print '<th scope="col" class="completion-sortchoice">';
@@ -299,9 +327,19 @@ if (!$csv) {
                 get_user_field_name($field) . '</th>';
     }
 } else {
+	//-------------- USER ROLE - CSV HEADER----------------//
+	echo $sep . csv_quote('Role');
+	//-------------- USER ROLE - CSV HEADER----------------//
     foreach ($extrafields as $field) {
         echo $sep . csv_quote(get_user_field_name($field));
     }
+    //------------------------ GROUP/REGION/NETWORK CSV HEADER-----------------------//
+    echo $sep . csv_quote('Group');
+    echo $sep . csv_quote('Group ID');
+    echo $sep . csv_quote('Region');
+    echo $sep . csv_quote('Network');
+    echo $sep . csv_quote('School Type');
+    //------------------------ GROUP/REGION/NETWORK CSV HEADER-----------------------//
 }
 
 // Activities
@@ -320,10 +358,11 @@ foreach($activities as $activity) {
     $displayname = shorten_text($activity->name);
 
     if ($csv) {
-        print $sep.csv_quote(strip_tags($displayname)).$sep.csv_quote($datetext);
+        print $sep.csv_quote(strip_tags($activity->name)).$sep.csv_quote($datetext);
     } else {
-        $formattedactivityname = format_string($displayname, true, array('context' => $activity->context));
-        print '<th scope="col" class="'.$datepassedclass.'">'.
+        $realSection = $DB->get_record_sql('SELECT * FROM {course_sections} WHERE id = '.$activity->section);
+        $formattedactivityname = format_string($activity->name, true, array('context' => $context));
+        print '<th data-depth="1" scope="col" class="'.$activity->datepassedclass.'module'.($realSection->section).'">'.
             '<a href="'.$CFG->wwwroot.'/mod/'.$activity->modname.
             '/view.php?id='.$activity->id.'" title="' . $formattedactivityname . '">'.
             '<img src="'.$OUTPUT->pix_url('icon', $activity->modname).'" alt="'.
@@ -343,7 +382,7 @@ foreach($activities as $activity) {
 if ($csv) {
     print $line;
 } else {
-    print '</tr></thead><tbody>';
+    print '</tr>';
 }
 
 // Row for each user
@@ -351,6 +390,16 @@ foreach($progress as $user) {
     // User name
     if ($csv) {
         print csv_quote(fullname($user));
+        //************************** ADDED/UPDATED USER ROLE *****************************//
+        $userrole = null;
+	    $sql = "SELECT id FROM {user_info_field} WHERE " . $DB->sql_compare_text('name') . " = " . $DB->sql_compare_text(':name') . "";
+	    if($role_fieldid = $DB->get_field_sql($sql, array('name' => 'role'))) {
+	    	$rolesql = "SELECT data FROM {$CFG->prefix}user_info_data WHERE userid = $user->id AND fieldid = $role_fieldid";
+			$userrole = $DB->get_field_sql($rolesql);
+	    }
+	    print $sep.csv_quote($userrole);
+	    //************************** ADDED/UPDATED USER ROLE *****************************//
+		
         foreach ($extrafields as $field) {
             echo $sep . csv_quote($user->{$field});
         }
@@ -362,6 +411,29 @@ foreach($progress as $user) {
         }
     }
 
+    //**************************************** ADDED/UPDATED*****************************************//
+    if($csv) {
+    	$sql = "SELECT GROUP_CONCAT(g.name) AS groupname, g.idnumber, g.region, g.network, g.schooltype
+    	        FROM {groups} g, {groups_members} gm 
+				WHERE g.id = gm.groupid AND g.courseid = $course->id AND gm.userid = $user->id 
+				GROUP BY gm.userid";
+
+		if($groups = $DB->get_record_sql($sql)) {
+			$groupidnumber = isset($groups->idnumber) && !empty($groups->idnumber) ? $groups->idnumber : null;
+			$groupname = isset($groups->groupname) && !empty($groups->groupname) ? $groups->groupname : null;
+			$groupregion = isset($groups->region) && !empty($groups->region) ? $groups->region : null;
+			$groupnetwork = isset($groups->network) && !empty($groups->network) ? $groups->network : null;
+			$groupschooltype = isset($groups->schooltype) && !empty($groups->schooltype) ? $groups->schooltype : null;
+			
+			print $sep.csv_quote($groupname);
+			print $sep.csv_quote($groupidnumber);
+			print $sep.csv_quote($groupregion);
+			print $sep.csv_quote($groupnetwork);
+			print $sep.csv_quote($groupschooltype);
+		}
+    }
+    //**************************************** ADDED/UPDATED*****************************************//
+    
     // Progress for each activity
     foreach($activities as $activity) {
 
@@ -398,7 +470,8 @@ foreach($progress as $user) {
         if ($csv) {
             print $sep.csv_quote($describe).$sep.csv_quote($date);
         } else {
-            print '<td class="completion-progresscell '.$formattedactivities[$activity->id]->datepassedclass.'">'.
+            $realSection = $DB->get_record_sql('SELECT * FROM {course_sections} WHERE id = '.$activity->section);
+            print '<td data-depth="1" class="completion-progresscell module'.($realSection->section).' '.$activity->datepassedclass.'">'.
                 '<img src="'.$OUTPUT->pix_url('i/'.$completionicon).
                 '" alt="'.$describe.'" title="'.$fulldescribe.'" /></td>';
         }
@@ -414,7 +487,7 @@ foreach($progress as $user) {
 if ($csv) {
     exit;
 }
-print '</tbody></table>';
+print '</table>';
 print '</div>';
 print $pagingbar;
 
@@ -424,4 +497,3 @@ print '<ul class="progress-actions"><li><a href="index.php?course='.$course->id.
     get_string('excelcsvdownload','completion').'</a></li></ul>';
 
 echo $OUTPUT->footer();
-
