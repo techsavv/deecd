@@ -129,12 +129,12 @@ function theme_essential_pluginfile($course, $cm, $context, $filearea, $args, $f
  * @param mixed $pagewidth
  * @return string
  */
-    function essential_set_pagewidth($css, $pagewidth) {    $tag = '[[setting:pagewidth]]';    $replacement = $pagewidth;    if (is_null($replacement)) {        $replacement = '1200';    }
+    function essential_set_pagewidth($css, $pagewidth) {    $tag = '[[setting:pagewidth]]';    $replacement = $pagewidth;    if (is_null($replacement)) {        $replacement = '1200';    }
     if ( $replacement == "100" ) {
 		$css = str_replace($tag, $replacement.'%', $css);
 	} else {
 		$css = str_replace($tag, $replacement.'px', $css);
-	}    return $css;    }
+	}    return $css;    }
 
 /**
  * Displays the Font Awesome Edit Icons based on settings value
@@ -153,32 +153,6 @@ function essential_set_editicons($css, $editicons) {
     $tag = '[[setting:editicons]]';
     if ($editicons) { //Setting is "YES"
         $rules = file_get_contents($editiconsurl);
-        $replacement = $rules;
-    } else { //Setting is "NO"
-        $replacement = null; //NULL so we don't actually output anything to the stylesheet
-    }
-    $css = str_replace($tag, $replacement, $css);
-    return $css;
-}
-
-/**
- * Displays the Autohide CSS based on settings value
- *
- * @param string $css
- * @param mixed $autohide
- * @return string
- * This code originally written for the Zebra theme by Danny Wahl
- */
-function essential_set_autohide($css, $autohide) {
-	global $CFG;
-	if (!empty($CFG->themedir)) {
-		$autohideurl = $CFG->themedir . '/essential/style/autohide.css'; //Pull the full path for autohide css
-	} else {
-		$autohideurl = $CFG->dirroot . '/theme/essential/style/autohide.css'; //MDL-36065
-	}
-    $tag = '[[setting:autohide]]';
-    if ($autohide) { //Setting is "YES"
-        $rules = file_get_contents($autohideurl);
         $replacement = $rules;
     } else { //Setting is "NO"
         $replacement = null; //NULL so we don't actually output anything to the stylesheet
@@ -229,7 +203,7 @@ function essential_set_customcss($css, $customcss) {
 
 function theme_essential_process_css($css, $theme) {
 
-    if (!empty($theme->settings->pagewidth)) {       $pagewidth = $theme->settings->pagewidth;    } else {       $pagewidth = null;    }    $css = essential_set_pagewidth($css,$pagewidth);
+    if (!empty($theme->settings->pagewidth)) {       $pagewidth = $theme->settings->pagewidth;    } else {       $pagewidth = null;    }    $css = essential_set_pagewidth($css,$pagewidth);
     
     // Set the Fonts.
     if ($theme->settings->fontselect ==1) {
@@ -454,14 +428,6 @@ function theme_essential_process_css($css, $theme) {
         $editicons = null;
     }
     $css = essential_set_editicons($css, $editicons);
-    
-    //Get the autohide value from settings
-    if (!empty($theme->settings->autohide)) {
-        $autohide = $theme->settings->autohide;
-    } else {
-        $autohide = null;
-    }
-    $css = essential_set_autohide($css, $autohide);
     
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {

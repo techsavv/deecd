@@ -11,8 +11,6 @@ body{
     text-shadow: none !important;
     color: #444;
     padding-top: 0px;
-    border-top: 1px solid #8e8e8e !important;
-    font-family: "Arial" !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,8 +82,6 @@ a {
 #page-header {
     padding: 12px 0px 0px 0px;
     border-bottom: 1px solid #DDD;
-    background: #8e8e8e !important;
-    height: 55px;
 }
 
 h2.main,
@@ -99,7 +95,7 @@ h2.main,
 a.logo {
     display: block;
     float: left;
-    height: 41px;
+    height: 75px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -134,8 +130,11 @@ h2#subtitle {
     border: 0px none;
 }
 
-.breadcrumb-button a{
-    color: #fff;
+.btn-success,
+.btn-warning,
+.btn-info,
+.btn-danger {
+    color: #fff !important;
 }
 
 /* @group Social Buttons */
@@ -254,12 +253,6 @@ ul.socials {
 /* @end */
 
 /* @group Custom Menu */
-.dropdown-menu {   
-    background-color: #e6e6e6;
-}
-.dropdown-menu > li > a {   
-    background-color: #e6e6e6;
-}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
@@ -272,6 +265,10 @@ ul.socials {
     font-size: 1.1em;
     margin-right: 5px;
     vertical-align: middle;	
+}
+
+.open > .dropdown-menu {
+	overflow: visible;
 }
 /* @end */
 
@@ -309,8 +306,6 @@ ul.breadcrumb li:last-child:after {
 .navbar {
     margin-bottom: 0px;
     background-image: none !important;
-    font-family: 'Signika';
-
 }
 
 .navbar-inner{
@@ -323,7 +318,6 @@ ul.breadcrumb li:last-child:after {
     color: #fff;
     text-shadow: none;
     line-height: 20px;
-    font-family: 'Signika';
 }
 
 .navbar .nav .active > a,
@@ -479,9 +473,6 @@ letter-spacing:0.1em;
 
 .container-fluid {
     max-width: [[setting:pagewidth]];
-}
-#page {
-      background-color: white
 }
 
 #region-main {
@@ -717,12 +708,11 @@ table#greyboxleft h2 {
 
 
 .block {
-    background: #f1f1f1;
+    background: white;
     padding: 8px;
     border-radius: 8px;
     border: 1px solid #E1E1E1;
     margin-bottom: 10px;
-    font-family: 'Arial';
 }
 
 .block #icon {
@@ -787,7 +777,7 @@ table#greyboxleft h2 {
 .block .header .title h2,
 .block h3.main {
     font-size: 1.15em;
-    color: #05727f;
+    color: #888;
     line-height: 26px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1301,7 +1291,7 @@ table#greyboxleft h2 {
     font-size: 1.1em;
     line-height: 20px;
     float: left;
-    font-family: 'Arial',Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     margin-left: 10px;
 }
     
@@ -1809,9 +1799,4 @@ table.calendarmonth.calendartable {
 
 .back-to-top:hover{
     text-decoration: none;
-}
-
-/* Customisations */
-#socialheading {
-    color: #FFFFFF;
 }
