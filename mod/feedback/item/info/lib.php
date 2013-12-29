@@ -150,7 +150,7 @@ class feedback_item_info extends feedback_item_base {
         $data = $analysed_item->data;
         if (is_array($data)) {
             echo '<tr><th colspan="2" align="left">';
-            echo $itemnr.'&nbsp;'.$item->name;
+            echo $itemnr.'&nbsp;('.$item->label.') '.$item->name;
             echo '</th></tr>';
             $sizeofdata = count($data);
             for ($i = 0; $i < $sizeofdata; $i++) {

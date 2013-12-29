@@ -1,7 +1,0 @@
-[01-Dec-2013 05:51:17 UTC] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'techsavv_moodle'@'localhost' (using password: YES) in /home/techsavv/public_html/deecd/lib/dml/mysqli_native_moodle_database.php on line 375
-[01-Dec-2013 12:55:03 UTC] Default exception handler: Cannot downgrade report_progress from 2013110500 to 2013050100. Debug: 
-Error code: cannotdowngrade
-* line 535 of /lib/upgradelib.php: downgrade_exception thrown
-* line 1580 of /lib/upgradelib.php: call to upgrade_plugins()
-* line 422 of /admin/index.php: call to upgrade_noncore()
-

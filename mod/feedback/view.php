@@ -96,9 +96,21 @@ if ($courseid AND $courseid != SITEID) {
     }
 }
 
-if ($feedback->anonymous == FEEDBACK_ANONYMOUS_NO) {
-    add_to_log($course->id, 'feedback', 'view', 'view.php?id='.$cm->id, $feedback->id, $cm->id);
-}
+// Trigger module viewed event.
+$event = \mod_feedback\event\course_module_viewed::create(array(
+    'objectid' => $feedback->id,
+    'context' => $context,
+    'other' => array(
+        'cmid' => $cm->id,
+        'instanceid' => $feedback->id,
+        'anonymous' => $feedback->anonymous,
+        'content' => 'feedbackmoduleview'
+        )
+    ));
+$event->add_record_snapshot('course_modules', $cm);
+$event->add_record_snapshot('course', $course);
+$event->add_record_snapshot('feedback', $feedback);
+$event->trigger();
 
 /// Print the page header
 $strfeedbacks = get_string("modulenameplural", "feedback");
@@ -132,13 +144,14 @@ if ((empty($cm->visible) and !$cap_viewhiddenactivities) AND $courseid == SITEID
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-/// print the tabs
-require('tabs.php');
-
 $previewimg = $OUTPUT->pix_icon('t/preview', get_string('preview'));
-$previewlnk = '<a href="'.$CFG->wwwroot.'/mod/feedback/print.php?id='.$id.'">'.$previewimg.'</a>';
+$previewlnk = new moodle_url('/mod/feedback/print.php', array('id' => $id));
+$preview = html_writer::link($previewlnk, $previewimg);
 
-echo $OUTPUT->heading(format_text($feedback->name.' '.$previewlnk));
+echo $OUTPUT->heading(format_string($feedback->name) . $preview);
+
+// Print the tabs.
+require('tabs.php');
 
 //show some infos to the feedback
 if (has_capability('mod/feedback:edititems', $context)) {
@@ -193,9 +206,9 @@ if (has_capability('mod/feedback:edititems', $context)) {
 }
 
 if (has_capability('mod/feedback:edititems', $context)) {
-    echo $OUTPUT->heading(get_string('description', 'feedback'), 4);
+    echo $OUTPUT->heading(get_string('description', 'feedback'), 3);
 }
-echo $OUTPUT->box_start('generalbox boxaligncenter boxwidthwide');
+echo $OUTPUT->box_start('generalbox boxwidthwide');
 $options = (object)array('noclean'=>true);
 echo format_module_intro('feedback', $feedback, $cm->id);
 echo $OUTPUT->box_end();
@@ -210,7 +223,7 @@ if (has_capability('mod/feedback:edititems', $context)) {
                                                             'page_after_submit',
                                                             0);
 
-    echo $OUTPUT->heading(get_string("page_after_submit", "feedback"), 4);
+    echo $OUTPUT->heading(get_string("page_after_submit", "feedback"), 3);
     echo $OUTPUT->box_start('generalbox boxaligncenter boxwidthwide');
     echo format_text($page_after_submit_output,
                      $feedback->page_after_submitformat,
@@ -227,8 +240,8 @@ if ( (intval($feedback->publish_stats) == 1) AND
     if ($multiple_count = $DB->count_records('feedback_tracking', $params)) {
         $url_params = array('id'=>$id, 'courseid'=>$courseid);
         $analysisurl = new moodle_url('/mod/feedback/analysis.php', $url_params);
-        echo '<div class="mdl-align"><button type="button" onclick=window.open("'.$analysisurl->out().'","_self") >';
-        echo get_string('completed_feedbacks', 'feedback').'</button>';
+        echo '<div class="mdl-align"><a href="'.$analysisurl->out().'">';
+        echo get_string('completed_feedbacks', 'feedback').'</a>';
         echo '</div>';
     }
 }
@@ -261,7 +274,7 @@ if ($feedback_complete_cap) {
     if (($feedback->timeopen > $checktime) OR
             ($feedback->timeclose < $checktime AND $feedback->timeclose > 0)) {
 
-        echo '<h2><font color="red">'.get_string('feedback_is_not_open', 'feedback').'</font></h2>';
+        echo $OUTPUT->notification(get_string('feedback_is_not_open', 'feedback'));
         echo $OUTPUT->continue_button($CFG->wwwroot.'/course/view.php?id='.$course->id);
         echo $OUTPUT->box_end();
         echo $OUTPUT->footer();
@@ -294,12 +307,10 @@ if ($feedback_complete_cap) {
             }
             echo '<a href="'.$completeurl->out().'">'.get_string('continue_the_form', 'feedback').'</a>';
         } else {
-            echo '<button type="button" style="display:block; margin-left:auto; margin-right:auto;" onclick=window.open("'.$completeurl->out().'","_self") >'.get_string('complete_the_form', 'feedback').'</button>';
+            echo '<a href="'.$completeurl->out().'">'.get_string('complete_the_form', 'feedback').'</a>';
         }
     } else {
-        echo '<div style="text-align:center;">';
-        echo get_string('this_feedback_is_already_submitted', 'feedback');
-        echo '</div>';
+        echo $OUTPUT->notification(get_string('this_feedback_is_already_submitted', 'feedback'));
         if ($courseid) {
             echo $OUTPUT->continue_button($CFG->wwwroot.'/course/view.php?id='.$courseid);
         } else {

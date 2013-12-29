@@ -1,8 +1,5 @@
 <?php  // Moodle configuration file
 
-defined('APPLICATION_ENV')
-|| define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
-
 unset($CFG);
 global $CFG;
 $CFG = new stdClass();
@@ -10,23 +7,18 @@ $CFG = new stdClass();
 $CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
 $CFG->dbhost    = 'localhost';
-$CFG->dbname    = 'techsavv_deecd';
+$CFG->dbname    = 'techsavv_moodle2';
 $CFG->dbuser    = 'techsavv_moodle';
 $CFG->dbpass    = 'T3chS@vvy!';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
-  'dbsocket' => 0,
+  'dbport' => '',
+  'dbsocket' => '',
 );
 
-if (APPLICATION_ENV == 'production') {
-  $CFG->wwwroot   = 'http://deecd.tech-savvy.com.au';
-  $CFG->dataroot  = '/home/techsavv/subdomains/data/moodle-deecd';
-}
-else {
-  $CFG->wwwroot   = 'http://deecd.damiandennis.com';
-  $CFG->dataroot  = '/home/deecd/public_html/moodledata';
-}
+$CFG->wwwroot   = 'http://deecd.tech-savvy.com.au';
+$CFG->dataroot  = '/home/techsavv/subdomains/data/moodle-deecd';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;

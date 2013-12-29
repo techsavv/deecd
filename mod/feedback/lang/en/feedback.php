@@ -91,7 +91,7 @@ $string['drop_feedback'] = 'Remove from this course';
 $string['edit_item'] = 'Edit question';
 $string['edit_items'] = 'Edit questions';
 $string['email_notification'] = 'Enable notification of submissions';
-$string['email_notification_help'] = 'If enabled, administrators receive email notification of feedback submissions.';
+$string['email_notification_help'] = 'If enabled, teachers will receive notification of feedback submissions.';
 $string['emailteachermail'] = '{$a->username} has completed feedback activity : \'{$a->feedback}\'
 
 You can view it here:
@@ -102,6 +102,10 @@ You can view it <a href="{$a->url}">here</a>.';
 $string['entries_saved'] = 'Your answers have been saved. Thank you.';
 $string['export_questions'] = 'Export questions';
 $string['export_to_excel'] = 'Export to Excel';
+$string['eventcoursemoduleviewed'] = 'Course module viewed';
+$string['eventresponsedeleted'] = 'Response deleted';
+$string['eventresponsesubmitted'] = 'Response submitted';
+$string['eventinstanceslistviewed'] = 'Instances list viewed';
 $string['feedback:addinstance'] = 'Add a new feedback';
 $string['feedbackclose'] = 'Allow answers to';
 $string['feedback:complete'] = 'Complete a feedback';
@@ -157,7 +161,7 @@ $string['maximal'] = 'maximal';
 $string['messageprovider:message'] = 'Feedback reminder';
 $string['messageprovider:submission'] = 'Feedback notifications';
 $string['mode'] = 'Mode';
-$string['modulename'] = 'Survey';
+$string['modulename'] = 'Feedback';
 $string['modulename_help'] = 'The feedback activity module enables a teacher to create a custom survey for collecting feedback from participants using a variety of question types including multiple choice, yes/no or text input.
 
 Feedback responses may be anonymous if desired, and results may be shown to all participants or restricted to teachers only. Any feedback activities on the site front page may also be completed by non-logged-in users.
@@ -169,7 +173,7 @@ Feedback activities may be used
 * For guest surveys of course choices, school policies etc.
 * For anti-bullying surveys in which students can report incidents anonymously';
 $string['modulename_link'] = 'mod/feedback/view';
-$string['modulenameplural'] = 'Surveys';
+$string['modulenameplural'] = 'Feedback';
 $string['movedown_item'] = 'Move this question down';
 $string['move_here'] = 'Move here';
 $string['move_item'] = 'Move this question';
