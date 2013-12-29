@@ -338,11 +338,11 @@ ul.breadcrumb li:last-child:after {
 .navbar .nav > li > a {
     color: #fff;
     text-shadow: none;
-/*Updated font family and font size in navbar*/
+/**KA**Updated font family and font size in navbar*/
     font-family: Signika Negative;
-    font-size: 13pt;
+    font-size: 14pt;
 }
-}
+/**END CHANGE**/
 
 .navbar .nav > li > a:hover {
     color: #fff;
@@ -780,7 +780,9 @@ table#greyboxleft h2 {
 
 .block .header .title h2,
 .block h3.main {
-    font-size: 1.15em;
+ /**KA**Enlarged font in block headers*/   
+    font-size: 14pt;
+/***END CHANGE*/
     color: #888;
     line-height: 26px;
     margin-bottom: 5px;
@@ -1444,6 +1446,11 @@ img.profilepicture
     cursor: default;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
+}
+
+/**KA**Change colour of line at top of nav bar*/
+.nav-collapse {
+border: 1px solid #8E8E8E;
 }
 
 /* @end */
