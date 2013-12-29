@@ -21,7 +21,7 @@ $CFG->dboptions = array (
 
 if (APPLICATION_ENV == 'production') {
   $CFG->wwwroot   = 'http://deecd.tech-savvy.com.au';
-  $CFG->dataroot  = '/home/techsavv/moodledata_deecd';
+  $CFG->dataroot  = '/home/techsavv/subdomains/data/moodle_deecd';
 }
 else {
   $CFG->wwwroot   = 'http://deecd.damiandennis.com';
