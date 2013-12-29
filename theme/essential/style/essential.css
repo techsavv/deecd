@@ -130,8 +130,11 @@ h2#subtitle {
     border: 0px none;
 }
 
-.breadcrumb-button a{
-    color: #fff;
+.btn-success,
+.btn-warning,
+.btn-info,
+.btn-danger {
+    color: #fff !important;
 }
 
 /* @group Social Buttons */
@@ -262,6 +265,10 @@ ul.socials {
     font-size: 1.1em;
     margin-right: 5px;
     vertical-align: middle;	
+}
+
+.open > .dropdown-menu {
+	overflow: visible;
 }
 /* @end */
 
