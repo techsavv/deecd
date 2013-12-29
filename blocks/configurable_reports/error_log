@@ -1,0 +1,37 @@
+[15-Dec-2013 03:04:18 UTC] Default exception handler: error/badpermissions Debug: 
+Error code: badpermissions
+$a contents: 
+* line 463 of /lib/setuplib.php: moodle_exception thrown
+* line 46 of /blocks/configurable_reports/managereport.php: call to print_error()
+
+[15-Dec-2013 03:42:22 UTC] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of /lib/setuplib.php: moodle_exception thrown
+* line 545 of /lib/moodlelib.php: call to print_error()
+* line 28 of /blocks/configurable_reports/viewreport.php: call to required_param()
+
+[15-Dec-2013 03:42:22 UTC] PHP Notice:  Undefined index: filter in /home/techsavv/subdomains/deecdvic/lib/outputrequirementslib.php on line 1263
+[15-Dec-2013 07:32:54 UTC] Default exception handler: error/reportdoesnotexists Debug: 
+Error code: reportdoesnotexists
+$a contents: 
+* line 463 of /lib/setuplib.php: moodle_exception thrown
+* line 37 of /blocks/configurable_reports/editcomp.php: call to print_error()
+
+[15-Dec-2013 07:33:07 UTC] Default exception handler: error/reportdoesnotexists Debug: 
+Error code: reportdoesnotexists
+$a contents: 
+* line 463 of /lib/setuplib.php: moodle_exception thrown
+* line 37 of /blocks/configurable_reports/editcomp.php: call to print_error()
+
+[15-Dec-2013 10:20:13 UTC] Default exception handler: block_configurable_reports/badpermissions Debug: 
+Error code: badpermissions
+$a contents: 
+* line 463 of /lib/setuplib.php: moodle_exception thrown
+* line 62 of /blocks/configurable_reports/viewreport.php: call to print_error()
+
+[15-Dec-2013 10:20:20 UTC] Default exception handler: block_configurable_reports/badpermissions Debug: 
+Error code: badpermissions
+$a contents: 
+* line 463 of /lib/setuplib.php: moodle_exception thrown
+* line 62 of /blocks/configurable_reports/viewreport.php: call to print_error()
+
