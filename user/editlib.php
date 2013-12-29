@@ -192,7 +192,7 @@ function useredit_shared_definition(&$mform, $editoroptions = null, $filemanager
     $choices['1'] = get_string('autosubscribeyes');
     $choices['0'] = get_string('autosubscribeno');
     $mform->addElement('select', 'autosubscribe', get_string('autosubscribe'), $choices);
-    $mform->setDefault('autosubscribe', 1);
+    $mform->setDefault('autosubscribe', 0);
 
     if (!empty($CFG->forum_trackreadposts)) {
         $choices = array();
