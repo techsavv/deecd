@@ -99,10 +99,17 @@ if ($editform->is_cancelled()) {
         unset($data->idnumber);
     }
 
-    if ($data->id) {
-        groups_update_group($data, $editform, $editoroptions);
+ if ($data->id) {
+            if(groups_update_group($data, $editform, $editoroptions)) {
+                    $DB->execute("UPDATE {groups} SET region = '$data->region',network = '$data->network',schooltype = '$data->schooltype' 
+                                  WHERE id = $data->id");
+            }
     } else {
         $id = groups_create_group($data, $editform, $editoroptions);
+         if($id) {
+                $DB->execute("UPDATE {groups} SET region = '$data->region',network = '$data->network',schooltype = '$data->schooltype'
+                              WHERE id = $id");
+        }
         $returnurl = $CFG->wwwroot.'/group/index.php?id='.$course->id.'&group='.$id;
     }
 
