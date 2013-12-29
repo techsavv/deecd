@@ -173,7 +173,7 @@ class feedback_item_numeric extends feedback_item_base {
 
         if (isset($values->data) AND is_array($values->data)) {
             echo '<tr><th colspan="2" align="left">';
-            echo $itemnr.'&nbsp;('.$item->label.') '.$item->name;
+            echo $itemnr.'&nbsp;'.$itemname;
             echo '</th></tr>';
 
             foreach ($values->data as $value) {

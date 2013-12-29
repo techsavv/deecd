@@ -231,7 +231,7 @@ class feedback_item_multichoice extends feedback_item_base {
         if ($analysed_item) {
             $itemname = $analysed_item[1];
             echo '<tr><th colspan="2" align="left">';
-            echo $itemnr.'&nbsp;('.$item->label.') '.$itemname;
+            echo $itemnr.'&nbsp;'.$itemname;
             echo '</th></tr>';
 
             $analysed_vals = $analysed_item[2];

@@ -147,7 +147,7 @@ class feedback_item_textfield extends feedback_item_base {
         $values = feedback_get_group_values($item, $groupid, $courseid);
         if ($values) {
             echo '<tr><th colspan="2" align="left">';
-            echo $itemnr.'&nbsp;('.$item->label.') '.$item->name;
+            echo $itemnr.'&nbsp;'.$itemname;
             echo '</th></tr>';
             foreach ($values as $value) {
                 echo '<tr><td colspan="2" valign="top" align="left">';

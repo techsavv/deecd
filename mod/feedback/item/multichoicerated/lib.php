@@ -206,7 +206,7 @@ class feedback_item_multichoicerated extends feedback_item_base {
         $analysed_item = $this->get_analysed($item, $groupid, $courseid);
         if ($analysed_item) {
             echo '<tr><th colspan="2" align="left">';
-            echo $itemnr.'&nbsp;('.$item->label.') '.$analysed_item[1];
+            echo $itemnr.'&nbsp;'.$analysed_item[1];
             echo '</th></tr>';
             $analysed_vals = $analysed_item[2];
             $pixnr = 0;
