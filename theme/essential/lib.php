@@ -321,7 +321,7 @@ function theme_essential_process_css($css, $theme) {
     } else if ($theme->settings->fontselect ==21) {
         $headingfont = 'Signika Negative';
         $bodyfont = 'Arimo';
-        $bodysize = '14px';
+        $bodysize = '16px';
         $bodyweight = '400';
     } else if ($theme->settings->fontselect ==22) {
         $headingfont = 'Helvetica';
