@@ -670,7 +670,7 @@
 
                     $links = array();
 
-                    if ($CFG->bloglevel > 0) {
+                    if ($CFG->bloglevel > 0 && $CFG->enableblogs) {
                         $links[] = html_writer::link(new moodle_url('/blog/index.php?userid='.$user->id), get_string('blogs','blog'));
                     }
 
