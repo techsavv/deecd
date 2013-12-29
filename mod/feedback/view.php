@@ -310,7 +310,8 @@ if ($feedback_complete_cap) {
             echo '<a href="'.$completeurl->out().'">'.get_string('complete_the_form', 'feedback').'</a>';
         }
     } else {
-        echo $OUTPUT->notification(get_string('this_feedback_is_already_submitted', 'feedback'));
+        echo '<div style="text-align:center;">';
+        echo get_string('this_feedback_is_already_submitted', 'feedback');
         if ($courseid) {
             echo $OUTPUT->continue_button($CFG->wwwroot.'/course/view.php?id='.$courseid);
         } else {
