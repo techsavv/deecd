@@ -338,6 +338,10 @@ ul.breadcrumb li:last-child:after {
 .navbar .nav > li > a {
     color: #fff;
     text-shadow: none;
+/*Updated font family and font size in navbar*/
+    font-family: Signika Negative;
+    font-size: 13pt;
+}
 }
 
 .navbar .nav > li > a:hover {
