@@ -83,7 +83,7 @@ defined('MOODLE_INTERNAL') || die;
     	'18'=>'Pacifico & Arimo',
     	'19'=>'Nixie One & Ledger',
     	'20'=>'Cantata One & Imprima',
-    	'21'=>'Rancho & Gudea',
+    	'21'=>'Signika Negative & Arimo',
     	'22'=>'DISABLE Google Fonts');
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $setting->set_updatedcallback('theme_reset_all_caches');
