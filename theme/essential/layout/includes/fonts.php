@@ -59,9 +59,6 @@
 	<link href="//fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet" type="text/css">
 	<link href="//fonts.googleapis.com/css?family=Imprima" rel="stylesheet" type="text/css">
 <?php } else if($PAGE->theme->settings->fontselect==21) { ?>
-	<link href="//fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css">
-<?php } else if($PAGE->theme->settings->fontselect==22) { ?>
-	<link href="//fonts.googleapis.com/css?family=Signika+Negative:600" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Signika Negative" rel="stylesheet" type="text/css">
 	<link href="//fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
 <?php } ?>
