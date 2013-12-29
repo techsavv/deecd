@@ -307,7 +307,7 @@ if ($feedback_complete_cap) {
             }
             echo '<a href="'.$completeurl->out().'">'.get_string('continue_the_form', 'feedback').'</a>';
         } else {
-            echo '<a href="'.$completeurl->out().'">'.get_string('complete_the_form', 'feedback').'</a>';
+            echo '<button type="button" style="display:block; margin-left:auto; margin-right:auto;" onclick=window.open("'.$completeurl->out().'","_self") >'.get_string('complete_the_form', 'feedback').'</button>';
         }
     } else {
         echo '<div style="text-align:center;">';
