@@ -1451,7 +1451,7 @@ class global_navigation extends navigation_node {
                 $ccselect = ', ' . context_helper::get_preload_record_columns_sql('ctx');
                 $ccjoin = "LEFT JOIN {context} ctx ON (ctx.instanceid = c.id AND ctx.contextlevel = :contextlevel)";
                 $categoryparams['contextlevel'] = CONTEXT_COURSE;
-                $sql = "SELECT c.id, c.sortorder, c.visible, c.fullname, c.shortname, c.category $ccselect
+                $sql = "SELECT c.id, c.sortorder, c.visible, c.fullname, c.fullname, c.category $ccselect
                             FROM {course} c
                                 $ccjoin
                             WHERE c.category {$categoryids}
@@ -1486,7 +1486,7 @@ class global_navigation extends navigation_node {
                 foreach ($partfetch as $categoryid) {
                     $ccselect = ', ' . context_helper::get_preload_record_columns_sql('ctx');
                     $ccjoin = "LEFT JOIN {context} ctx ON (ctx.instanceid = c.id AND ctx.contextlevel = :contextlevel)";
-                    $sql = "SELECT c.id, c.sortorder, c.visible, c.fullname, c.shortname, c.category $ccselect
+                    $sql = "SELECT c.id, c.sortorder, c.visible, c.fullname, c.fullname, c.category $ccselect
                                 FROM {course} c
                                     $ccjoin
                                 WHERE c.category = :categoryid
@@ -1523,7 +1523,7 @@ class global_navigation extends navigation_node {
             $ccselect = ', ' . context_helper::get_preload_record_columns_sql('ctx');
             $ccjoin = "LEFT JOIN {context} ctx ON (ctx.instanceid = c.id AND ctx.contextlevel = :contextlevel)";
             $courseparams['contextlevel'] = CONTEXT_COURSE;
-            $sql = "SELECT c.id, c.sortorder, c.visible, c.fullname, c.shortname, c.category $ccselect
+            $sql = "SELECT c.id, c.sortorder, c.visible, c.fullname, c.fullname, c.category $ccselect
                         FROM {course} c
                             $ccjoin
                         WHERE c.id {$courseids}
@@ -2260,8 +2260,8 @@ class global_navigation extends navigation_node {
 
             foreach ($userscourses as $usercourse) {
                 $usercoursecontext = context_course::instance($usercourse->id);
-                $usercourseshortname = format_string($usercourse->shortname, true, array('context' => $usercoursecontext));
-                $usercoursenode = $userscoursesnode->add($usercourseshortname, new moodle_url('/user/view.php', array('id'=>$user->id, 'course'=>$usercourse->id)), self::TYPE_CONTAINER);
+                $usercoursefullname = format_string($usercourse->fullname, true, array('context' => $usercoursecontext));
+                $usercoursenode = $userscoursesnode->add($usercoursefullname, new moodle_url('/user/view.php', array('id'=>$user->id, 'course'=>$usercourse->id)), self::TYPE_CONTAINER);
 
                 $gradeavailable = has_capability('moodle/grade:viewall', $usercoursecontext);
                 if (!$gradeavailable && !empty($usercourse->showgrades) && is_array($reports) && !empty($reports)) {
@@ -2368,10 +2368,10 @@ class global_navigation extends navigation_node {
         }
 
         $issite = ($course->id == $SITE->id);
-        $shortname = format_string($course->shortname, true, array('context' => $coursecontext));
+        $fullname = format_string($course->fullname, true, array('context' => $coursecontext));
         $fullname = format_string($course->fullname, true, array('context' => $coursecontext));
         // This is the name that will be shown for the course.
-        $coursename = empty($CFG->navshowfullcoursenames) ? $shortname : $fullname;
+        $coursename = empty($CFG->navshowfullcoursenames) ? $fullname : $fullname;
 
         if ($issite) {
             $parent = $this;
@@ -2407,7 +2407,7 @@ class global_navigation extends navigation_node {
             }
         }
 
-        $coursenode = $parent->add($coursename, $url, self::TYPE_COURSE, $shortname, $course->id);
+        $coursenode = $parent->add($coursename, $url, self::TYPE_COURSE, $fullname, $course->id);
         $coursenode->nodetype = self::NODETYPE_BRANCH;
         $coursenode->hidden = (!$course->visible);
         // We need to decode &amp;'s here as they will have been added by format_string above and attributes will be encoded again
