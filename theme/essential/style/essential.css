@@ -11,6 +11,9 @@ body{
     text-shadow: none !important;
     color: #444;
     padding-top: 0px;
+/**KA**CHANGE TOP BORDER AT OP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
+    background: #8e8e8e;
+/*END CHANGE*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,6 +85,9 @@ a {
 #page-header {
     padding: 12px 0px 0px 0px;
     border-bottom: 1px solid #DDD;
+/**KA**Replace image background on header with plain grey background behind logo**/
+    background: #8e8e8e;
+    /*END CHANGE*/
 }
 
 h2.main,
@@ -100,9 +106,6 @@ a.logo {
     padding: 0;
     width: 100%;
     background-size: contain !important;
-/**KA**Remove image as background and replace with grey colour background**/
-    background: #8E8E8E;
-/**END CHANGE**/
 }
 
 h1#title {
@@ -315,6 +318,9 @@ ul.breadcrumb li:last-child:after {
     border-radius: 0px;
     line-height: 0px;
     background-image: none;
+/**KA**change navbar to dark grey**/
+    background-color: #5d5d5d !important;
+/*END CHANGE*/
 }
 
 .navbar .brand {
@@ -1817,12 +1823,3 @@ table.calendarmonth.calendartable {
     text-decoration: none;
 }
 
-/**KA** Change hyperlink colour - normal and hover**/
-a, a:visited {
-color: #027E8E;
-}
-
-a:hover {
-color: #027E8E;
-}
-/*END CHANGE*/
