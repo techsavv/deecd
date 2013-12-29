@@ -312,6 +312,9 @@ ul.breadcrumb li:last-child:after {
     border-radius: 0px;
     line-height: 0px;
     background-image: none;
+/**KA**Override background colour of navbar**/
+background-color: #5D5D5D !important;
+/**END CHANGE**/
 }
 
 .navbar .brand {
@@ -712,7 +715,9 @@ table#greyboxleft h2 {
 
 
 .block {
-    background: white;
+/**KA**Change background colour of blocks**/
+    background: #f1f1f1;
+/**END CHANGE**/
     padding: 8px;
     border-radius: 8px;
     border: 1px solid #E1E1E1;
@@ -780,10 +785,10 @@ table#greyboxleft h2 {
 
 .block .header .title h2,
 .block h3.main {
- /**KA**Enlarged font in block headers*/   
+ /**KA**Enlarged and changed colour of font in block headers*/   
     font-size: 14pt;
+    color: #027E8E;
 /***END CHANGE*/
-    color: #888;
     line-height: 26px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1450,8 +1455,9 @@ img.profilepicture
 
 /**KA**Change colour of line at top of nav bar*/
 .nav-collapse {
-border: 1px solid #8E8E8E;
+border: 1px solid #5d5d5d;
 }
+/**end change**/
 
 /* @end */
 
