@@ -25,5 +25,9 @@ $CFG->directorypermissions = 0777;
 
 require_once(dirname(__FILE__) . '/lib/setup.php');
 
+$CFG->lang=‘en’;
+$CFG->langcache=0;
+$CFG->langstringcache=0;
+
 // There is no php closing tag in this file,
 // it is intentional because it prevents trailing whitespace problems!
