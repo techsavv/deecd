@@ -4,12 +4,27 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
+defined('APPLICATION_ENV')
+|| define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
+
+defined('DB_USER')
+|| define('DB_USER', (getenv('DB_USER') ? getenv('DB_USER') : 'techsavv_moodle'));
+
+defined('DB_PASSWORD')
+|| define('DB_PASSWORD', (getenv('DB_PASSWORD') ? getenv('DB_PASSWORD') : 'T3chS@vvy!'));
+
+defined('DB_NAME')
+|| define('DB_NAME', (getenv('DB_NAME') ? getenv('DB_NAME') : 'techsavv_moodle2'));
+
+defined('DB_HOST')
+|| define('DB_HOST', (getenv('DB_HOST') ? getenv('DB_HOST') : 'localhost'));
+
 $CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'localhost';
-$CFG->dbname    = 'techsavv_moodle2';
-$CFG->dbuser    = 'techsavv_moodle';
-$CFG->dbpass    = 'T3chS@vvy!';
+$CFG->dbhost    = DB_HOST;
+$CFG->dbname    = DB_NAME;
+$CFG->dbuser    = DB_USER;
+$CFG->dbpass    = DB_PASSWORD;
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
@@ -17,8 +32,15 @@ $CFG->dboptions = array (
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = 'http://deecd.tech-savvy.com.au';
-$CFG->dataroot  = '/home/techsavv/subdomains/data/moodle-deecd';
+if (APPLICATION_ENV === 'production') {
+  $CFG->wwwroot   = 'http://deecd.tech-savvy.com.au';
+  $CFG->dataroot  = '/home/techsavv/subdomains/data/moodle-deecd';
+}
+else {
+  $CFG->wwwroot   = 'http://deecd.damiandennis.com';
+  $CFG->dataroot  = '/home/deecd/moodle-deecd';
+}
+
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
