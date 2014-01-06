@@ -16,10 +16,10 @@
 
 /**
  * This code was written and released by Bas Brands and is added as a
- * value add to the mcb theme.
+ * value add to the essential theme.
  *
  *
- * @package   theme_mcb
+ * @package   theme_essential
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

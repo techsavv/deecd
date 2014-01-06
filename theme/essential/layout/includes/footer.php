@@ -19,7 +19,7 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_mcb
+ * @package   theme_essential
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -37,11 +37,11 @@ $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->re
 ?>
 	<div class="row-fluid">
 		<?php
-            		echo $OUTPUT->mcbblocks($footerl, 'span4');
+            		echo $OUTPUT->essentialblocks($footerl, 'span4');
 
-            		echo $OUTPUT->mcbblocks($footerm, 'span4');
+            		echo $OUTPUT->essentialblocks($footerm, 'span4');
 
-            		echo $OUTPUT->mcbblocks($footerr, 'span4');
+            		echo $OUTPUT->essentialblocks($footerr, 'span4');
 		?>
  	</div>
 

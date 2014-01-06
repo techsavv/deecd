@@ -477,7 +477,7 @@ h1, h2, h3, h4, h5, h6,
 #socialheading,
 .forumpost .subject,
 .block_login label {
-    font-family: "Signika", sans-serif;
+    font-family: "[[setting:headingfont]]", sans-serif;
 }
 /* @end */
 
