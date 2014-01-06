@@ -19,18 +19,18 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_essential
+ * @package   theme_mcb
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2013120200;        // YYYYMMDD.
+$plugin->version   = 2013112100;        // YYYYMMDD.
 $plugin->maturity = MATURITY_STABLE;             // this version's maturity level.
-$plugin->release = '2.6.2 (Build: 20131202)';
+$plugin->release = '2.6.1 (Build: 20131121)';
 $plugin->requires  = 2013111800;        // Requires Moodle 2.6.
-$plugin->component = 'theme_essential';
+$plugin->component = 'theme_mcb';
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2013050100,
 );

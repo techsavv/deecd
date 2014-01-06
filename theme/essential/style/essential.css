@@ -11,9 +11,8 @@ body{
     text-shadow: none !important;
     color: #444;
     padding-top: 0px;
-/**KA**CHANGE TOP BORDER AT OP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
-    background: #8e8e8e;
-/*END CHANGE*/
+    border-top: 1px solid #8e8e8e !important;
+    font-family: "Arial" !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,9 +84,8 @@ a {
 #page-header {
     padding: 12px 0px 0px 0px;
     border-bottom: 1px solid #DDD;
-/**KA**Replace image background on header with plain grey background behind logo**/
-    background: #8e8e8e;
-    /*END CHANGE*/
+    background: #8e8e8e !important;
+    height: 55px;
 }
 
 h2.main,
@@ -101,7 +99,7 @@ h2.main,
 a.logo {
     display: block;
     float: left;
-    height: 75px;
+    height: 41px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -136,11 +134,8 @@ h2#subtitle {
     border: 0px none;
 }
 
-.btn-success,
-.btn-warning,
-.btn-info,
-.btn-danger {
-    color: #fff !important;
+.breadcrumb-button a{
+    color: #fff;
 }
 
 /* @group Social Buttons */
@@ -259,6 +254,12 @@ ul.socials {
 /* @end */
 
 /* @group Custom Menu */
+.dropdown-menu {   
+    background-color: #e6e6e6;
+}
+.dropdown-menu > li > a {   
+    background-color: #e6e6e6;
+}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
@@ -271,10 +272,6 @@ ul.socials {
     font-size: 1.1em;
     margin-right: 5px;
     vertical-align: middle;	
-}
-
-.open > .dropdown-menu {
-	overflow: visible;
 }
 /* @end */
 
@@ -312,21 +309,21 @@ ul.breadcrumb li:last-child:after {
 .navbar {
     margin-bottom: 0px;
     background-image: none !important;
+    font-family: 'Signika';
+
 }
 
 .navbar-inner{
     border-radius: 0px;
     line-height: 0px;
     background-image: none;
-/**KA**change navbar to dark grey**/
-    background-color: #5d5d5d !important;
-/*END CHANGE*/
 }
 
 .navbar .brand {
     color: #fff;
     text-shadow: none;
     line-height: 20px;
+    font-family: 'Signika';
 }
 
 .navbar .nav .active > a,
@@ -347,11 +344,7 @@ ul.breadcrumb li:last-child:after {
 .navbar .nav > li > a {
     color: #fff;
     text-shadow: none;
-/**KA**Updated font family and font size in navbar*/
-    font-family: Signika Negative;
-    font-size: 14pt;
 }
-/**END CHANGE**/
 
 .navbar .nav > li > a:hover {
     color: #fff;
@@ -486,6 +479,9 @@ letter-spacing:0.1em;
 
 .container-fluid {
     max-width: [[setting:pagewidth]];
+}
+#page {
+      background-color: white
 }
 
 #region-main {
@@ -721,13 +717,12 @@ table#greyboxleft h2 {
 
 
 .block {
-/**KA**Change background colour of blocks**/
     background: #f1f1f1;
-/**END CHANGE**/
     padding: 8px;
     border-radius: 8px;
     border: 1px solid #E1E1E1;
     margin-bottom: 10px;
+    font-family: 'Arial';
 }
 
 .block #icon {
@@ -791,10 +786,8 @@ table#greyboxleft h2 {
 
 .block .header .title h2,
 .block h3.main {
- /**KA**Enlarged and changed colour of font in block headers*/   
-    font-size: 14pt;
-    color: #027E8E;
-/***END CHANGE*/
+    font-size: 1.15em;
+    color: #05727f;
     line-height: 26px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1308,7 +1301,7 @@ table#greyboxleft h2 {
     font-size: 1.1em;
     line-height: 20px;
     float: left;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Arial',Helvetica,Arial,sans-serif;
     margin-left: 10px;
 }
     
@@ -1458,11 +1451,6 @@ img.profilepicture
     border: 1px solid #ddd;
     border-bottom-color: transparent;
 }
-
-.nav-collapse {
-border: 1px solid #5d5d5d;
-}
-
 
 /* @end */
 
@@ -1823,3 +1811,7 @@ table.calendarmonth.calendartable {
     text-decoration: none;
 }
 
+/* Customisations */
+#socialheading {
+    color: #FFFFFF;
+}

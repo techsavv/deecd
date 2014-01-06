@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The Essential theme is built upon the Bootstrapbase theme.
+ * The mcb theme is built upon the Bootstrapbase theme.
  *
  * @package    theme
- * @subpackage Essential
+ * @subpackage mcb
  * @author     Julian (@moodleman) Ridden
  * @author     Based on code originally written by G J Bernard, Mary Evans, Bas Brands, Stuart Lamour and David Scotson.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -124,10 +124,11 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
+    <link href='http://fonts.googleapis.com/css?family=Signika:400,600,700|Neucha' rel='stylesheet' type='text/css'>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <noscript>
-			<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot;?>/theme/essential/style/nojs.css" />
+			<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot;?>/theme/mcb/style/nojs.css" />
 	</noscript>
     <!-- Google web fonts -->
     <?php require_once(dirname(__FILE__).'/includes/fonts.php'); ?>
@@ -290,9 +291,9 @@ echo $OUTPUT->doctype() ?>
     <?php if (is_siteadmin()) { ?>
 	<div class="hidden-blocks">
     	<div class="row-fluid">
-        	<h4><?php echo get_string('visibleadminonly', 'theme_essential') ?></h4>
+        	<h4><?php echo get_string('visibleadminonly', 'theme_mcb') ?></h4>
             <?php
-                echo $OUTPUT->essentialblocks('hidden-dock');
+                echo $OUTPUT->mcbblocks('hidden-dock');
             ?>
     	</div>
 	</div>

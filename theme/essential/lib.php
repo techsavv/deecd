@@ -19,7 +19,7 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_essential
+ * @package   theme_mcb
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -37,7 +37,7 @@
 /**
  * Include the Awesome Font.
  */
-function theme_essential_set_fontwww($css) {
+function theme_mcb_set_fontwww($css) {
     global $CFG, $PAGE;
     if(empty($CFG->themewww)){
         $themewww = $CFG->wwwroot."/theme";
@@ -46,11 +46,11 @@ function theme_essential_set_fontwww($css) {
     }
     $tag = '[[setting:fontwww]]';
     
-    $theme = theme_config::load('essential');
+    $theme = theme_config::load('mcb');
     if (!empty($theme->settings->bootstrapcdn)) {
     	$css = str_replace($tag, '//netdna.bootstrapcdn.com/font-awesome/4.0.0/fonts/', $css);
     } else {
-    	$css = str_replace($tag, $themewww.'/essential/fonts/', $css);
+    	$css = str_replace($tag, $themewww.'/mcb/fonts/', $css);
     }
     return $css;
 }
@@ -62,7 +62,7 @@ function theme_essential_set_fontwww($css) {
  * @param string $logo The URL of the logo.
  * @return string The parsed CSS
  */
-function theme_essential_set_logo($css, $logo) {
+function theme_mcb_set_logo($css, $logo) {
     global $OUTPUT;
     $tag = '[[setting:logo]]';
     $replacement = $logo;
@@ -85,9 +85,9 @@ function theme_essential_set_logo($css, $logo) {
  * @param array $options
  * @return bool
  */
-function theme_essential_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_mcb_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM) {
-        $theme = theme_config::load('essential');
+        $theme = theme_config::load('mcb');
         if ($filearea === 'logo') {
             return $theme->setting_file_serve('logo', $args, $forcedownload, $options);
         } else if ($filearea === 'pagebackground') {
@@ -129,19 +129,12 @@ function theme_essential_pluginfile($course, $cm, $context, $filearea, $args, $f
  * @param mixed $pagewidth
  * @return string
  */
-    function essential_set_pagewidth($css, $pagewidth) {
-    $tag = '[[setting:pagewidth]]';
-    $replacement = $pagewidth;
-    if (is_null($replacement)) {
-        $replacement = '1200';
-    }
+    function mcb_set_pagewidth($css, $pagewidth) {    $tag = '[[setting:pagewidth]]';    $replacement = $pagewidth;    if (is_null($replacement)) {        $replacement = '1200';    }
     if ( $replacement == "100" ) {
 		$css = str_replace($tag, $replacement.'%', $css);
 	} else {
 		$css = str_replace($tag, $replacement.'px', $css);
-	}
-    return $css;
-    }
+	}    return $css;    }
 
 /**
  * Displays the Font Awesome Edit Icons based on settings value
@@ -150,16 +143,42 @@ function theme_essential_pluginfile($course, $cm, $context, $filearea, $args, $f
  * @param mixed $autohide
  * @return string
  */
-function essential_set_editicons($css, $editicons) {
+function mcb_set_editicons($css, $editicons) {
 	global $CFG;
 	if (!empty($CFG->themedir)) {
-		$editiconsurl = $CFG->themedir . '/essential/style/editicons.css'; //Pull the full path for autohide css
+		$editiconsurl = $CFG->themedir . '/mcb/style/editicons.css'; //Pull the full path for autohide css
 	} else {
-		$editiconsurl = $CFG->dirroot . '/theme/essential/style/editicons.css'; //MDL-36065
+		$editiconsurl = $CFG->dirroot . '/theme/mcb/style/editicons.css'; //MDL-36065
 	}
     $tag = '[[setting:editicons]]';
     if ($editicons) { //Setting is "YES"
         $rules = file_get_contents($editiconsurl);
+        $replacement = $rules;
+    } else { //Setting is "NO"
+        $replacement = null; //NULL so we don't actually output anything to the stylesheet
+    }
+    $css = str_replace($tag, $replacement, $css);
+    return $css;
+}
+
+/**
+ * Displays the Autohide CSS based on settings value
+ *
+ * @param string $css
+ * @param mixed $autohide
+ * @return string
+ * This code originally written for the Zebra theme by Danny Wahl
+ */
+function mcb_set_autohide($css, $autohide) {
+	global $CFG;
+	if (!empty($CFG->themedir)) {
+		$autohideurl = $CFG->themedir . '/mcb/style/autohide.css'; //Pull the full path for autohide css
+	} else {
+		$autohideurl = $CFG->dirroot . '/theme/mcb/style/autohide.css'; //MDL-36065
+	}
+    $tag = '[[setting:autohide]]';
+    if ($autohide) { //Setting is "YES"
+        $rules = file_get_contents($autohideurl);
         $replacement = $rules;
     } else { //Setting is "NO"
         $replacement = null; //NULL so we don't actually output anything to the stylesheet
@@ -176,7 +195,7 @@ function essential_set_editicons($css, $editicons) {
  *
  * @return string
  */
-function essential_performance_output($param) {
+function mcb_performance_output($param) {
 	
     $html = '<div class="container-fluid performanceinfo"><div class="row-fluid"><h2>Performance Information</h2></div><div class="row-fluid">';
 	if (isset($param['realtime'])) $html .= '<div class="span3"><a href="#"><var id="load">'.$param['realtime'].' secs</var><span>Load Time</span></a></div>';
@@ -196,7 +215,7 @@ function essential_performance_output($param) {
  * @param string $customcss The custom CSS to add.
  * @return string The CSS which now contains our custom CSS.
  */
-function essential_set_customcss($css, $customcss) {
+function mcb_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {
@@ -208,14 +227,9 @@ function essential_set_customcss($css, $customcss) {
     return $css;
 }
 
-function theme_essential_process_css($css, $theme) {
+function theme_mcb_process_css($css, $theme) {
 
-    if (!empty($theme->settings->pagewidth)) {
-       $pagewidth = $theme->settings->pagewidth;
-    } else {
-       $pagewidth = null;
-    }
-    $css = essential_set_pagewidth($css,$pagewidth);
+    if (!empty($theme->settings->pagewidth)) {       $pagewidth = $theme->settings->pagewidth;    } else {       $pagewidth = null;    }    $css = mcb_set_pagewidth($css,$pagewidth);
     
     // Set the Fonts.
     if ($theme->settings->fontselect ==1) {
@@ -319,9 +333,9 @@ function theme_essential_process_css($css, $theme) {
         $bodysize = '13px';
         $bodyweight = '400';
     } else if ($theme->settings->fontselect ==21) {
-        $headingfont = 'Signika Negative';
-        $bodyfont = 'Arimo';
-        $bodysize = '16px';
+        $headingfont = 'Rancho';
+        $bodyfont = 'Gudea';
+        $bodysize = '13px';
         $bodyweight = '400';
     } else if ($theme->settings->fontselect ==22) {
         $headingfont = 'Helvetica';
@@ -330,10 +344,10 @@ function theme_essential_process_css($css, $theme) {
         $bodyweight = '400';
     }
     
-    $css = theme_essential_set_headingfont($css, $headingfont);
-    $css = theme_essential_set_bodyfont($css, $bodyfont);
-    $css = theme_essential_set_bodysize($css, $bodysize);
-    $css = theme_essential_set_bodyweight($css, $bodyweight);
+    $css = theme_mcb_set_headingfont($css, $headingfont);
+    $css = theme_mcb_set_bodyfont($css, $bodyfont);
+    $css = theme_mcb_set_bodysize($css, $bodysize);
+    $css = theme_mcb_set_bodyweight($css, $bodyweight);
     
     // Set the theme color.
     if (!empty($theme->settings->themecolor)) {
@@ -341,7 +355,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $themecolor = null;
     }
-    $css = theme_essential_set_themecolor($css, $themecolor);
+    $css = theme_mcb_set_themecolor($css, $themecolor);
 
     // Set the theme hover color.
     if (!empty($theme->settings->themehovercolor)) {
@@ -349,7 +363,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $themehovercolor = null;
     }
-    $css = theme_essential_set_themehovercolor($css, $themehovercolor);
+    $css = theme_mcb_set_themehovercolor($css, $themehovercolor);
     
     // Set the footer color.
     if (!empty($theme->settings->footercolor)) {
@@ -357,7 +371,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $footercolor = null;
     }
-    $css = theme_essential_set_footercolor($css, $footercolor);
+    $css = theme_mcb_set_footercolor($css, $footercolor);
     
     // Set the footer seperator color.
     if (!empty($theme->settings->footersepcolor)) {
@@ -365,7 +379,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $footersepcolor = null;
     }
-    $css = theme_essential_set_footersepcolor($css, $footersepcolor);
+    $css = theme_mcb_set_footersepcolor($css, $footersepcolor);
     
     // Set the footer text color.
     if (!empty($theme->settings->footertextcolor)) {
@@ -373,7 +387,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $footertextcolor = null;
     }
-    $css = theme_essential_set_footertextcolor($css, $footertextcolor);
+    $css = theme_mcb_set_footertextcolor($css, $footertextcolor);
     
     // Set the footer URL color.
     if (!empty($theme->settings->footerurlcolor)) {
@@ -381,7 +395,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $footerurlcolor = null;
     }
-    $css = theme_essential_set_footerurlcolor($css, $footerurlcolor);
+    $css = theme_mcb_set_footerurlcolor($css, $footerurlcolor);
     
     // Set the footer hover color.
     if (!empty($theme->settings->footerhovercolor)) {
@@ -389,7 +403,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $footerhovercolor = null;
     }
-    $css = theme_essential_set_footerhovercolor($css, $footerhovercolor);
+    $css = theme_mcb_set_footerhovercolor($css, $footerhovercolor);
 
 
 // Set the footer heading color.
@@ -398,7 +412,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $footerheadingcolor = null;
     }
-    $css = theme_essential_set_footerheadingcolor($css, $footerheadingcolor);
+    $css = theme_mcb_set_footerheadingcolor($css, $footerheadingcolor);
     
      // Set the slide header color.
     if (!empty($theme->settings->slideheadercolor)) {
@@ -406,7 +420,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $slideheadercolor = null;
     }
-    $css = theme_essential_set_slideheadercolor($css, $slideheadercolor);
+    $css = theme_mcb_set_slideheadercolor($css, $slideheadercolor);
     
      // Set the slide text color.
     if (!empty($theme->settings->slidecolor)) {
@@ -414,7 +428,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $slidecolor = null;
     }
-    $css = theme_essential_set_slidecolor($css, $slidecolor);
+    $css = theme_mcb_set_slidecolor($css, $slidecolor);
     
      // Set the slide button color.
     if (!empty($theme->settings->slidebuttoncolor)) {
@@ -422,7 +436,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $slidebuttoncolor = null;
     }
-    $css = theme_essential_set_slidebuttoncolor($css, $slidebuttoncolor);
+    $css = theme_mcb_set_slidebuttoncolor($css, $slidebuttoncolor);
 
     
     // Set the navbar seperator.
@@ -431,7 +445,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $navbarsep = '/';
     }
-    $css = theme_essential_set_navbarsep($css, $navbarsep);
+    $css = theme_mcb_set_navbarsep($css, $navbarsep);
     
     //Get the editicons value from settings
     if (!empty($theme->settings->editicons)) {
@@ -439,7 +453,15 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $editicons = null;
     }
-    $css = essential_set_editicons($css, $editicons);
+    $css = mcb_set_editicons($css, $editicons);
+    
+    //Get the autohide value from settings
+    if (!empty($theme->settings->autohide)) {
+        $autohide = $theme->settings->autohide;
+    } else {
+        $autohide = null;
+    }
+    $css = mcb_set_autohide($css, $autohide);
     
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
@@ -447,16 +469,16 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $customcss = null;
     }
-    $css = essential_set_customcss($css, $customcss);
+    $css = mcb_set_customcss($css, $customcss);
 
     // Set the background image for the logo.
     $logo = $theme->setting_file_url('logo', 'logo');
-    $css = theme_essential_set_logo($css, $logo);
+    $css = theme_mcb_set_logo($css, $logo);
     
     // Set the background image for the page.
     $setting = 'pagebackground';
     $pagebackground = $theme->setting_file_url($setting, $setting);
-    $css = theme_essential_set_pagebackground($css, $pagebackground, $setting);
+    $css = theme_mcb_set_pagebackground($css, $pagebackground, $setting);
     
     // Set Slide Images.
     $setting = 'slide1image';
@@ -465,7 +487,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $slideimage = null;
     }
-    $css = theme_essential_set_slideimage($css, $slideimage, $setting);
+    $css = theme_mcb_set_slideimage($css, $slideimage, $setting);
 
     $setting = 'slide2image';
     if (!empty($theme->settings->slide2image)) {
@@ -473,7 +495,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $slideimage = null;
     }
-    $css = theme_essential_set_slideimage($css, $slideimage, $setting);
+    $css = theme_mcb_set_slideimage($css, $slideimage, $setting);
 
     $setting = 'slide3image';
     if (!empty($theme->settings->slide3image)) {
@@ -481,7 +503,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $slideimage = null;
     }
-    $css = theme_essential_set_slideimage($css, $slideimage, $setting);
+    $css = theme_mcb_set_slideimage($css, $slideimage, $setting);
 
     $setting = 'slide4image';
     if (!empty($theme->settings->slide4image)) {
@@ -489,7 +511,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $slideimage = null;
     }
-    $css = theme_essential_set_slideimage($css, $slideimage, $setting);
+    $css = theme_mcb_set_slideimage($css, $slideimage, $setting);
     
     // Set Marketing Image Height.
     if (!empty($theme->settings->marketingheight)) {
@@ -497,7 +519,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $marketingheight = null;
     }
-    $css = theme_essential_set_marketingheight($css, $marketingheight);
+    $css = theme_mcb_set_marketingheight($css, $marketingheight);
     
     // Set Marketing Images.
     $setting = 'marketing1image';
@@ -506,7 +528,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $marketingimage = null;
     }
-    $css = theme_essential_set_marketingimage($css, $marketingimage, $setting);
+    $css = theme_mcb_set_marketingimage($css, $marketingimage, $setting);
     
     $setting = 'marketing2image';
     if (!empty($theme->settings->marketing2image)) {
@@ -514,7 +536,7 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $marketingimage = null;
     }
-    $css = theme_essential_set_marketingimage($css, $marketingimage, $setting);
+    $css = theme_mcb_set_marketingimage($css, $marketingimage, $setting);
     
     $setting = 'marketing3image';
     if (!empty($theme->settings->marketing3image)) {
@@ -522,15 +544,15 @@ function theme_essential_process_css($css, $theme) {
     } else {
         $marketingimage = null;
     }
-    $css = theme_essential_set_marketingimage($css, $marketingimage, $setting);
+    $css = theme_mcb_set_marketingimage($css, $marketingimage, $setting);
 
     // Set the font path.
 
-    $css = theme_essential_set_fontwww($css);
+    $css = theme_mcb_set_fontwww($css);
     return $css;
 }
 
-function theme_essential_set_headingfont($css, $headingfont) {
+function theme_mcb_set_headingfont($css, $headingfont) {
     $tag = '[[setting:headingfont]]';
     $replacement = $headingfont;
     if (is_null($replacement)) {
@@ -540,7 +562,7 @@ function theme_essential_set_headingfont($css, $headingfont) {
     return $css;
 }
 
-function theme_essential_set_bodyfont($css, $bodyfont) {
+function theme_mcb_set_bodyfont($css, $bodyfont) {
     $tag = '[[setting:bodyfont]]';
     $replacement = $bodyfont;
     if (is_null($replacement)) {
@@ -550,7 +572,7 @@ function theme_essential_set_bodyfont($css, $bodyfont) {
     return $css;
 }
 
-function theme_essential_set_bodysize($css, $bodysize) {
+function theme_mcb_set_bodysize($css, $bodysize) {
     $tag = '[[setting:bodysize]]';
     $replacement = $bodysize;
     if (is_null($replacement)) {
@@ -560,7 +582,7 @@ function theme_essential_set_bodysize($css, $bodysize) {
     return $css;
 }
 
-function theme_essential_set_bodyweight($css, $bodyweight) {
+function theme_mcb_set_bodyweight($css, $bodyweight) {
     $tag = '[[setting:bodyweight]]';
     $replacement = $bodyweight;
     if (is_null($replacement)) {
@@ -570,7 +592,7 @@ function theme_essential_set_bodyweight($css, $bodyweight) {
     return $css;
 }
 
-function theme_essential_set_themecolor($css, $themecolor) {
+function theme_mcb_set_themecolor($css, $themecolor) {
     $tag = '[[setting:themecolor]]';
     $replacement = $themecolor;
     if (is_null($replacement)) {
@@ -580,7 +602,7 @@ function theme_essential_set_themecolor($css, $themecolor) {
     return $css;
 }
 
-function theme_essential_set_themehovercolor($css, $themehovercolor) {
+function theme_mcb_set_themehovercolor($css, $themehovercolor) {
     $tag = '[[setting:themehovercolor]]';
     $replacement = $themehovercolor;
     if (is_null($replacement)) {
@@ -590,7 +612,7 @@ function theme_essential_set_themehovercolor($css, $themehovercolor) {
     return $css;
 }
 
-function theme_essential_set_footercolor($css, $footercolor) {
+function theme_mcb_set_footercolor($css, $footercolor) {
     $tag = '[[setting:footercolor]]';
     $replacement = $footercolor;
     if (is_null($replacement)) {
@@ -600,7 +622,7 @@ function theme_essential_set_footercolor($css, $footercolor) {
     return $css;
 }
 
-function theme_essential_set_footertextcolor($css, $footertextcolor) {
+function theme_mcb_set_footertextcolor($css, $footertextcolor) {
     $tag = '[[setting:footertextcolor]]';
     $replacement = $footertextcolor;
     if (is_null($replacement)) {
@@ -610,7 +632,7 @@ function theme_essential_set_footertextcolor($css, $footertextcolor) {
     return $css;
 }
 
-function theme_essential_set_footerurlcolor($css, $footerurlcolor) {
+function theme_mcb_set_footerurlcolor($css, $footerurlcolor) {
     $tag = '[[setting:footerurlcolor]]';
     $replacement = $footerurlcolor;
     if (is_null($replacement)) {
@@ -620,7 +642,7 @@ function theme_essential_set_footerurlcolor($css, $footerurlcolor) {
     return $css;
 }
 
-function theme_essential_set_footerhovercolor($css, $footerhovercolor) {
+function theme_mcb_set_footerhovercolor($css, $footerhovercolor) {
     $tag = '[[setting:footerhovercolor]]';
     $replacement = $footerhovercolor;
     if (is_null($replacement)) {
@@ -630,7 +652,7 @@ function theme_essential_set_footerhovercolor($css, $footerhovercolor) {
     return $css;
 }
 
-function theme_essential_set_footerheadingcolor($css, $footerheadingcolor) {
+function theme_mcb_set_footerheadingcolor($css, $footerheadingcolor) {
     $tag = '[[setting:footerheadingcolor]]';
     $replacement = $footerheadingcolor;
     if (is_null($replacement)) {
@@ -640,7 +662,7 @@ function theme_essential_set_footerheadingcolor($css, $footerheadingcolor) {
     return $css;
 }
 
-function theme_essential_set_slideheadercolor($css, $slideheadercolor) {
+function theme_mcb_set_slideheadercolor($css, $slideheadercolor) {
     $tag = '[[setting:slideheadercolor]]';
     $replacement = $slideheadercolor;
     if (is_null($replacement)) {
@@ -650,7 +672,7 @@ function theme_essential_set_slideheadercolor($css, $slideheadercolor) {
     return $css;
 }
 
-function theme_essential_set_slidecolor($css, $slidecolor) {
+function theme_mcb_set_slidecolor($css, $slidecolor) {
     $tag = '[[setting:slidecolor]]';
     $replacement = $slidecolor;
     if (is_null($replacement)) {
@@ -660,7 +682,7 @@ function theme_essential_set_slidecolor($css, $slidecolor) {
     return $css;
 }
 
-function theme_essential_set_slidebuttoncolor($css, $slidebuttoncolor) {
+function theme_mcb_set_slidebuttoncolor($css, $slidebuttoncolor) {
     $tag = '[[setting:slidebuttoncolor]]';
     $replacement = $slidebuttoncolor;
     if (is_null($replacement)) {
@@ -670,7 +692,7 @@ function theme_essential_set_slidebuttoncolor($css, $slidebuttoncolor) {
     return $css;
 }
 
-function theme_essential_set_footersepcolor($css, $footersepcolor) {
+function theme_mcb_set_footersepcolor($css, $footersepcolor) {
     $tag = '[[setting:footersepcolor]]';
     $replacement = $footersepcolor;
     if (is_null($replacement)) {
@@ -680,7 +702,7 @@ function theme_essential_set_footersepcolor($css, $footersepcolor) {
     return $css;
 }
 
-function theme_essential_set_navbarsep($css, $navbarsep) {
+function theme_mcb_set_navbarsep($css, $navbarsep) {
     $tag = '[[setting:navbarsep]]';
     $replacement = $navbarsep;
     if (is_null($replacement)) {
@@ -690,7 +712,7 @@ function theme_essential_set_navbarsep($css, $navbarsep) {
     return $css;
 }
 
-function theme_essential_set_pagebackground($css, $pagebackground, $setting) {
+function theme_mcb_set_pagebackground($css, $pagebackground, $setting) {
     global $OUTPUT;
     $tag = '[[setting:pagebackground]]';
     $replacement = $pagebackground;
@@ -703,7 +725,7 @@ function theme_essential_set_pagebackground($css, $pagebackground, $setting) {
 }
 
 
-function theme_essential_set_slideimage($css, $slideimage, $setting) {
+function theme_mcb_set_slideimage($css, $slideimage, $setting) {
     global $OUTPUT;
     $tag = '[[setting:'.$setting.']]';
     $replacement = $slideimage;
@@ -711,7 +733,7 @@ function theme_essential_set_slideimage($css, $slideimage, $setting) {
     return $css;
 }
 
-function theme_essential_set_marketingheight($css, $marketingheight) {
+function theme_mcb_set_marketingheight($css, $marketingheight) {
     $tag = '[[setting:marketingheight]]';
     $replacement = $marketingheight;
     if (is_null($replacement)) {
@@ -721,7 +743,7 @@ function theme_essential_set_marketingheight($css, $marketingheight) {
     return $css;
 }
 
-function theme_essential_set_marketingimage($css, $marketingimage, $setting) {
+function theme_mcb_set_marketingimage($css, $marketingimage, $setting) {
     global $OUTPUT;
     $tag = '[[setting:'.$setting.']]';
     $replacement = $marketingimage;
@@ -729,17 +751,17 @@ function theme_essential_set_marketingimage($css, $marketingimage, $setting) {
     return $css;
 }
 
-function theme_essential_page_init(moodle_page $page) {
+function theme_mcb_page_init(moodle_page $page) {
     $page->requires->jquery();
-    $page->requires->jquery_plugin('cslider', 'theme_essential');
-    $page->requires->jquery_plugin('custom', 'theme_essential'); 
-    $page->requires->jquery_plugin('alert', 'theme_essential');
-    $page->requires->jquery_plugin('carousel', 'theme_essential');
-    $page->requires->jquery_plugin('collapse', 'theme_essential');
-    $page->requires->jquery_plugin('modal', 'theme_essential');
-    $page->requires->jquery_plugin('scrollspy', 'theme_essential');
-    $page->requires->jquery_plugin('tab', 'theme_essential');
-    $page->requires->jquery_plugin('tooltip', 'theme_essential');
-    $page->requires->jquery_plugin('transition', 'theme_essential');
-    $page->requires->jquery_plugin('modernizr', 'theme_essential');  
+    $page->requires->jquery_plugin('cslider', 'theme_mcb');
+    $page->requires->jquery_plugin('custom', 'theme_mcb'); 
+    $page->requires->jquery_plugin('alert', 'theme_mcb');
+    $page->requires->jquery_plugin('carousel', 'theme_mcb');
+    $page->requires->jquery_plugin('collapse', 'theme_mcb');
+    $page->requires->jquery_plugin('modal', 'theme_mcb');
+    $page->requires->jquery_plugin('scrollspy', 'theme_mcb');
+    $page->requires->jquery_plugin('tab', 'theme_mcb');
+    $page->requires->jquery_plugin('tooltip', 'theme_mcb');
+    $page->requires->jquery_plugin('transition', 'theme_mcb');
+    $page->requires->jquery_plugin('modernizr', 'theme_mcb');  
 }
