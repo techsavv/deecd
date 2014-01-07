@@ -893,7 +893,7 @@ table#greyboxleft h2 {
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    background: #027E8E;
+    background: #027E8E !important;
     margin-right: 5px;
     font-size: 1em;
     text-shadow: none;
@@ -904,7 +904,7 @@ table#greyboxleft h2 {
 
 .block_login input:hover {
     text-decoration: none;
-    background: #BFD8DC;
+    background: #BFD8DC !important;
     color: #fff;
 }
 
@@ -912,11 +912,12 @@ table#greyboxleft h2 {
     color: #fff;
     padding: 3px 5px;
     border-radius: 5px;
-    float: left;
+    float: right;
     margin-left: 15px;
+    margin-bottom: 5px;
     font-size: 1em;
     white-space: nowrap;
-    background: #027E8E;
+    background: #027E8E !important;
 }
 
 .block_login input[type="text"],
