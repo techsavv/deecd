@@ -1873,13 +1873,13 @@ table.calendarmonth.calendartable {
 
 /*KA*CHANGE HOVER STYLE ON TEXT*/
     a:hover {
-        color: #027E8E;
+        color: #027E8E !important;
     }
 /*END CHANGE*/
 
 /*KA*CHANGED FORMATTING OF COURSE NAMES ON FRONT PAGE*/
 .coursename {
-    color: #037F8F;
+    color: #037F8F !important;
     text-decoration: none;
     font-size: 17pt;
 }
