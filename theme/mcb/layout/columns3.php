@@ -87,6 +87,11 @@ echo $OUTPUT->doctype() ?>
             			<nav class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></nav>
             			<div class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></div>
         			</div>
+                    <!--/**TE**ADDED COURSE HEADER CODE**/-->
+                    <div class='courseHeader'>
+                    <?php echo html_writer::start_tag('img',array('src'=>$OUTPUT->pix_url('courseheader','theme'),'class'=>'courseHeaderImg')); ?>
+                    </div>
+                    <!--/*END CHANGE*/-->
                     <?php
                     echo $OUTPUT->course_content_header();
                     echo $OUTPUT->main_content();

@@ -18,7 +18,7 @@
  * The mcb theme is built upon the Bootstrapbase theme.
  *
  * @package    theme
- * @subpackage mcb
+ * @subpackage Essential
  * @author     Julian (@moodleman) Ridden
  * @author     Based on code originally written by G J Bernard, Mary Evans, Bas Brands, Stuart Lamour and David Scotson.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -94,7 +94,7 @@ echo $OUTPUT->doctype() ?>
     
     <!-- End Main Regions -->
 
-    <a href="#top" class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i><p><?php print_string('backtotop', 'theme_mcb'); ?></p></a>
+    <a href="#top" class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i><p><?php print_string('backtotop', 'theme_essential'); ?></p></a>
 
 	<footer id="page-footer" class="container-fluid">
 		<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
