@@ -1535,14 +1535,23 @@ img.profilepicture
     font-family: Signika Negative   
     border-bottom-color: #037F8F !important;
     background-color: #037F8F !important;
+    border-bottom-color: #DE6B00;
+    border-bottom-width: 2px;
 }
 /* @end */
 
-/*KA - change BACKGROUND COLOUR ON ACTIVE TAB*/
-.nav-tabs>.active>a {
+/*KA - change BACKGROUND COLOUR ON ACTIVE TAB AND TAB HOVER*/
+.nav-tabs>.active>a .nav-tabs>li>a:hover {
     background-color: #DE6B00 !important;
+    border-bottom-color: #DE6B00;
+    border-bottom-width: 2px;
 }
 /*end change*/
+
+/*KA CHANGE BORDER COLOUR UNDER TABS*/
+
+
+
 
 /* @group Performance Information */
 .performanceinfo {
