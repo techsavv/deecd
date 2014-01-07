@@ -923,6 +923,9 @@ table#greyboxleft h2 {
 .block_login input[type="text"],
 .block_login input[type="password"] {
     width: 95% !important;
+    background: #BFD8DC !important;
+    font-size: 13pt;
+    color: #027E8E !important;
 }
 
 .block_login .footer a:hover {
