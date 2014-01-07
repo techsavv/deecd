@@ -1529,13 +1529,20 @@ img.profilepicture
 }
  
 .nav-tabs>li>a {
-    color: #fff;
+    color: #fff !important;
     cursor: default;
     border: 1px solid #ddd;
     font-family: Signika Negative   
-    border-bottom-color: transparent;
+    border-bottom-color: #037F8F !important;
+    background-color: #037F8F !important;
 }
 /* @end */
+
+/*KA - change BACKGROUND COLOUR ON ACTIVE TAB*/
+.nav-tabs>.active>a {
+    background-color: #DE6B00 !important;
+}
+/*end change*/
 
 /* @group Performance Information */
 .performanceinfo {
