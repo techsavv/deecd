@@ -1914,7 +1914,7 @@ table.calendarmonth.calendartable {
 
 /*KA-REMOVE RIGTH BORDER FROM HELP AND YOU ARE LOGGED IN AS TEXT*/
 .navbar .nav {
-    border-right: none;
+    border-right: none !important;
 }
 /*END CHANGE*/
 
