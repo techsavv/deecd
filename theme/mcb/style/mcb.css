@@ -33,6 +33,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: #037F8F !important;
 }
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
@@ -350,9 +351,11 @@ ul.breadcrumb li:last-child:after {
 }
 
 .navbar .brand {
-    color: #fff;
+    color: #fff !important;
     text-shadow: none;
     line-height: 20px;
+    color: white !important;
+    font-family: Signika Negative;
 }
 
 .navbar .nav .active > a,
@@ -371,7 +374,7 @@ ul.breadcrumb li:last-child:after {
 }
 
 .navbar .nav > li > a {
-    color: #fff;
+    color: #ffffff !important;
     text-shadow: none;
 /**KA**Updated font family and font size in navbar*/
     font-family: Signika Negative;
@@ -924,6 +927,7 @@ table#greyboxleft h2 {
     font-size: 1em;
     white-space: nowrap;
     background: #027E8E !important;
+    color: white !important;
 }
 
 .block_login input[type="text"],
