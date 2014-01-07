@@ -1,7 +1,7 @@
-The "Essential" Moodle Theme
+The "mcb" Moodle Theme
 ======================
 
-With 2.5 now released I thought it time to take the opportunity to build a new theme that would push the new theme engine to it's limits a bit. With that in mind I am happy to introduce the new "Essential" theme.
+With 2.5 now released I thought it time to take the opportunity to build a new theme that would push the new theme engine to it's limits a bit. With that in mind I am happy to introduce the new "mcb" theme.
 
 The idea of this theme, as usual with my themes, is to make the site look as little like Moodle as possible. In this specific instance, it would be used on sites where Moodle would potentially serve as a company homepage rather than just a course list.
 
@@ -47,7 +47,7 @@ Cool things to know about the theme.
  - New Frontpage Slideshow settings to allow to display; all the time, only before login, only after login or never.
  - New Marketing Spots settings to allow to display; all the time, only before login, only after login or never.
  - Course Labels are no longer in bold by default
- - Now has a companion Mahara ePorfolio theme so you can keep them looking alike - https://github.com/moodleman/mahara-theme_essential
+ - Now has a companion Mahara ePorfolio theme so you can keep them looking alike - https://github.com/moodleman/mahara-theme_mcb
  - Further minor bug fixes and tidy up.
    
  New in 2.5.4
@@ -109,6 +109,6 @@ If you would like to see it in action, head to this year's iMoot site at [http:/
 Documentation
 =============
 
-As always, documentation is a work in progress. Availbale documentation is available at http://docs.moodle.org/25/en/Essential_theme
+As always, documentation is a work in progress. Availbale documentation is available at http://docs.moodle.org/25/en/mcb_theme
 
 If you have questions you can post them in the official discussion moodle.org forum at https://moodle.org/mod/forum/discuss.php?d=231970
