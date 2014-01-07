@@ -11,7 +11,7 @@ body{
     text-shadow: none !important;
     color: #444;
     padding-top: 0px;
-/**KA**CHANGE TOP BORDER AT OP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
+/**KA**CHANGE TOP BORDER AT TOP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
     background: #8e8e8e;
 /*END CHANGE*/
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
@@ -1529,7 +1529,7 @@ img.profilepicture
 }
 
 .nav-collapse {
-border: 1px solid #5d5d5d;
+border: 1px solid #5d5d5d !important;
 }
 
 
