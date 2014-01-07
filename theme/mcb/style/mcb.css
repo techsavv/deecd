@@ -372,6 +372,9 @@ ul.breadcrumb li:last-child:after {
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     color: #fff;
 }
+    .navbar .nav>li>a {
+    border-left: 1px solid #FFFFFF;
+}
 
 .navbar .caret {
     border-top-color: white !important;
@@ -1529,7 +1532,7 @@ img.profilepicture
 }
 
 .nav-collapse {
-border: 1px solid #5d5d5d !important;
+    border: 1px solid #5d5d5d !important;
 }
 
 
