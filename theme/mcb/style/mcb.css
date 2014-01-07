@@ -1918,9 +1918,10 @@ table.calendarmonth.calendartable {
 }
 /*end change*/
 
-/*KA-REMOVE RIGTH BORDER FROM HELP AND YOU ARE LOGGED IN AS TEXT*/
+/*KA-REMOVE RIGHT BORDER FROM HELP AND YOU ARE LOGGED IN AS TEXT AND CHANGED LEFT BORDER TO WHITE*/
 .navbar .nav {
     border-right: none !important;
+    border-left: 2px solid #FFFFFF;
 }
 /*END CHANGE*/
 
