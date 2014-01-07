@@ -1925,6 +1925,10 @@ table.calendarmonth.calendartable {
 }
 /*END CHANGE*/
 
+.nav {
+    margin-bottom: 0px;
+}
+
 /*ka-HFORMAT COURSE LIST ON FRONT PAGE*/
 .coursebox .enrolmenticons {
     display: none;
