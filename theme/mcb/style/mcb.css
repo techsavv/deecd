@@ -406,6 +406,7 @@ ul.breadcrumb li:last-child:after {
 
 .course-content ul li.section.main {
     border-bottom: 0px none;
+    background: #FFFFFF;
 }
 
 div.mdl-align.title {
@@ -1543,8 +1544,8 @@ img.profilepicture
 /*KA - change BACKGROUND COLOUR ON ACTIVE TAB AND TAB HOVER*/
 .nav-tabs>.active>a .nav-tabs>li>a:hover {
     background-color: #DE6B00 !important;
-    border-bottom-color: #DE6B00;
-    border-bottom-width: 2px;
+    border-bottom-color: #DE6B00 !important;
+    border-bottom-width: 2px !important;
 }
 /*end change*/
 
