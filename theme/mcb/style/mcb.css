@@ -893,7 +893,7 @@ table#greyboxleft h2 {
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    background: #0cc719;
+    background: #027E8E;
     margin-right: 5px;
     font-size: 1em;
     text-shadow: none;
@@ -904,7 +904,7 @@ table#greyboxleft h2 {
 
 .block_login input:hover {
     text-decoration: none;
-    background: #339900;
+    background: #BFD8DC;
     color: #fff;
 }
 
@@ -916,6 +916,7 @@ table#greyboxleft h2 {
     margin-left: 15px;
     font-size: 1em;
     white-space: nowrap;
+    background: #027E8E;
 }
 
 .block_login input[type="text"],
