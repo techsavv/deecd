@@ -19,7 +19,7 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_essential
+ * @package   theme_mcb
  * @copyright 2013 Julian Ridden
  * @copyright 2013 Gareth J Barnard - Pirate translation.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -29,12 +29,12 @@
 $string['choosereadme'] = '
 <div class="clearfix">
 <div class="well">
-<h2>Essential</h2>
-<p><img class=img-polaroid src="essential/pix/screenshot.jpg" /></p>
+<h2>mcb</h2>
+<p><img class=img-polaroid src="mcb/pix/screenshot.jpg" /></p>
 </div>
 <div class="well">
-<h3>About Essential mee hearties</h3>
-<p>Essential is thee modified Moodle bootstrap theme which inherits styles and renderers from its parent theme, arrg.</p>
+<h3>About mcb mee hearties</h3>
+<p>mcb is thee modified Moodle bootstrap theme which inherits styles and renderers from its parent theme, arrg.</p>
 <h3>Parents</h3>
 <p>Thy theme is based upon thee Bootstrap theme, which thy was created for Moodle 2.5, with thee help of thy ship mates:<br>
 Stuart Lamour, Mark Aberdour, Paul Hibbitts and Mary Evans.</p>
