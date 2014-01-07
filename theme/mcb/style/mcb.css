@@ -22,7 +22,10 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal !important;
-    color: #666;
+}
+
+h2 {
+    color: #027e8e;
 }
 
 h3 {
@@ -1945,4 +1948,10 @@ table.calendarmonth.calendartable {
     padding-left: 0px;
     background-image: none;
 }
-/*END CHANGES*/
+/*END CHANGE*/
+
+/*KA-RIGHT BLOCK REGION WAS SHIFTING DOWN ON COURSE PAGE AS IT WAS TOO WIDE - REDUCED WIDTH*/
+.empty-region-side-post.used-region-side-pre #block-region-side-pre.span4 {
+    width: 22.5%;
+}
+/*END CHANGE*/
