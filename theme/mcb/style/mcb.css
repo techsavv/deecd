@@ -15,8 +15,8 @@ body{
     background: #8e8e8e;
 /*END CHANGE*/
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
-    background-size:100%;
-    background-position-y:120px; /* offset from page header */
+    background-size: 100% !important;
+    background-position-y: 120px !important; /* offset from page header */
 /*END CHANGE */
 }
 
