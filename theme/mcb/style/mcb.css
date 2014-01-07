@@ -112,8 +112,9 @@ a {
 #page-header {
     padding: 0px 0px 0px 0px;
     border-bottom: 1px solid #DDD;
-/**KA**Replace image background on header with plain grey background behind logo**/
+/**KA**Replace image background on header with plain grey background behind logo and changed height**/
     background: #8e8e8e;
+    height: 75px;
     /*END CHANGE*/
 }
 
