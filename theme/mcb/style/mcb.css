@@ -1532,11 +1532,12 @@ img.profilepicture
 .nav-tabs>li>a {
     color: #fff !important;
     cursor: default;
+    font-family: Signika Negative;
+    font-size: 14pt;
     border: 1px solid #ddd;
-    font-family: Signika Negative   
-    border-bottom-color: #037F8F !important;
+    font-family: Signika Negative;   
     background-color: #037F8F !important;
-    border-bottom-color: #DE6B00;
+    border-bottom-color: #DE6B00 !important;
     border-bottom-width: 2px;
 }
 /* @end */
@@ -1972,3 +1973,21 @@ table.calendarmonth.calendartable {
     width: 22.5%;
 }
 /*END CHANGE*/
+
+.mdl-left {
+font-family: Signika Negative;
+font-size: 15pt;
+}
+
+.mdl-left a:hover {
+text-decoration: none;
+}
+
+.mdl-right {
+font-family: Signika Negative;
+font-size: 15pt;
+}
+
+.mdl-right a:hover {
+text-decoration: none;
+}
