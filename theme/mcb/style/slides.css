@@ -11,7 +11,7 @@
 	margin: 10px auto;
     margin-bottom:20px;
 	overflow: hidden;
-	background: #FFFFFF;
+	background: #FFFFFF !important;
 	
 	/*KA-remove transparency on top and bottom of slideshow image*
 	background: transparent url([[pix:theme|bg/header]]) repeat 0% 0%;
