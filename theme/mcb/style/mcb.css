@@ -373,7 +373,7 @@ ul.breadcrumb li:last-child:after {
     color: #fff;
 }
     .navbar .nav>li>a {
-    border-left: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF !important;
 }
 
 .navbar .caret {
@@ -1531,12 +1531,6 @@ img.profilepicture
     font-family: Signika Negative   
     border-bottom-color: transparent;
 }
-
-.nav-collapse {
-    border: 1px solid #5d5d5d !important;
-}
-
-
 /* @end */
 
 /* @group Performance Information */
@@ -1925,7 +1919,6 @@ table.calendarmonth.calendartable {
 /*KA-REMOVE RIGHT BORDER FROM HELP AND YOU ARE LOGGED IN AS TEXT AND CHANGED LEFT BORDER TO WHITE*/
 .navbar .nav {
     border-right: none !important;
-    border-left: 2px solid #FFFFFF;
 }
 /*END CHANGE*/
 
