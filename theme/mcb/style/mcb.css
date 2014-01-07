@@ -172,6 +172,10 @@ h2#subtitle {
     font-size: 1.1em;
 }
 
+#socialheading {
+    color: #FFFFFF !important;
+    margin-top: 0px;
+} 
 
 .socials a,
 .socials a:visited {
@@ -285,6 +289,7 @@ ul.socials {
 .dropdown-submenu:focus > a {
     color: #ffffff;
     text-decoration: none;
+    background-image: linear-gradient(to bottom, #BFD8DC, #BFD8DC);
 }
 
 .dropdown [class^="fa fa-"] {
