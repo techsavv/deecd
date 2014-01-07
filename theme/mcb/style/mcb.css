@@ -1918,3 +1918,17 @@ table.calendarmonth.calendartable {
 }
 /*END CHANGE*/
 
+/*ka-HFORMAT COURSE LIST ON FRONT PAGE*/
+.coursebox .enrolmenticons {
+    display: none;
+}
+
+.coursebox .content .summary {
+    margin-right: 70px;
+    margin-top: 0px;
+}
+
+.coursebox .content .teachers {
+    width: 35%;
+}
+/*END CHANGES*/
