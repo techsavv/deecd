@@ -287,9 +287,10 @@ ul.socials {
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
-    background-image: linear-gradient(to bottom, #BFD8DC, #BFD8DC);
+    background-image: linear-gradient(to bottom, #BFD8DC, #BFD8DC) !important;
+    background-color: #FFFFFF !important;
 }
 
 .dropdown [class^="fa fa-"] {
@@ -1888,3 +1889,18 @@ table.calendarmonth.calendartable {
     text-decoration: none;
     font-size: 17pt;
 }
+/*END CHANGE*/
+
+/*CHANGE COLOUR OF HOVER IN 'YOU ARE LOGGED IN AS' TEXT*/
+.logininfo a:hover {
+    color: #BFD8DC !important;
+    text-decoration: none;
+}
+/*end change*/
+
+/*KA-REMOVE RIGTH BORDER FROM HELP AND YOU ARE LOGGED IN AS TEXT*/
+.navbar .nav {
+    border-right: none;
+}
+/*END CHANGE*/
+
