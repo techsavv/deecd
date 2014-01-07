@@ -1198,6 +1198,14 @@ table#greyboxleft h2 {
     color: orange !important;
 }
 
+#page-footer .footnote a {
+    color: #FFFFFF !important;
+}
+
+#page-footer .footnote a:visited {
+    color: #FFFFFF !important;
+}
+
 #page-footer .footnote a:hover {
     text-decoration: none;
 }
