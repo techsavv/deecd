@@ -42,6 +42,7 @@ a {
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 .courseHeader{
     background:#027E8D;
+    margin-bottom: 20px;
 }
 .courseHeaderImg{
     margin-left:auto;
@@ -2040,3 +2041,16 @@ text-decoration: none;
     display: none;
 }
 /*end change*/
+
+/*KA - PAGE RESOURCE*/
+.modified {
+    display: none;
+}
+/*end change*/
+
+/*KA - GLOSSARY ACTIVITY - CUSTOMISATION*/
+.glossaryexplain {
+    text-align: center;
+    margin-top: 20px;
+}
+/*END CHANGE*/
