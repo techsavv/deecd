@@ -41,13 +41,13 @@ a {
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 .courseHeader{
-    background:#BFD8DC;
+    background:#027E8D;
 }
 .courseHeaderImg{
     margin-left:auto;
     margin-right:auto;
     display:block;
-    height:250px;
+    height:200px;
     /* can control image size here if need be */
 }
 /*END CHANGE*/
