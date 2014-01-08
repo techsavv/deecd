@@ -1553,7 +1553,23 @@ img.profilepicture
 /*KA CHANGE BORDER COLOUR UNDER TABS*/
 
 
+/*KA-CHANGE HOVER STYLE ON ACTIVITIES LIST*/
+.course-content .section .activity:hover {
+    background-color: #F7DABF;
+    margin-bottom: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
 
+.course-content .section li.activity {
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
 
 /* @group Performance Information */
 .performanceinfo {
