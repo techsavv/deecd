@@ -1579,6 +1579,16 @@ img.profilepicture
     color: #5D5D5D;
 }
 
+.path-course-view li.activity span.autocompletion img {
+    padding-right: 50px;
+}
+
+.editing .section .activity .activityinstance {
+    padding-right: 100px;
+    padding-left: 20px;
+}
+/*END CHANGE*/
+
 /* @group Performance Information */
 .performanceinfo {
     bottom:0;
