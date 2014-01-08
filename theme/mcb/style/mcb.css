@@ -1557,10 +1557,10 @@ img.profilepicture
 .course-content .section .activity:hover {
     background-color: #F7DABF;
     margin-bottom: 5px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -khtml-border-radius: 10px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -khtml-border-radius: 4px;
     padding-top: 7px;
     padding-bottom: 7px;
 }
