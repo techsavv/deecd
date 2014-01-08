@@ -2015,6 +2015,7 @@ table.calendarmonth.calendartable {
 }
 /*END CHANGE*/
 
+/*KA - UPDATING NAVIGATION TEXT BELOW ACTIVITIES IN COURSE PAGE*/
 .mdl-left {
 font-family: Signika Negative;
 font-size: 15pt;
@@ -2032,3 +2033,16 @@ font-size: 15pt;
 .mdl-right a:hover {
 text-decoration: none;
 }
+
+/*END CHANGE*/
+
+/*KA - QUIZ FORMATTING*/
+.que .formulation {
+    background-color: #ECE5ED;
+    border-color: #B498B7;
+}
+
+#page-mod-quiz-attempt .courseHeader {
+    display: none;
+}
+/*end change*/
