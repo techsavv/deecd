@@ -52,12 +52,6 @@ a {
 }
 /*END CHANGE*/
 
-/*KA- HIDE BANNER ON FAQ GLOSSARY PAGE*/
-.cmid-13 .courseHeaderImg {
-    display: none;
-}
-/*End change*/
-
 .dir-rtl a.logo {
     display: block;
     float: right;
