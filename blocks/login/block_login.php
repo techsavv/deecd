@@ -69,10 +69,10 @@ class block_login extends block_base {
             $this->content->text .= "</form>\n";
 
             if (!empty($signup)) {
-                $this->content->footer .= '<div><a href="'.$signup.'">'.get_string('startsignup').'</a></div>';
+                $this->content->footer .= '<div class="signup"><a href="'.$signup.'">'.get_string('startsignup').'</a></div>';
             }
             if (!empty($forgot)) {
-                $this->content->footer .= '<div><a href="'.$forgot.'">'.get_string('forgotaccount').'</a></div>';
+                $this->content->footer .= '<div class="lost_pass"><a href="'.$forgot.'">'.get_string('forgotaccount').'</a></div>';
             }
         }
 
