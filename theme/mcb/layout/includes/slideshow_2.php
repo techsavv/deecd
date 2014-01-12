@@ -29,7 +29,7 @@
                 <a href="<?php echo $slide2url ?>" class="da-link"><?php echo get_string('readmore','theme_mcb')?></a>
             <?php } ?>
             <?php if ($hasslide2image) { ?>
-            <div class="da-img"><img src="<?php echo $slide2image ?>" alt="<?php echo $slide2 ?>"></div>
+            <div class="da-img"><img src="<?php //echo $slide2image ?>" alt="<?php //echo $slide2 ?>"></div>
             <?php } ?>
         </div>
     <?php } ?>
