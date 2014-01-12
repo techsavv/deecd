@@ -111,7 +111,7 @@ a {
     padding: 0px 0px 0px 0px;
     border-bottom: 1px solid #DDD;
 /**KA**Replace image background on header with plain grey background behind logo and changed height**/
-    background: #8e8e8e;
+    background-color: #8e8e8e;
     height: 75px;
     /*END CHANGE*/
 }
@@ -282,6 +282,8 @@ ul.socials {
     padding: 0px;
     margin: 0px;
     margin-top: 8px;
+	display:inline;
+	float:left;
 }
 
 /* @end */
@@ -803,7 +805,7 @@ table#greyboxleft h2 {
     margin-right: 5px;
 }
     
-    .hidden-blocks {
+.hidden-blocks {
     background: #ffe1e1;
     padding: 10px;
     border: 1px solid #EEE;
@@ -839,12 +841,15 @@ table#greyboxleft h2 {
     font-weight: normal;
     padding: 0px;
 }
-
+.block_html .header .title h2#instance-11-header:before {
+	content: "\f059";
+}
 .block .header .title h2:before {
     font-family: FontAwesome;
     font-size: 1.65em;
     margin-right: .3em;
     content: "\f0c9";
+	color:#027E8E !important;
 }
 
 .block .header .title {
@@ -1557,7 +1562,7 @@ img.profilepicture
 
 /*KA-CHANGE HOVER STYLE ON ACTIVITIES LIST*/
 .course-content .section .activity:hover {
-    background-color: #F7DABF;
+   background-color: #F7DABF;
     margin-bottom: 5px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -1568,10 +1573,17 @@ img.profilepicture
 }
 
 .course-content .section li.activity {
-    margin-bottom: 5px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+	margin-bottom: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border: 1px solid #ccc;
+	background-color: rgb(240, 240, 240);
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-khtml-border-radius: 4px;
 }
+.course-content .section .activity a:hover{ text-decoration:none;}
 
 .instancename {
     color: #5D5D5D;
@@ -2054,3 +2066,15 @@ text-decoration: none;
     margin-top: 20px;
 }
 /*END CHANGE*/
+
+/*bkp*/
+/*.variant2 .da-slide-current .da-img{
+	background-image:url([[pix:theme|Frontpage-banner2]]);
+	background-repeat:no-repeat;
+	background-size: contain;
+}*/
+.block_login .footer div.lost_pass a{ background:none !important; color: #027E8E !important;}
+.block_login .footer div.lost_pass a:hover{ text-decoration:underline !important;}
+.block_login .footer div.signup a{ background-color: rgb(8, 75, 83) !important;}
+.block_course_participants .content ul li div.c1>img{display:none;}
+.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px;}

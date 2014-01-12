@@ -57,11 +57,13 @@ a:hover{
 /* @group Header */
 
 #page-header {
-    background: url([[pix:theme|bg/header]]) repeat;
+    background: url([[pix:theme|bg/header]]);
+	background-repeat:repeat;
+	background-color:#5d5d5d;
 }
 
 a.logo {
-    background: url([[setting:logo]]) no-repeat 0 0;
+     background: url([[pix:theme|deecdLogo]]) no-repeat;
 }
 
 h1#title {
