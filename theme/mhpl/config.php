@@ -19,21 +19,21 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_mcb
+ * @package   theme_mhpl
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$THEME->name = 'mcb';
+$THEME->name = 'mhpl';
 
 // The only thing you need to change in this file when copying it to
 // create a new theme is the name above. You also need to change the name
-// in version.php and lang/en/theme_mcb.php as well.
+// in version.php and lang/en/theme_mhpl.php as well.
 
 $THEME->doctype = 'html5';
 $THEME->yuicssmodules = array();
 $THEME->parents = array('bootstrapbase');
-$THEME->sheets = array('slides', 'lightbox', 'font-awesome.min', 'mcb', 'settings');
+$THEME->sheets = array('slides', 'lightbox', 'font-awesome.min', 'mhpl', 'settings');
 $THEME->supportscssoptimisation = false;
 $THEME->enable_dock = false;
 
@@ -170,7 +170,7 @@ $THEME->javascripts_footer = array(
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 
-$THEME->csspostprocess = 'theme_mcb_process_css';
+$THEME->csspostprocess = 'theme_mhpl_process_css';
 
 $useragent = '';
 if (!empty($_SERVER['HTTP_USER_AGENT'])) {

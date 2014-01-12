@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The mcb theme is built upon the Bootstrapbase theme.
+ * The mhpl theme is built upon the Bootstrapbase theme.
  *
  * @package    theme
  * @subpackage Essential

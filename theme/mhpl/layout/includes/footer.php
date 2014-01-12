@@ -19,7 +19,7 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_essential
+ * @package   theme_mhpl
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -46,7 +46,7 @@ $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->re
  	</div><!-->
 	<div class="footerlinks row-fluid">
     	<hr>
-        <p class="helplink">Developed and hosted by <a href="http://www.tech-savvy.com.au">Tech-Sevvy Solutions</a></p>
+        <p class="helplink">Developed and hosted by <a href="http://www.tech-savvy.com.au">Tech-Savvy Solutions</a></p>
     <?php if ($hasfootnote) {
         echo '<div class="footnote">'.$hasfootnote.'</div>';
     } ?>

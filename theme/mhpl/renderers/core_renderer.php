@@ -15,16 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * mcb theme with the underlying Bootstrap theme.
+ * mhpl theme with the underlying Bootstrap theme.
  *
  * @package    theme
- * @subpackage mcb
+ * @subpackage mhpl
  * @author     Julian (@moodleman) Ridden
  * @author     Based on code originally written by G J Barnard, Mary Evans, Bas Brands, Stuart Lamour and David Scotson.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
  
- class theme_mcb_core_renderer extends theme_bootstrapbase_core_renderer {
+ class theme_mhpl_core_renderer extends theme_bootstrapbase_core_renderer {
  	
  	/*
      * This renders a notification message.
@@ -72,7 +72,7 @@
                 error_log("PERF: " . $perf['txt']);
             }
             if (defined('MDL_PERFTOFOOT') || debugging() || $CFG->perfdebug > 7) {
-                $performanceinfo = mcb_performance_output($perf);
+                $performanceinfo = mhpl_performance_output($perf);
             }
         }
 
@@ -99,13 +99,13 @@
         if (isloggedin() && !isguestuser() && $hasdisplaymycourses) {
         	$mycoursetitle = $this->page->theme->settings->mycoursetitle;
             if ($mycoursetitle == 'module') {
-				$branchtitle = get_string('mymodules', 'theme_mcb');
+				$branchtitle = get_string('mymodules', 'theme_mhpl');
 			} else if ($mycoursetitle == 'unit') {
-				$branchtitle = get_string('myunits', 'theme_mcb');
+				$branchtitle = get_string('myunits', 'theme_mhpl');
 			} else if ($mycoursetitle == 'class') {
-				$branchtitle = get_string('myclasses', 'theme_mcb');
+				$branchtitle = get_string('myclasses', 'theme_mhpl');
 			} else {
-				$branchtitle = get_string('mycourses', 'theme_mcb');
+				$branchtitle = get_string('mycourses', 'theme_mhpl');
 			}
 			$branchlabel = '<i class="fa fa-briefcase"></i>'.$branchtitle;
             $branchurl   = new moodle_url('/my/index.php');
@@ -119,7 +119,7 @@
  					}
  				}
  			} else {
-                $noenrolments = get_string('noenrolments', 'theme_mcb');
+                $noenrolments = get_string('noenrolments', 'theme_mhpl');
  				$branch->add('<em>'.$noenrolments.'</em>', new moodle_url('/'), $noenrolments);
  			}
             
@@ -131,9 +131,9 @@
     	*/
         $hasdisplaymydashboard = (empty($this->page->theme->settings->displaymydashboard)) ? false : $this->page->theme->settings->displaymydashboard;
         if (isloggedin() && !isguestuser() && $hasdisplaymydashboard) {
-            $branchlabel = '<i class="fa fa-dashboard"></i>'.get_string('mydashboard', 'theme_mcb');
+            $branchlabel = '<i class="fa fa-dashboard"></i>'.get_string('mydashboard', 'theme_mhpl');
             $branchurl   = new moodle_url('/my/index.php');
-            $branchtitle = get_string('mydashboard', 'theme_mcb');
+            $branchtitle = get_string('mydashboard', 'theme_mhpl');
             $branchsort  = 10000;
  
             $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
@@ -250,7 +250,7 @@
 
 include_once($CFG->dirroot . "/course/format/topics/renderer.php");
  
-class theme_mcb_format_topics_renderer extends format_topics_renderer {
+class theme_mhpl_format_topics_renderer extends format_topics_renderer {
     
     protected function get_nav_links($course, $sections, $sectionno) {
         // FIXME: This is really evil and should by using the navigation API.
@@ -273,7 +273,7 @@ class theme_mcb_format_topics_renderer extends format_topics_renderer {
                 $previouslink .= html_writer::end_tag('div');
                 $previouslink .= html_writer::start_tag('span', array('class' => 'text'));
                 $previouslink .= html_writer::start_tag('span', array('class' => 'nav_guide'));
-                $previouslink .= get_string('previoussection', 'theme_mcb');
+                $previouslink .= get_string('previoussection', 'theme_mhpl');
                 $previouslink .= html_writer::end_tag('span');
                 $previouslink .= html_writer::empty_tag('br');
                 $previouslink .= get_section_name($course, $sections[$back]);
@@ -295,7 +295,7 @@ class theme_mcb_format_topics_renderer extends format_topics_renderer {
                 $nextlink .= html_writer::end_tag('div');
                 $nextlink .= html_writer::start_tag('span', array('class' => 'text'));
                 $nextlink .= html_writer::start_tag('span', array('class' => 'nav_guide'));
-                $nextlink .= get_string('nextsection', 'theme_mcb');
+                $nextlink .= get_string('nextsection', 'theme_mhpl');
                 $nextlink .= html_writer::end_tag('span');
                 $nextlink .= html_writer::empty_tag('br');
                 $nextlink .= get_section_name($course, $sections[$forward]);
