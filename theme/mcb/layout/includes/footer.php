@@ -46,7 +46,7 @@ $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->re
  	</div><!-->
 	<div class="footerlinks row-fluid">
     	<hr>
-        <p class="helplink">Developed and hosted by <a href="http://www.tech-savvy.com.au">Tech-Sevvy Solutions</a></p>
+        <p class="helplink">Developed and hosted by <a href="http://www.tech-savvy.com.au">Tech-Savvy Solutions</a></p>
     <?php if ($hasfootnote) {
         echo '<div class="footnote">'.$hasfootnote.'</div>';
     } ?>

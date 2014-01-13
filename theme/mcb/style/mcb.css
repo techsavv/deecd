@@ -278,7 +278,7 @@ ul.socials {
 #socialheading {
     text-align: right;
     color: #666;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     padding: 0px;
     margin: 0px;
     margin-top: 8px;
@@ -1233,8 +1233,9 @@ color: #bfd8dc !important;
 }
 
 .helplink a {
-    color: orange !important;
+    color: #BFD8DC  !important;
 }
+.helplink a:hover{color:#8E8E8E !important}
 
 #page-footer .footnote a {
     color: #FFFFFF !important;
@@ -1560,7 +1561,9 @@ img.profilepicture
 /*KA CHANGE BORDER COLOUR UNDER TABS*/
 
 
-/*KA-CHANGE HOVER STYLE ON ACTIVITIES LIST*/
+/*KA-CHANGE HOVER STYLE ON ACTIVITIES LIST*/ 
+
+/*bkp*/
 .course-content .section .activity:hover {
    background-color: #F7DABF;
     margin-bottom: 5px;
@@ -1576,12 +1579,6 @@ img.profilepicture
 	margin-bottom: 5px;
 	padding-top: 7px;
 	padding-bottom: 7px;
-	border: 1px solid #ccc;
-	background-color: rgb(240, 240, 240);
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-	-khtml-border-radius: 4px;
 }
 .course-content .section .activity a:hover{ text-decoration:none;}
 
@@ -2068,13 +2065,15 @@ text-decoration: none;
 /*END CHANGE*/
 
 /*bkp*/
-/*.variant2 .da-slide-current .da-img{
+.variant2 .da-slide-current .da-img{
 	background-image:url([[pix:theme|Frontpage-banner2]]);
 	background-repeat:no-repeat;
 	background-size: contain;
-}*/
+}
 .block_login .footer div.lost_pass a{ background:none !important; color: #027E8E !important;}
 .block_login .footer div.lost_pass a:hover{ text-decoration:underline !important;}
-.block_login .footer div.signup a{ background-color: rgb(8, 75, 83) !important;}
+.block_login .footer div.lost_pass{float:left; margin-left:-23px; margin-top:33px;}
 .block_course_participants .content ul li div.c1>img{display:none;}
-.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px;}
+.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block;}
+.course-content ul.topics{border: 1px solid #9c4342;}
+.block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
