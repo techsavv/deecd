@@ -56,18 +56,17 @@ if (!empty($_SERVER['HTTP_USER_AGENT'])) {
 <?php
 // Check if IE7 browser and display message
 if (strpos($checkuseragent, 'MSIE 7')) {
-	echo get_string('ie7message', 'theme_mcb');
+/*	echo get_string('ie7message', 'theme_mcb');*/
 }?>
 
 <?php
 if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
-    <header id="page-header-IE7-8" class="clearfix">
+    <header id="page-header" class="clearfix">
 <?php
 } else { ?>
     <header id="page-header" class="clearfix">
 <?php
 } ?>
-
     <div class="container-fluid">
     <div class="row-fluid">
     <!-- HEADER: LOGO AREA -->

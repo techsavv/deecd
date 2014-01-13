@@ -2077,3 +2077,8 @@ text-decoration: none;
 .block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block;}
 .course-content ul.topics{border: 1px solid #9c4342;}
 .block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
+
+/***following changes are done by sudhanshu*/
+#ie7message{
+    display:none;
+}
