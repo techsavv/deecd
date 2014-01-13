@@ -2078,5 +2078,12 @@ text-decoration: none;
 .course-content ul.topics{border: 1px solid #9c4342;}
 .block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
 
+/**
+*following changes are done by sudhanshu
+*
+*/
+#ie7message{
+display:none;
+}
 
 
