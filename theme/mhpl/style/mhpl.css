@@ -1530,7 +1530,7 @@ img.profilepicture
 }
  
 .nav-tabs>li>a {
-    color: #fff !important;
+    color: #F6F2DF !important;
     cursor: default;
     font-family: Signika Negative;
     font-size: 14pt;
@@ -1539,6 +1539,7 @@ img.profilepicture
     background-color: #B498B7 !important;
     border-bottom-color: #9C4342 !important;
     border-bottom-width: 2px;
+    line-height: 20px;
 }
 /* @end */
 
