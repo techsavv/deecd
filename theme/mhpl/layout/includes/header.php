@@ -51,8 +51,7 @@ $checkuseragent = '';
 if (!empty($_SERVER['HTTP_USER_AGENT'])) {
     $checkuseragent = $_SERVER['HTTP_USER_AGENT'];
 }
-/* - Commenting out this line to remove message at top of browser
-echo $checkuseragent;*/
+//echo $checkuseragent;
 ?>
 
 

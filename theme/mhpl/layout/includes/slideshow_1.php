@@ -1,5 +1,6 @@
 <?php 
-    if ($hasslideshow && !strpos($checkuseragent, 'MSIE 7')) { // Hide slideshow for IE7
+  //  if ($hasslideshow && !strpos($checkuseragent, 'MSIE 7')) { // Hide slideshow for IE7
+    if ($hasslideshow) { // Hide slideshow for IE7
 ?>
     <div id="da-slider" class="da-slider <?php echo $hideonphone ?>" style="background-position: 8650% 0%;">
 
@@ -13,7 +14,7 @@
                 <a href="<?php echo $slide1url ?>" class="da-link"><?php echo get_string('readmore','theme_mhpl')?></a>
             <?php } ?>
             <?php if ($hasslide1image) { ?>
-            <div class="da-img"><img src="<?php //echo $slide1image ?>" alt="<?php //echo $slide1 ?>"></div>
+            <div class="da-img"><img src="<?php echo $slide1image ?>" alt="<?php echo $slide1 ?>"></div>
             <?php } ?>
         </div>
     <?php } ?>
@@ -29,7 +30,7 @@
                 <a href="<?php echo $slide2url ?>" class="da-link"><?php echo get_string('readmore','theme_mhpl')?></a>
             <?php } ?>
             <?php if ($hasslide2image) { ?>
-            <div class="da-img"><img src="<?php //echo $slide2image ?>" alt="<?php //echo $slide2 ?>"></div>
+            <div class="da-img"><img src="<?php echo $slide2image ?>" alt="<?php echo $slide2 ?>"></div>
             <?php } ?>
         </div>
     <?php } ?>
@@ -74,4 +75,8 @@
         </nav>
         
     </div>
+<?php } else { ?>
+    <div class="da-slide">            
+            <div class="da-img"><img src="<?php //echo $slide4image ?>" alt="<?php //echo $slide4 ?>"></div>
+        </div>
 <?php } ?>
