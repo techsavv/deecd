@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    color: #027e8e;
+    color: #7D5A80;
 }
 
 h3 {
@@ -36,12 +36,12 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #037F8F !important;
+    color: #9C4342 !important;
 }
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 .courseHeader{
-    background:#027E8D;
+    background:#B498B7;
     margin-bottom: 5px;
 }
 .courseHeaderImg{
