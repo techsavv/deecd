@@ -13,7 +13,7 @@
                 <a href="<?php echo $slide1url ?>" class="da-link"><?php echo get_string('readmore','theme_mhpl')?></a>
             <?php } ?>
             <?php if ($hasslide1image) { ?>
-            <div class="da-img"><img src="<?php echo $slide1image ?>" alt="<?php echo $slide1 ?>"></div>
+            <div class="da-img"><img src="<?php //echo $slide1image ?>" alt="<?php //echo $slide1 ?>"></div>
             <?php } ?>
         </div>
     <?php } ?>
