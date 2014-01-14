@@ -1230,6 +1230,7 @@ color: #bfd8dc !important;
 .helplink {
     float: right;
     padding-right: 20px;
+    font-size: 10pt;
 }
 
 .helplink a {
@@ -1959,7 +1960,8 @@ table.calendarmonth.calendartable {
 
 /*KA*CHANGE HOVER STYLE ON TEXT*/
     a:hover {
-        color: #027E8E !important;
+        color: #CC8686 !important;
+        text-decoration: none;
     }
 /*END CHANGE*/
 
