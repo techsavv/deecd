@@ -2086,4 +2086,8 @@ text-decoration: none;
 display:none;
 }
 
-
+/*KA - change button colour throughout site*/
+#id_submitbutton {
+    background-image: linear-gradient(to bottom,#9C4342,#9C4342);
+}
+/*end change*/
