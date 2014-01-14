@@ -833,7 +833,7 @@ table#greyboxleft h2 {
 .block h3.main {
  /**KA**Enlarged and changed colour of font in block headers*/   
     font-size: 14pt;
-    color: #027E8E;
+    color: #7D5A80;
 /***END CHANGE*/
     line-height: 26px;
     margin-bottom: 5px;
@@ -846,10 +846,10 @@ table#greyboxleft h2 {
 }
 .block .header .title h2:before {
     font-family: FontAwesome;
-    font-size: 1.65em;
+    font-size: 20pt;
     margin-right: .3em;
     content: "\f0c9";
-	color:#027E8E !important;
+	color:#7D5A80 !important;
 }
 
 .block .header .title {
