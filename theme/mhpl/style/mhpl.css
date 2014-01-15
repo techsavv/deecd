@@ -2060,6 +2060,15 @@ text-decoration: none;
 #page-mod-quiz-attempt .submitbtns, #page-mod-quiz-review .submitbtns {
     text-align: right !important;
 }
+
+.quizattemptsummary .lastcol{
+    display: none;
+}
+
+.quizgradefeedback {
+    text-align: left !important;
+}
+
 /*end change*/
 
 /*KA - PAGE RESOURCE*/
