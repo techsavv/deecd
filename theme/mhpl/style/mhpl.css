@@ -1716,6 +1716,7 @@ img.profilepicture
 .questionbankwindow.block .header .title {
     border-bottom: 0px none;
 }
+
 /* @end */
 
 /* @group Forms */
@@ -2051,6 +2052,10 @@ text-decoration: none;
 #page-mod-quiz-attempt .courseHeader {
     display: none;
 }
+
+.box.quizinfo {
+    display: none;
+}
 /*end change*/
 
 /*KA - PAGE RESOURCE*/
@@ -2090,6 +2095,13 @@ display:none;
 
 /*KA - change button colour throughout site*/
 #id_submitbutton {
-    background-image: linear-gradient(to bottom,#9C4342,#9C4342);
+    background-image: linear-gradient(to bottom,#9C4342,#9C4342) !important;
 }
 /*end change*/
+
+/*KA - increase margin under section title*/
+.single-section h3.sectionname {
+    margin-bottom: 20px;
+}
+/*end change*/
+
