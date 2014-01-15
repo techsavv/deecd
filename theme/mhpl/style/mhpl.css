@@ -2054,7 +2054,11 @@ text-decoration: none;
 }
 
 .box.quizinfo {
-    display: none;
+    display: none !important;
+}
+
+#page-mod-quiz-attempt .submitbtns, #page-mod-quiz-review .submitbtns {
+    text-align: right !important;
 }
 /*end change*/
 
