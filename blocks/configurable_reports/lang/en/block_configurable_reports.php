@@ -40,6 +40,7 @@ $string['field'] = "Field";
 $string['typeofreport'] = "Type of report";
 $string['enablejsordering'] = "Enable JavaScript ordering";
 $string['enablejspagination'] = "Enable JavaScript Pagination";
+$string['export_csv'] = "Export in CSV format";
 $string['export_ods'] = "Export in ODS format";
 $string['export_xls'] = "Export in XLS format";
 $string['viewreport'] = "View report";
@@ -303,12 +304,14 @@ $string['template_marks_help'] = '<p>You can use any of this replacement marks:<
 
 </ul>';
 
-$string['conditionexpr_conditions'] = $string['conditionexpr'];
+
+
+$string['conditionexpr_conditions'] = 'Condition';
 $string['conditionexpr_conditions_help'] = '<p>You can combine conditions using a logic expression</p>
 
-<p>Enter a valid logic expression with these operators: and, or, nor.</p>';
+<p>Enter a valid logic expression with these operators: and, or.</p>';
 
-$string['conditionexpr_permissions'] = $string['conditionexpr'];
+$string['conditionexpr_permissions'] = 'Condition';
 $string['conditionexpr_permissions_help'] = '<p>You can combine conditions using a logic expression</p>
 
 <p>Enter a valid logic expression with these operators: and, or.</p>';
@@ -317,20 +320,20 @@ $string['reporttable_help'] = '<p>This is the width of the table that will displ
 
 <p>If you use a Template this option has no effect</p>';
 
-$string['comp_calcs'] = $string['calcs'];
+$string['comp_calcs'] = 'Calcs';
 $string['comp_calcs_help'] = '<p>Here you can add calculations for columns, i.e: average of number of users enrolled in courses</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
 
-$string['comp_calculations'] = $string['calcs'];
+$string['comp_calculations'] = 'Calcs';
 $string['comp_calculations_help'] = '<p>Here you can add calculations for columns, i.e: average of number of users enrolled in courses</p>';
-$string['comp_conditions'] = $string['conditions'];
+$string['comp_conditions'] = 'Conditions';
 $string['comp_conditions_help'] = '<p>Here you can define the conditions (i.e, only courses from this category, only users from Spain, etc.. </p>
 
 <p>You can add a logical expression if you are using more than one condition.</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_customsql'] = $string['customsql'];
+$string['comp_customsql'] = 'Custom SQL';
 $string['comp_customsql_help'] = '<p>Add a working SQL query. Do no use the moodle database prefix $CFG->prefix instead use "prefix_" without quotes</p>
 <p>Example: SELECT * FROM prefix_course</p>
 
@@ -342,27 +345,27 @@ $string['comp_customsql_help'] = '<p>Add a working SQL query. Do no use the mood
 
 <p>For using filters see: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Creating a SQL Report Tutorial</a></p>';
 
-$string['comp_ordering'] = $string['ordering'];
+$string['comp_ordering'] = 'Ordering';
 $string['comp_ordering_help'] = '<p>Here you can choose how to order the report using fields and directions</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_permissions'] = $string['permissions'];
+$string['comp_permissions'] = 'Permissions';
 $string['comp_permissions_help'] = '<p>Here you can choose who can view a report.</p>
 
 <p>You can add a logical expression to calculate the final permission if you are using more than one condition.</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_plot'] = $string['plot'];
+$string['comp_plot'] = 'Plot';
 $string['comp_plot_help'] = '<p>Here you can add graphs to your report based on the report columns and values</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_template'] = $string['template'];
+$string['comp_template'] = 'Template';
 $string['comp_template_help'] = '<p>You can modify the report\'s layout by creating a template</p>
 
 <p>For creating a template see the replacemnet marks you can use in header, footer and for each report record using the help buttons or the information displayed in the same page.</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_filters'] = $string['filters'];
+$string['comp_filters'] = 'Filters';
 $string['comp_filters_help'] = '<p>Here you can choose which filters will be displayed</p>
 
 <p>A filter lets an user to choose columns from the report to filter the report results</p>
@@ -370,7 +373,7 @@ $string['comp_filters_help'] = '<p>Here you can choose which filters will be dis
 <p>For using filters if your report type is SQL see: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Creating a SQL Report Tutorial</a></p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_columns'] = $string['columns'];
+$string['comp_columns'] = 'Columns';
 $string['comp_columns_help'] = '<p>Here you can choose the different columns of your report depending on the type of report</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
@@ -427,4 +430,11 @@ Please, notice that there is a daily limit of calls to the repository.
 If the connection to the repository is not working, you can download manually here <a href="https://github.com/jleyva/moodle-configurable_reports_repository" target="_blank">https://github.com/jleyva/moodle-configurable_reports_repository</a> a report and then import it using the "Import report" feature displayed bellow
 ';
 $string['reportcreated'] = 'Report successfully created';
+$string['usersincohorts'] = 'User who are member of a/several cohorts';
+$string['usersincohorts_summary'] = 'Only the users who are members of the selected cohorts';
+$string['displayglobalreports'] = 'Display global reports';
+$string['displayreportslist'] = 'Display the reports list in the block body';
+
+$string['usercompletion'] = 'User course completion status';
+$string['usercompletionsummary'] = 'Course completion status';
 

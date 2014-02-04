@@ -22,13 +22,13 @@
   * @date: 2009
   */
 
-  function export_report($report){
-	global $DB, $CFG;
-    require_once($CFG->dirroot.'/lib/excellib.class.php');
+function export_report($report){
+    global $DB, $CFG;
+    require_once($CFG->libdir . '/csvlib.class.php');
 
     $table = $report->table;
-	$matrix = array();
-	$filename = 'report_'.(time()).'.xls';
+    $matrix = array();
+    $filename = 'report';
 
     if (!empty($table->head)) {
         $countcols = count($table->head);
@@ -47,23 +47,12 @@
         }
     }
 
-    $downloadfilename = clean_filename($filename);
-    /// Creating a workbook
-    $workbook = new MoodleExcelWorkbook("-");
-    /// Sending HTTP headers
-    $workbook->send($downloadfilename);
-    /// Adding the worksheet
-    $myxls = $workbook->add_worksheet($filename);
+    $csvexport = new csv_export_writer();
+    $csvexport->set_filename($filename);
 
     foreach($matrix as $ri=>$col){
-        foreach($col as $ci=>$cv){
-            $myxls->write_string($ri,$ci,$cv);
-        }
+        $csvexport->add_data($col);
     }
-
-    $workbook->close();
+    $csvexport->download_file();
     exit;
-
-
 }
-
