@@ -41,8 +41,8 @@ a {
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 .courseHeader{
-    background:#027E8D;
     margin-bottom: 20px;
+    background:url('http://deecdvic.tech-savvy.com.au/theme/mcb/pix/courseheaderbg.png') repeat-x top right;
 }
 .courseHeaderImg{
     margin-left:auto;
