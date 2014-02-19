@@ -40,6 +40,7 @@ a {
 }
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
+/**KA-ADDED HORIZONTAL LINES ON BACKGROUND OF COURSE HEADER*/
 .courseHeader{
     margin-bottom: 20px;
     background:url('http://deecd.tech-savvy.com.au/theme/mcb/pix/courseheaderbg.png') repeat-x top right;
