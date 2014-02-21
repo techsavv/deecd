@@ -2045,13 +2045,33 @@ text-decoration: none;
 
 /*KA - QUIZ FORMATTING*/
 .que .formulation {
-    background-color: #ECE5ED;
-    border-color: #B498B7;
+    background-color: #F7DABF;
+    border-color: #DE6B00;
 }
 
 #page-mod-quiz-attempt .courseHeader {
     display: none;
 }
+
+.box.quizinfo {
+    display: none !important;
+}
+
+#page-mod-quiz-attempt .submitbtns, #page-mod-quiz-review .submitbtns {
+    text-align: right !important;
+}
+
+.quizattemptsummary .lastcol{
+    display: none;
+}
+
+.quizgradefeedback {
+    text-align: left !important;
+}
+
+/*end change*/
+
+
 /*end change*/
 
 /*KA - PAGE RESOURCE*/
