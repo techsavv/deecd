@@ -37,8 +37,8 @@ if (APPLICATION_ENV === 'production') {
   $CFG->dataroot  = '/home/techsavv/subdomains/data/moodle-deecd';
 }
 else {
-  $CFG->wwwroot   = 'http://deecd.damiandennis.com';
-  $CFG->dataroot  = '/home/deecd/moodle-deecd';
+  $CFG->wwwroot   = 'http://deecd.sandeepgill.com.au';
+  $CFG->dataroot  = '/var/www/TECH_SAVVY/DEECD_DEV';
 }
 
 $CFG->admin     = 'admin';
