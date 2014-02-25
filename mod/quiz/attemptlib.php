@@ -1127,7 +1127,7 @@ class quiz_attempt {
      * this page to be output as only a fragment.
      * @return string the URL to review this attempt.
      */
-    public function review_url($slot = null, $page = -1, $showall = false, $thispage = -1) {
+    public function review_url($slot = null, $page = -1, $showall = true, $thispage = -1) {
         return $this->page_and_question_url('review', $slot, $page, $showall, $thispage);
     }
 
@@ -1596,8 +1596,10 @@ class quiz_attempt {
                     array('attempt' => $this->attempt->id));
             if ($showall) {
                 $url->param('showall', 1);
-            } else if ($page > 0) {
-                $url->param('page', $page);
+            } else {
+                $url->param('showall',0);
+                if($page > 0)
+                    $url->param('page', $page);
             }
             return $url;
         }

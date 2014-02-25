@@ -32,7 +32,7 @@ require_once($CFG->dirroot . '/mod/quiz/report/reportlib.php');
 
 $attemptid = required_param('attempt', PARAM_INT);
 $page      = optional_param('page', 0, PARAM_INT);
-$showall   = optional_param('showall', 0, PARAM_BOOL);
+$showall   = optional_param('showall', 1, PARAM_BOOL);
 
 $url = new moodle_url('/mod/quiz/review.php', array('attempt'=>$attemptid));
 if ($page !== 0) {
