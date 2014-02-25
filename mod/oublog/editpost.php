@@ -155,6 +155,7 @@ if (!$frmpost = $mform->get_data()) {
         $PAGE->navbar->add(format_string($oubloginstance->name), $viewurl);
     }
     $PAGE->navbar->add($post->general);
+    $PAGE->set_pagelayout('newblogpost');
     $PAGE->set_title(format_string($oublog->name));
     $PAGE->set_heading(format_string($course->fullname));
     echo $OUTPUT->header();

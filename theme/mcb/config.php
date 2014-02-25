@@ -83,6 +83,12 @@ $THEME->layouts = array(
         'regions' => array('side-pre', 'side-post', 'footer-left', 'footer-middle', 'footer-right'),
         'defaultregion' => 'side-post',
     ),
+    //This has been added for edit blogpost page
+    'newblogpost' => array(
+        'file' => 'editblogpost.php',
+        'regions' => array('side-pre', 'side-post', 'footer-left', 'footer-middle', 'footer-right'),
+        'defaultregion' => 'side-post',
+    ),
     // Server administration scripts.
     'admin' => array(
         'file' => 'columns2.php',
