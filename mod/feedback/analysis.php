@@ -145,7 +145,6 @@ if ($check_anonymously) {
 
         //get the class of item-typ
         $itemobj = feedback_get_item_class($item->typ);
-
         $itemnr++;
         if ($feedback->autonumbering) {
             $printnr = $itemnr.'.';
