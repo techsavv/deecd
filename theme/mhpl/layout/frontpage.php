@@ -44,6 +44,12 @@ $hasslide4url = (!empty($PAGE->theme->settings->slide4url));
 $hasslideshow = ($hasslide1||$hasslide2||$hasslide3||$hasslide4);
 $hasanalytics = (empty($PAGE->theme->settings->useanalytics)) ? false : $PAGE->theme->settings->useanalytics;
 
+$slidecount = 0;
+if($hasslide1image)$slidecount++;
+if($hasslide2image)$slidecount++;
+if($hasslide3image)$slidecount++;
+if($hasslide4image)$slidecount++;
+    
 $hasalert1 = (empty($PAGE->theme->settings->enable1alert)) ? false : $PAGE->theme->settings->enable1alert;
 $hasalert2 = (empty($PAGE->theme->settings->enable2alert)) ? false : $PAGE->theme->settings->enable2alert;
 $hasalert3 = (empty($PAGE->theme->settings->enable3alert)) ? false : $PAGE->theme->settings->enable3alert;
