@@ -2132,3 +2132,11 @@ text-decoration: none;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
+
+#mod_quiz_navblock .header .title h2:before {
+    font-family: FontAwesome;
+    font-size: 20pt;
+    margin-right: .3em;
+    content: "\f047";
+	color:#DE6B00 !important;
+}
