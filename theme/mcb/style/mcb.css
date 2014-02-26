@@ -2165,3 +2165,10 @@ text-decoration: none;
     font-size: 1.4em;
     margin-top: 20%;
 }
+
+.block_course_participants .header .title h2:before {
+    font-family: FontAwesome;
+    font-size: 20pt;
+    margin-right: .3em;
+    content: "\f0c0";
+}
