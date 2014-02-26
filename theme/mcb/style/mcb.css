@@ -2108,3 +2108,10 @@ text-decoration: none;
     display:none;
 }
 .block_html .content .no-overflow p span i.fa{color: #DE6B00; font-size: x-large;}  
+/*SG: for quiz navigation background colors*/
+.path-mod-quiz .qnbutton.correct, .formulation .correct {
+    background-color: #dff0d8 !important;
+}
+.path-mod-quiz .qnbutton.incorrect, .formulation .incorrect {
+    background-color: #f2dede !important;
+}

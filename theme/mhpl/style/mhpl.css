@@ -2118,3 +2118,10 @@ display:none;
 }
 /*end change*/
 
+/*SG: for quiz navigation background colors*/
+.path-mod-quiz .qnbutton.correct, .formulation .correct {
+    background-color: #dff0d8 !important;
+}
+.path-mod-quiz .qnbutton.incorrect, .formulation .incorrect {
+    background-color: #f2dede !important;
+}
