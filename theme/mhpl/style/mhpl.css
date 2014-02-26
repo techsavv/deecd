@@ -2094,7 +2094,7 @@ text-decoration: none;
 .block_login .footer div.lost_pass a:hover{ text-decoration:underline !important;}
 .block_login .footer div.lost_pass{float:left; margin-left:-23px; margin-top:33px;}
 .block_course_participants .content ul li div.c1>img{display:none;}
-.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block;}
+.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block;font-size: x-large; color:#DE6B00;}
 .course-content ul.topics{border: 1px solid #9c4342;}
 .block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
 
