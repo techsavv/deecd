@@ -2175,6 +2175,10 @@ display:none;
     margin-top: 20%;
 }
 
+.pagelayout-redirect #page {
+    background: none;
+}
+
 .block_course_participants .header .title h2:before {
     font-family: FontAwesome;
     font-size: 20pt;
