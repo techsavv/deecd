@@ -94,8 +94,6 @@ if ($hasslide2) {
 }
 if ($hasslide2image) {
     $slide2image = $PAGE->theme->setting_file_url('slide2image', 'slide2image');
-    echo $slide2image;
-    die;
 }
 if ($hasslide2caption) {
     $slide2caption = $PAGE->theme->settings->slide2caption;
