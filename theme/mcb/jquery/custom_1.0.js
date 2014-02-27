@@ -6,7 +6,7 @@ $(function() {
 	});
 	
 	$('#da-slider').cslider({
-		autoplay	: true,
+		autoplay: true,
 		interval : 6000
 	});
 });
