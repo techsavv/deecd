@@ -1,4 +1,0 @@
-[29-Dec-2013 03:13:24 UTC] PHP Notice:  Use of undefined constant MDL_PERF_TEST - assumed 'MDL_PERF_TEST' in /home/techsavv/subdomains/deecd/lib/setuplib.php on line 1818
-[29-Dec-2013 03:13:24 UTC] PHP Notice:  Trying to get property of non-object in /home/techsavv/subdomains/deecd/lib/moodlelib.php on line 8809
-[29-Dec-2013 03:13:24 UTC] PHP Notice:  Undefined offset: 1 in /home/techsavv/subdomains/deecd/lib/moodlelib.php on line 8047
-[29-Dec-2013 03:13:24 UTC] PHP Notice:  Trying to get property of non-object in /home/techsavv/subdomains/deecd/lib/moodlelib.php on line 8816
