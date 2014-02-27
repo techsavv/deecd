@@ -170,6 +170,9 @@ abstract class page_wiki {
 
         if (!has_capability('mod/wiki:editpage', $PAGE->context)){
             unset($this->tabs['edit']);
+            /*SG: Remove tabs for learners*/
+            unset($this->tabs['map']);
+            unset($this->tabs['files']);
         }
 
         if ($groupmode and $groupmode == VISIBLEGROUPS) {

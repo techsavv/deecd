@@ -45,6 +45,8 @@ $THEME->plugins_exclude_sheets = array(
     ),
 );
 
+$THEME->regions = array();
+
 $THEME->layouts = array(
     // Front page.
     'frontpage' => array(

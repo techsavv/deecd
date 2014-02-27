@@ -83,18 +83,23 @@ echo $OUTPUT->doctype() ?>
             echo $OUTPUT->course_content_footer();
             ?>
         </section>
+        <div class="block-region">
+            <div class="region-content">
         <?php
         $classextra = '';
         if ($left) {
             $classextra = ' desktop-first-column';
         }
-        echo $OUTPUT->blocks('side-pre', 'span3'.$classextra);
+            echo $OUTPUT->blocks('side-pre', 'span3'.$classextra);
+        
         ?>
+            </div>
+                </div>
     </div>
     
     <!-- End Main Regions -->
 
-    <a href="#top" class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i><p><?php print_string('backtotop', 'theme_essential'); ?></p></a>
+    <a href="#top" class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i><p><?php print_string('backtotop', 'theme_mcb'); ?></p></a>
 
 	<footer id="page-footer" class="container-fluid">
 		<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
