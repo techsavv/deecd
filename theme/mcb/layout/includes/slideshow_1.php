@@ -1,5 +1,5 @@
 <?php 
-  if ($hasslideshow && !strpos($checkuseragent, 'MSIE 7') && $slidecount > 1) { // Hide slideshow for IE7
+  if ($hasslideshow && $slidecount > 1) { // Hide slideshow for IE7
 ?>
     <div id="da-slider" class="da-slider <?php echo $hideonphone ?>" style="background-position: 8650% 0%;">
 
@@ -86,7 +86,7 @@
     <?php if ($hasslide2image) { ?>
         <div class="da-slide">
             
-            <div class="da-img"><img src="<?php //echo $slide2image ?>" alt="<?php //echo $slide2 ?>"></div>
+            <div class="da-img"><img src="<?php echo $slide2image ?>" alt="<?php //echo $slide2 ?>"></div>
             
         </div>
     <?php } ?>
