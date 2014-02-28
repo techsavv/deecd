@@ -2168,11 +2168,13 @@ display:none;
 }
 
 .pagelayout-redirect .alert-info {
-    color: #3a87ad;
+    font-family: "Signika Negative",sans-serif;
+    color: #027e8e;
     background-color: #BFD8DC;
     border-color: #bce8f1;
-    font-size: 1.4em;
+    font-size: 28px;
     margin-top: 20%;
+    text-align: center;
 }
 
 .pagelayout-redirect #page {
