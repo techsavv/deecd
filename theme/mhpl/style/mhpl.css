@@ -1574,7 +1574,10 @@ img.profilepicture
     padding-bottom: 7px;
 }
 
-.course-content .section li.activity {
+/**
+ * SG - Updated due to activity issues
+ */
+.course-content .section li.activity, .course-content .section li.activity.modtype_label.label {
 	margin-bottom: 5px;
 	padding-top: 7px;
 	padding-bottom: 7px;
@@ -2186,4 +2189,9 @@ display:none;
     font-size: 20pt;
     margin-right: .3em;
     content: "\f0c0";
+}
+
+.course-content .section li.activity.modtype_label.label .mod-indent-outer {
+    margin-left: auto;
+    margin-right:auto;
 }
