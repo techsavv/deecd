@@ -76,7 +76,12 @@ a {
 }
  
  /* @group Font Awesome */
- 
+ /*KA - PAGE RESOURCE*/
+.modified {
+    display: none;
+}
+/*end change*/
+
  .fa {
  	font-style: normal !important;
  }
