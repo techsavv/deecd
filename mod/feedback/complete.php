@@ -347,7 +347,7 @@ if ($feedback_can_submit) {
         $params = array('userid' => $USER->id, 'feedback' => $feedback->id);
         if ($multiple_count = $DB->count_records('feedback_tracking', $params)) {
             echo $OUTPUT->box_start('mdl-align');
-            echo '<a href="'.$analysisurl->out().'">';
+            echo '<button type="button" onclick=window.open("'.$analysisurl->out().'","_self") >';
             echo get_string('completed_feedbacks', 'feedback').'</a>';
             echo $OUTPUT->box_end();
         }
