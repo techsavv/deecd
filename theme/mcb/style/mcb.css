@@ -2189,3 +2189,15 @@ text-decoration: none;
     margin-left: auto;
     margin-right:auto;
 }
+
+/* KA - ACTIVITY-SPECIFIC CSS*/
+
+/* KA - Hide 'visual summary' buttons from the survey provided to give access to the MCB Offline resources'*/
+.cmid-96 .boxaligncenter {
+    display: none;
+}
+
+.cmid-96 .box .generalbox .boxaligncenter .boxwidthwide .button {
+    display:none;
+}
+/*end changes*/
