@@ -400,7 +400,7 @@ if ($feedback_can_submit) {
                 }
             }
         }
-        echo '<button onclick="window.open(\''.$CFG->wwwroot.'/mod/feedback/analysis.php?id='.$cm->id.'\', \'_self\')" type="button" style="display:block; margin-left:auto; margin-right:auto;">View a visual summary of survey responses</button>';
+        echo $OUTPUT->continue_button($url);
     } else {
         if (isset($savereturn) && $savereturn == 'failed') {
             echo $OUTPUT->box_start('mform error');
