@@ -1591,6 +1591,8 @@ img.profilepicture
 }
 .course-content .section .activity a:hover{ text-decoration:none;}
 
+.section .activity .contentwithoutlink {display:block !important;}
+
 .instancename {
     color: #5D5D5D;
 }

@@ -1583,6 +1583,9 @@ img.profilepicture
 	padding-bottom: 7px;
 }
 .course-content .section .activity a:hover{ text-decoration:none;}
+
+.section .activity .contentwithoutlink {display:block !important;}
+
 .course-content ul.topics {
 	border: 1px solid #9c4342;
 }
