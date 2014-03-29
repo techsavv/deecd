@@ -5,16 +5,16 @@ global $CFG;
 $CFG = new stdClass();
 
 defined('APPLICATION_ENV')
-|| define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
+|| define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'development'));
 
 defined('DB_USER')
-|| define('DB_USER', (getenv('DB_USER') ? getenv('DB_USER') : 'techsavv_moodle'));
+|| define('DB_USER', (getenv('DB_USER') ? getenv('DB_USER') : 'globitow_moodle'));
 
 defined('DB_PASSWORD')
 || define('DB_PASSWORD', (getenv('DB_PASSWORD') ? getenv('DB_PASSWORD') : 'T3chS@vvy!'));
 
 defined('DB_NAME')
-|| define('DB_NAME', (getenv('DB_NAME') ? getenv('DB_NAME') : 'techsavv_moodle2'));
+|| define('DB_NAME', (getenv('DB_NAME') ? getenv('DB_NAME') : 'globitow_moodle2'));
 
 defined('DB_HOST')
 || define('DB_HOST', (getenv('DB_HOST') ? getenv('DB_HOST') : 'localhost'));
@@ -37,8 +37,8 @@ if (APPLICATION_ENV === 'production') {
   $CFG->dataroot  = '/home/techsavv/subdomains/data/moodle-deecd';
 }
 else {
-  $CFG->wwwroot   = 'http://deecd.damiandennis.com';
-  $CFG->dataroot  = '/home/deecd/moodle-deecd';
+  $CFG->wwwroot   = 'http://deecd.techsavvysolutions.com.au';
+  $CFG->dataroot  = '/home/globitow/data/deecd/moodledata';
 }
 
 $CFG->admin     = 'admin';
