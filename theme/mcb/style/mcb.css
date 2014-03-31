@@ -1,6 +1,6 @@
 /*
  * @author    Julian Ridden
- * @package   theme_essential
+ * @package   theme_esse    ntial
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
  
@@ -43,7 +43,7 @@ a {
 /**KA-ADDED HORIZONTAL LINES ON BACKGROUND OF COURSE HEADER*/
 .courseHeader{
     margin-bottom: 20px;
-    background:url('http://deecd.tech-savvy.com.au/theme/mcb/pix/courseheaderbg.png') repeat-x top right;
+    background:url([[pix:theme|courseheaderbg]]) repeat-x top right;
 }
 .courseHeaderImg{
     margin-left:auto;
@@ -83,7 +83,7 @@ a {
 /*end change*/
 
  .fa {
- 	font-style: normal !important;
+    font-style: normal !important;
  }
  
  @font-face {
@@ -213,7 +213,7 @@ a.instagram .fa-stack,
 a.vk .fa-stack,
 a.skype .fa-stack,
 a.website .fa-stack {
-	margin-top: -4px;
+    margin-top: -4px;
 }
 
 a.facebook:hover, a.facebook:focus {
@@ -288,8 +288,8 @@ ul.socials {
     padding: 0px;
     margin: 0px;
     margin-top: 8px;
-	display:inline;
-	float:left;
+    display:inline;
+    float:left;
 }
 
 /* @end */
@@ -310,11 +310,11 @@ ul.socials {
 .dropdown [class^="fa fa-"] {
     font-size: 1.1em;
     margin-right: 5px;
-    vertical-align: middle;	
+    vertical-align: middle; 
 }
 
 .open > .dropdown-menu {
-	overflow: visible;
+    overflow: visible;
 }
 /* @end */
 
@@ -413,9 +413,9 @@ ul.breadcrumb li:last-child:after {
 }
 
 div.mdl-align.title {
-	text-align: left;
-	border-bottom: 1px solid #e1e1e1;
-	margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 15px;
 }
 
 .course-content ul.topics li.section.main.clearfix.current {
@@ -454,70 +454,70 @@ h2.pagetitle span {
 /* @group Course Footer */
 
 #section_footer {
-	padding:2em 0;
-	color: [[setting:themecolor]];
-	line-height:1.5; 
-	clear:both;
+    padding:2em 0;
+    color: [[setting:themecolor]];
+    line-height:1.5; 
+    clear:both;
 }
 #section_footer a{
-	font-style:normal;
-	text-decoration:none;
+    font-style:normal;
+    text-decoration:none;
 }
 
 #previous_section, #next_section {
-	width:48%;
-	display:block; 
+    width:48%;
+    display:block; 
 }
 
 #next_section {
-	text-align:right;
-	float:right;
+    text-align:right;
+    float:right;
 }
 
 #previous_section {
-	float:left;
-	text-align:left;
+    float:left;
+    text-align:left;
 }
 
 .nav_guide { 
 letter-spacing:0.1em;
-	text-transform:uppercase;
-	font-style:normal;
-	color:#e4a82a;
+    text-transform:uppercase;
+    font-style:normal;
+    color:#e4a82a;
 }
 .nav_icon {
-	color: [[setting:themecolor]];
-	padding:0.3em;
-	width:8.3%;
-	text-align:center;
+    color: [[setting:themecolor]];
+    padding:0.3em;
+    width:8.3%;
+    text-align:center;
 }
 
 .nav_icon:hover {
-	color: [[setting:themehovercolor]];
+    color: [[setting:themehovercolor]];
 }
 
 #next_section .nav_icon {
-	float:right;
-	margin-left:0.3em;
-	border-left:1px solid #eee;
-	font-size:2em;
+    float:right;
+    margin-left:0.3em;
+    border-left:1px solid #eee;
+    font-size:2em;
 }
 
 #next_section .text{
-	width:74.05%;
-	float:right;
+    width:74.05%;
+    float:right;
 }
 
 #previous_section .nav_icon {
-	float:left;
-	margin-right:0.3em;
-	border-right:1px solid #eee;
-	font-size:2em;
+    float:left;
+    margin-right:0.3em;
+    border-right:1px solid #eee;
+    font-size:2em;
 }
 
 #previous_section .text{
-	width:74.05%;
-	float:left;
+    width:74.05%;
+    float:left;
 }
 
 /* @end */
@@ -848,14 +848,14 @@ table#greyboxleft h2 {
     padding: 0px;
 }
 .block_html .header .title h2#instance-11-header:before {
-	content: "\f059";
+    content: "\f059";
 }
 .block .header .title h2:before {
     font-family: FontAwesome;
     font-size: 20pt;
     margin-right: .3em;
     content: "\f0c9";
-	color:#DE6B00 !important;
+    color:#DE6B00 !important;
 }
 
 .block .header .title {
@@ -1414,7 +1414,7 @@ color: #bfd8dc !important;
 }
 
 .path-grade-report-grader table {
-	background: transparent;
+    background: transparent;
 }
 
     
@@ -1585,9 +1585,9 @@ img.profilepicture
  * SG - Updated due to activity issues
  */
 .course-content .section li.activity, .course-content .section li.activity.modtype_label.label {
-	margin-bottom: 5px;
-	padding-top: 7px;
-	padding-bottom: 7px;
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .course-content .section .activity a:hover{ text-decoration:none;}
 
@@ -1905,31 +1905,31 @@ table#user-grades th.userreport.c1 {
 .minicalendar .calendar_event_course,
 .minicalendar .calendar_event_group,
 .minicalendar .calendar_event_user {
-	border-radius: 50px;
+    border-radius: 50px;
 }
 
 .calendar-event-panel {
-	background: #fff;
-	border: 1px solid #e1e1e1;
-	border-radius: 5px;
-	padding-bottom: 10px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
 h2.eventtitle {
-	font-size: 1.25em;
-	border-bottom: 1px solid #e1e1e1;
-	line-height: 20px;
-	padding-bottom: 10px;
+    font-size: 1.25em;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 20px;
+    padding-bottom: 10px;
 }
 
 .minicalendar th, .block .minicalendar td {
-	padding: 5px 0px;
-	border: 1px dotted #e1e1e1;
+    padding: 5px 0px;
+    border: 1px dotted #e1e1e1;
 }
 
 table.calendarmonth.calendartable {
-	background: #fff;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    background: #fff;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
 
 /* @end */
@@ -2102,9 +2102,9 @@ text-decoration: none;
 
 /*bkp*/
 .variant2 .da-slide-current .da-img{
-	background-image:url([[pix:theme|Frontpage-banner2]]);
-	background-repeat:no-repeat;
-	background-size: contain;
+    background-image:url([[pix:theme|Frontpage-banner2]]);
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 .block_login .footer div.lost_pass a{ background:none !important; color: #027E8E !important;}
 .block_login .footer div.lost_pass a:hover{ text-decoration:underline !important;}
@@ -2149,7 +2149,7 @@ text-decoration: none;
     font-size: 20pt;
     margin-right: .3em;
     content: "\f047";
-	color:#DE6B00 !important;
+    color:#DE6B00 !important;
 }
 
 .path-mod-forum #region-main input[type="submit"], .path-mod-forum #id_submitbutton {
@@ -2195,6 +2195,3 @@ text-decoration: none;
     margin-left: auto;
     margin-right:auto;
 }
-
-/*FEEDBACK MODULE*/
-#page-mod-feedback-complete
