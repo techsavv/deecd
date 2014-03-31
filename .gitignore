@@ -2,3 +2,5 @@ fileupload
 Thumbs.db
 /config.php
 /nbproject/private/
+error_log
+
