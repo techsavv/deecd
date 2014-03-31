@@ -2139,17 +2139,17 @@ display:none;
 .path-mod-quiz input[type="submit"] {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-    background-color:#DE6B00;
-    *background-color:#E4862E;
-    background-image:-moz-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#E4862E));
-    background-image:-webkit-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-o-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:linear-gradient(to bottom,#DE6B00,#E4862E);
+    background-color:#9c4342;
+    *background-color:#BB5E5E;
+    background-image:-moz-linear-gradient(top,#9c4342,#BB5E5E);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#BB5E5E));
+    background-image:-webkit-linear-gradient(top,#9c4342,##BB5E5E);
+    background-image:-o-linear-gradient(top,#9c4342,#BB5E5E);
+    background-image:linear-gradient(to bottom,#9c4342,#BB5E5E);
     background-repeat:repeat-x;
     border-color:#51a351 #51a351 #387038;
     border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9c4342',endColorstr='#BB5E5E',GradientType=0);
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
@@ -2163,17 +2163,17 @@ display:none;
 .path-mod-forum #region-main input[type="submit"], .path-mod-forum #id_submitbutton {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-    background-color:#DE6B00;
-    *background-color:#E4862E;
-    background-image:-moz-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#E4862E));
-    background-image:-webkit-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-o-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:linear-gradient(to bottom,#DE6B00,#E4862E) !important;
+    background-color:#9c4342;
+    *background-color:#BB5E5E;
+    background-image:-moz-linear-gradient(top,#9c4342,#BB5E5E);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#BB5E5E));
+    background-image:-webkit-linear-gradient(top,#9c4342,##BB5E5E);
+    background-image:-o-linear-gradient(top,#9c4342,#BB5E5E);
+    background-image:linear-gradient(to bottom,#9c4342,#BB5E5E);
     background-repeat:repeat-x;
     border-color:#51a351 #51a351 #387038;
     border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9c4342',endColorstr='#BB5E5E',GradientType=0);
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
