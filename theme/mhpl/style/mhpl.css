@@ -1582,9 +1582,13 @@ img.profilepicture
 	padding-top: 7px;
 	padding-bottom: 7px;
 }
-.course-content .section .activity a:hover{ text-decoration:none;}
+.course-content .section .activity a:hover{ 
+    text-decoration:none;
+}
 
-.section .activity .contentwithoutlink {display:block !important;}
+.section .activity .contentwithoutlink {
+    display:block !important;min-width:150px;   
+}
 
 .course-content ul.topics {
 	border: 1px solid #9c4342;
@@ -1606,8 +1610,8 @@ img.profilepicture
     padding-left: 20px;
 }
 
-.section .activity .contentwithoutlink {
-    display:block !important;min-width:150px;
+.editing .section .activity .contentwithoutlink { 
+    padding-right:0px;margin-left:auto;margin-right:auto;display:block;
 }
 
 /*END CHANGE*/
