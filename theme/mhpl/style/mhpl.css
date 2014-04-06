@@ -1581,10 +1581,16 @@ img.profilepicture
 	padding-top: 7px;
 	padding-bottom: 7px;
 }
-.course-content .section .activity a:hover{ text-decoration:none;}
+.course-content .section .activity a:hover{ 
+    text-decoration:none;
+}
 
 .section .activity .contentwithoutlink {
+<<<<<<< HEAD
     display:block !important;min-width:150px;
+=======
+    display:block !important;min-width:150px;   
+>>>>>>> develop
 }
 
 .course-content ul.topics {
