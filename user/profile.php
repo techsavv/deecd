@@ -246,15 +246,20 @@ echo '</div>';
 // Print all the little details in a list
 
 echo html_writer::start_tag('dl', array('class'=>'list'));
-//if (!isset($hiddenfields['country']) && $user->country) {
-//    echo html_writer::tag('dt', get_string('country'));
-//   echo html_writer::tag('dd', get_string($user->country, 'countries'));
-//}
 
-if (!isset($hiddenfields['city']) && $user->city) {
-    echo html_writer::tag('dt', get_string('city'));
-    echo html_writer::tag('dd', $user->city);
+/// Print the Custom User Fields
+profile_display_fields($user->id);
+
+
+if (!isset($hiddenfields['country']) && $user->country) {
+    echo html_writer::tag('dt', get_string('country'));
+    echo html_writer::tag('dd', get_string($user->country, 'countries'));
 }
+
+//if (!isset($hiddenfields['city']) && $user->city) {
+//    echo html_writer::tag('dt', get_string('city'));
+//    echo html_writer::tag('dd', $user->city);
+//}
 
 if (isset($identityfields['address']) && $user->address) {
     echo html_writer::tag('dt', get_string('address'));
@@ -341,8 +346,8 @@ if ($user->msn && !isset($hiddenfields['msnid'])) {
     echo html_writer::tag('dd', s($user->msn));
 }
 
-/// Print the Custom User Fields
-profile_display_fields($user->id);
+/// Print the Custom User Fields - Moved above default fields
+//profile_display_fields($user->id);
 
 
 if (!isset($hiddenfields['mycourses'])) {
