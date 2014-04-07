@@ -2208,3 +2208,18 @@ display:none;
     margin-left: auto;
     margin-right:auto;
 }
+
+/* OUBLOG - theme customisations */
+
+#page-mod-oublog-editpost #id_message {
+    width: 600px;
+    height: 200px;
+}
+
+#page-mod-oublog-editpost #id_title {
+    width: 600px;
+}
+
+#fitem_id_tags {
+    display: none;
+}
