@@ -2204,19 +2204,11 @@ display:none;
     margin-right:auto;
 }
 
-<<<<<<< HEAD
-//* OUBLOG - theme customisations *// 
-
-#page-mod-oublog-editpost #id_message {
-    width: 600px;
-    height: 300px;
-=======
-/* OUBLOG - theme customisations */
+/* OUBLOG - theme customisations */ 
 
 #page-mod-oublog-editpost #id_message {
     width: 600px;
     height: 200px;
->>>>>>> develop
 }
 
 #page-mod-oublog-editpost #id_title {
