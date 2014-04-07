@@ -98,7 +98,7 @@ echo $OUTPUT->doctype() ?>
                     echo $OUTPUT->main_content();
                     echo $OUTPUT->course_content_footer();
                     ?>
-                </section>
+                </section>        
                 <?php if ($hasboringlayout) { ?>
                 <?php echo $OUTPUT->blocks('side-pre', 'span4 desktop-first-column'); ?>
                 <?php } else { ?>
