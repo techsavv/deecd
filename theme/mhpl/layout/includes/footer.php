@@ -35,15 +35,15 @@ $hasfootermiddle = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->r
 $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('footer-right', $OUTPUT));
 
 ?>
-<!-->	<div class="row-fluid">
+    <div class="row-fluid">
 		<?php
-            		//echo $OUTPUT->essentialblocks($footerl, 'span4');
+            		echo $OUTPUT->mhplblocks($footerl, 'span4');
 
-            		//echo $OUTPUT->essentialblocks($footerm, 'span4');
+            		echo $OUTPUT->mhplblocks($footerm, 'span4');
 
-            		//echo $OUTPUT->essentialblocks($footerr, 'span4');
+            		echo $OUTPUT->mhplblocks($footerr, 'span4');
 		?>
- 	</div><!-->
+	</div>
 	<div class="footerlinks row-fluid">
     	<hr>
         <p class="helplink">Developed and hosted by <a href="http://www.tech-savvy.com.au">Tech-Savvy Solutions</a></p>

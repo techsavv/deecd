@@ -209,7 +209,7 @@
     * Written by G J Barnard
     */
     
-    public function essentialblocks($region, $classes = array(), $tag = 'aside') {
+    public function mhplblocks($region, $classes = array(), $tag = 'aside') {
         $classes = (array)$classes;
         $classes[] = 'block-region';
         $attributes = array(
