@@ -246,10 +246,10 @@ echo '</div>';
 // Print all the little details in a list
 
 echo html_writer::start_tag('dl', array('class'=>'list'));
-if (!isset($hiddenfields['country']) && $user->country) {
-    echo html_writer::tag('dt', get_string('country'));
-    echo html_writer::tag('dd', get_string($user->country, 'countries'));
-}
+//if (!isset($hiddenfields['country']) && $user->country) {
+//    echo html_writer::tag('dt', get_string('country'));
+//   echo html_writer::tag('dd', get_string($user->country, 'countries'));
+//}
 
 if (!isset($hiddenfields['city']) && $user->city) {
     echo html_writer::tag('dt', get_string('city'));
