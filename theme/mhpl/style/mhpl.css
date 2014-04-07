@@ -48,9 +48,10 @@ a {
     margin-left:auto;
     margin-right:auto;
     display:block;
-    /* height:133px;
-    /* can control image size here if need be
-    /*END CHANGE*/
+   /* height:133px;*/
+    /* can control image size here if need be */
+}
+/*END CHANGE*/
 
 .dir-rtl a.logo {
     display: block;
@@ -1583,17 +1584,7 @@ img.profilepicture
 }
 .course-content .section .activity a:hover{ text-decoration:none;}
 
-<<<<<<< HEAD
-.section .activity .contentwithoutlink {
-<<<<<<< HEAD
-    display:block !important;min-width:150px;
-=======
-    display:block !important;min-width:150px;   
->>>>>>> develop
-}
-=======
 .section .activity .contentwithoutlink {display:block !important;min-width:150px;}
->>>>>>> develop
 
 .course-content ul.topics {
 	border: 1px solid #9c4342;
