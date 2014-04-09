@@ -1209,6 +1209,8 @@ table#greyboxleft h2 {
 
 /* @group Footer */
 
+/* @group Footer */
+
 #page-footer {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -1234,7 +1236,10 @@ color: #bfd8dc !important;
 }
 
 .helplink a {
-    color: orange !important;
+    color: #FFFFFF  !important;
+}
+.helplink a:hover{
+    color: #8E8E8E !important
 }
 
 #page-footer .footnote a {
@@ -1405,7 +1410,6 @@ color: #bfd8dc !important;
 #page-footer .block_rss_client .footer a {
         color: #fff;
 }
-
 .path-grade-report-grader table {
 	background: transparent;
 }
@@ -1971,7 +1975,7 @@ table.calendarmonth.calendartable {
 
 /*KA*CHANGE HOVER STYLE ON TEXT*/
     a:hover {
-        color: #CC8686 !important;
+        color: #CC8686;
         text-decoration: none;
     }
 /*END CHANGE*/
