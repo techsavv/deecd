@@ -181,6 +181,7 @@ h2#subtitle {
 #socialheading {
     color: #FFFFFF !important;
     margin-top: 0px;
+    letter-spacing: 0.1em !important;
 } 
 
 .socials a,
