@@ -98,7 +98,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
         </div>
         <?php if (isloggedin() && $hasheaderprofilepic) { ?>
         <div class="span2 pull-right" id="profilepic">
-            <p id="socialheading">Welcome <?php echo $USER->firstname; ?></p>
+            <p id="socialheading">Welcome, <?php echo $USER->firstname;?>!</p>
             <ul class="socials unstyled">
                 <li>
                     <a href="<?php echo $CFG->wwwroot.'/user/profile.php?id='.$USER->id; ?>">
