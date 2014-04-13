@@ -304,7 +304,7 @@ echo $OUTPUT->doctype() ?>
     	<div class="row-fluid">
         	<h4><?php echo get_string('visibleadminonly', 'theme_mcb') ?></h4>
             <?php
-                echo $OUTPUT->essentialblocks('hidden-dock');
+                echo $OUTPUT->mcbblocks('hidden-dock');
             ?>
     	</div>
 	</div>

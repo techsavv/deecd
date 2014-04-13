@@ -81,8 +81,6 @@ echo $OUTPUT->doctype() ?>
             echo $OUTPUT->course_content_footer();
             ?>
         </section>
-            <div class="block-region">
-            <div class="region-content">
     </div>
 	<!-- End Main Regions -->
 
