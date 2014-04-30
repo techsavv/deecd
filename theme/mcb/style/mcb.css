@@ -177,6 +177,11 @@ h2#subtitle {
 
 /* @group Social Buttons */
 
+/* VLAD-EDIT*/
+div#profilepic {
+        margin-top: 18px;
+}
+/*end change*/
 
 .socials p {
     font-weight: normal;
@@ -185,9 +190,16 @@ h2#subtitle {
 }
 
 #socialheading {
-    color: #FFFFFF !important;
-    margin-top: 0px;
-} 
+    text-align: right;
+    color: #FFFFFF;
+    letter-spacing: .1em;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;
+    margin-right: 10px;
+    display:inline;
+    float:right;
+}
 
 .socials a,
 .socials a:visited {
@@ -279,18 +291,9 @@ a.linkedin:hover, a.linkedin:focus {
 
 ul.socials {
     text-align: right;
+    float: right;
 }
 
-#socialheading {
-    text-align: right;
-    color: #666;
-    letter-spacing: .1em;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 8px;
-    display:inline;
-    float:left;
-}
 
 /* @end */
 
