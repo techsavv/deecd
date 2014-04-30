@@ -19,7 +19,7 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_mhpl
+ * @package   theme_deecd
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -51,15 +51,12 @@ $checkuseragent = '';
 if (!empty($_SERVER['HTTP_USER_AGENT'])) {
     $checkuseragent = $_SERVER['HTTP_USER_AGENT'];
 }
-//echo $checkuseragent;
 ?>
-
 
 <?php
 // Check if IE7 browser and display message
 if (strpos($checkuseragent, 'MSIE 7')) {
-        //following line is commented by sudhanshu
-	//echo get_string('ie7message', 'theme_mhpl');
+/*	echo get_string('ie7message', 'theme_deecd');*/
 }?>
 
 <?php
@@ -80,7 +77,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
         <?php } else if ($hassocialnetworks && !$hasmobileapps) { ?>
         	<div class="span6">
         <?php } else { ?>
-        	<div class="span10">
+        	<div class="span6">
         <?php } ?>
             <?php if (!$haslogo) { ?>
                 <i id="headerlogo" class="fa fa-<?php echo $PAGE->theme->settings->siteicon ?>"></i>
@@ -97,8 +94,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
             <?php } ?>
         </div>
         <?php if (isloggedin() && $hasheaderprofilepic) { ?>
-        <div class="span2 pull-right" id="profilepic">
-            <p id="socialheading">Welcome, <?php echo $USER->firstname;?>!</p>
+        <div class="span6 pull-right" id="profilepic">
             <ul class="socials unstyled">
                 <li>
                     <a href="<?php echo $CFG->wwwroot.'/user/profile.php?id='.$USER->id; ?>">
@@ -106,7 +102,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
                     </a>
                 </li>
             </ul>            
-
+            <p id="socialheading">Welcome, <?php echo $USER->firstname;?>!</p>
         </div>
         <?php
         }
@@ -115,7 +111,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
         if ($hassocialnetworks) {
         ?>
         <div class="span3 pull-right">
-        <p id="socialheading"><?php echo get_string('socialnetworks','theme_mhpl')?></p>
+        <p id="socialheading"><?php echo get_string('socialnetworks','theme_deecd')?></p>
             <ul class="socials unstyled">
                 <?php if ($hasgoogleplus) { ?>
                 <li><a href="<?php echo $hasgoogleplus; ?>" class="googleplus"><i class="fa fa-google-plus-square"></i></a></li>
@@ -159,7 +155,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
         if ($hasmobileapps) {
         ?>
         <div class="span2 pull-right">
-        <p id="socialheading"><?php echo get_string('mobileappsheading','theme_mhpl')?></p>
+        <p id="socialheading"><?php echo get_string('mobileappsheading','theme_deecd')?></p>
             <ul class="socials unstyled">
                 <?php if ($hasios) { ?>
                 <li><a href="<?php echo $hasios; ?>" class="ios"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-apple fa-stack-1x fa-inverse"></i></span></a></li>
