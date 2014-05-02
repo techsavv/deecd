@@ -1519,7 +1519,7 @@ img.profilepicture
 
 /**TE**ADDED RULE TO EVENLY SPACE TABS**/
 .nav-tabs li{
-    width: 16.5%; /* 100% width / 6 tabs */
+    width: 12.5%; /* 100% width / 6 tabs */
 }
 /*END CHANGE*/
 .nav-tabs > li, .nav-pills > li {
@@ -1544,11 +1544,11 @@ img.profilepicture
     color: #fff !important;
     cursor: default;
     font-family: Signika Negative;
-    font-size: 14pt;
+    font-size: 12.5pt;
     border: 1px solid #ddd;
     font-family: Signika Negative;   
     background-color: #037F8F !important;
-    border-bottom-color: #DE6B00 !important;
+    border-bottom-color: #037F8F !important;
     border-bottom-width: 2px;
 }
 /* @end */
@@ -1568,8 +1568,11 @@ img.profilepicture
 
 /*end change*/
 
-/*KA CHANGE BORDER COLOUR UNDER TABS*/
+/*KA CHANGE BORDER around activities*/
 
+.course-content ul.topics{
+    border: 1px solid #037f8f;
+}
 
 /*KA-CHANGE HOVER STYLE ON ACTIVITIES LIST*/ 
 
@@ -2114,7 +2117,6 @@ text-decoration: none;
 .block_login .footer div.lost_pass{float:left; margin-left:-23px; margin-top:33px;}
 .block_course_participants .content ul li div.c1>img{display:none;}
 .block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block; font-size: x-large; color:#DE6B00;}
-.course-content ul.topics{border: 1px solid #9c4342;}
 .block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
 
 /***following changes are done by sudhanshu*/
@@ -2171,6 +2173,24 @@ text-decoration: none;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
+
+.path-mod-oublog input[type="submit"] {
+    color:#fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color:#DE6B00;
+    *background-color:#E4862E;
+    background-image:-moz-linear-gradient(top,#DE6B00,#E4862E);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#E4862E));
+    background-image:-webkit-linear-gradient(top,#DE6B00,#E4862E);
+    background-image:-o-linear-gradient(top,#DE6B00,#E4862E);
+    background-image:linear-gradient(to bottom,#DE6B00,#E4862E) !important;
+    background-repeat:repeat-x;
+    border-color:#51a351 #51a351 #387038;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
 
 .pagelayout-redirect .alert-info {
     font-family: "Signika Negative",sans-serif;
