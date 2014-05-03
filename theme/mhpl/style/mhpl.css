@@ -2234,9 +2234,6 @@ display:none;
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-.path-mod-oublog #fitem_id_attachments {
-    display: none;
-}
 
 /*CHANGE BUTTON COLOUR ACROSS COURSE*/
 #id_submitbutton {
