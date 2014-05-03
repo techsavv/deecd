@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     color: #083d44;
+    font-family: Dense-Regular;
+    font-size: 18pt;
 }
 
 h3 {
@@ -40,7 +42,7 @@ a {
 }
 
 a:hover {
-    color: #027E8E !important;
+    color: #18a5a5 !important;
     text-decoration: none;
 }
 
@@ -2243,3 +2245,33 @@ table.calendarmonth.calendartable {
 #fitem_id_tags {
     display: none;
 }
+/*end change*/
+
+/*Enrol page customisations*/
+#page-enrol-index #notice{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.path-enrol input[type="submit"] {
+    color:#fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color:#d88900;
+    *background-color:#d88900;
+    background-image:-moz-linear-gradient(top,#d88900,#d88900);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#d88900),to(#d88900));
+    background-image:-webkit-linear-gradient(top,#d88900,#d88900);
+    background-image:-o-linear-gradient(top,#d88900,#d88900);
+    background-image:linear-gradient(to bottom,#d88900,#d88900) !important;
+    background-repeat:repeat-x;
+    border-color:#51a351 #51a351 #387038;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.coursebox:hover {
+    background-color: #d7e1e2 !important;
+}
+
+/*end change*/
