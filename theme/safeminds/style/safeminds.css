@@ -39,6 +39,12 @@ a {
     color: #083d44 !important;
 }
 
+a:hover {
+    color: #027E8E !important;
+    text-decoration: none;
+}
+
+
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 /**KA-ADDED HORIZONTAL LINES ON BACKGROUND OF COURSE HEADER*/
 .courseHeader{
@@ -75,6 +81,13 @@ a {
     /*END CHANGE*/
 }
  
+/*Hide section name from content area on first section*/
+
+h3.sectionname {
+    display: none;
+}
+/*end*/
+
  /* @group Font Awesome */
  /*KA - PAGE RESOURCE*/
 .modified {
@@ -91,8 +104,17 @@ a {
      font-weight: normal;
      font-style: normal;
  }
-
- /* @end */
+ @font-face {
+	font-family: 'Dense-Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url([[font:theme|Dense-Regular.eot]]);
+    src: url([[font:theme|Dense-Regular.eot]]) format('embedded-opentype'),
+	  url([[font:theme|Dense-Regular.woff]]) format('woff'),
+	  url([[font:theme|Dense-Regular.ttf]]) format('truetype'),
+	  url([[font:theme|Dense-Regular.svg]]) format('svg');
+}
+/* @end */
  
  /* @group Custom */
 
@@ -1545,8 +1567,8 @@ img.profilepicture
 .nav-tabs>li>a {
     color: #fff !important;
     cursor: default;
-    font-family: Signika Negative;
-    font-size: 14pt;
+    font-family: Dense-Regular;
+    font-size: 18pt;
     border: 1px solid #ddd;
     background-color: #083d44 !important;
     border-bottom-color: #083d44 !important;
@@ -1974,12 +1996,6 @@ table.calendarmonth.calendartable {
     text-decoration: none;
 }
 
-/*KA*CHANGE HOVER STYLE ON TEXT*/
-    a:hover {
-        color: #027E8E !important;
-        text-decoration: none;
-    }
-/*END CHANGE*/
 
 /*KA*CHANGED FORMATTING OF COURSE NAMES ON FRONT PAGE*/
 .coursename {
@@ -2039,21 +2055,21 @@ table.calendarmonth.calendartable {
 
 /*KA - UPDATING NAVIGATION TEXT BELOW ACTIVITIES IN COURSE PAGE*/
 .mdl-left {
-font-family: Signika Negative;
-font-size: 15pt;
+    font-family: Dense-Regular;
+    font-size: 18pt;
 }
 
 .mdl-left a:hover {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .mdl-right {
-font-family: Signika Negative;
-font-size: 15pt;
+    font-family: Dense-Regular;
+    font-size: 18pt;
 }
 
 .mdl-right a:hover {
-text-decoration: none;
+    text-decoration: none;
 }
 
 /*END CHANGE*/
