@@ -2262,3 +2262,32 @@ display:none;
 }
 
 /*end change*/
+
+/*Certificate customisations*/
+
+.path-mod-certificate input[type="submit"]{
+    color:#fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color:#9c4342 !important;
+    *background-color:#BB5E5E !important;
+    background-image:-moz-linear-gradient(top,#9c4342,#BB5E5E) !important;
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#9c4342),to(#BB5E5E)) !important;
+    background-image:-webkit-linear-gradient(top,#9c4342,##BB5E5E) !important;
+    background-image:-o-linear-gradient(top,#9c4342,#BB5E5E) !important;
+    background-image:linear-gradient(to bottom,#9c4342,#BB5E5E) !important;
+    background-repeat:repeat-x;
+    border-color:#51a351 #51a351 #387038;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9c4342',endColorstr='#BB5E5E',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+/*hide grades column*/
+.path-mod-certificate td.cell.c2 {
+    display: none;
+}
+
+.path-mod-certificate th.header.c2 {
+    display: none;
+}
+/*end change*/
