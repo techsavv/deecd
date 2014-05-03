@@ -157,6 +157,9 @@ if (!$frmpost = $mform->get_data()) {
         $PAGE->navbar->add(format_string($oubloginstance->name), $viewurl);
     }
     $PAGE->navbar->add($post->general);
+    /*SG - Instructions at the top of the New blog post page - can edit language string in theme*/
+    $PAGE->set_pagelayout('newblogpost');
+    /*End change*/
     $PAGE->set_title(format_string($oublog->name));
     $PAGE->set_heading(format_string($course->fullname));
     echo $OUTPUT->header();
