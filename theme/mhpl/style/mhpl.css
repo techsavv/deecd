@@ -2291,3 +2291,10 @@ display:none;
     display: none;
 }
 /*end change*/
+
+/*iframe customisation*/
+
+iframe {
+    border: 0px !important;
+}
+/*end change*/

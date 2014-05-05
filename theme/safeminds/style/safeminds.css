@@ -2306,10 +2306,9 @@ table.calendarmonth.calendartable {
 }
 /*end change*/
 
-/*iframe custmisation*/
+/*iframe customisation*/
 
-iframe#resourceobject {
+iframe {
     border: 0px !important;
-    height: 1600px !important;
 }
 /*end change*/
