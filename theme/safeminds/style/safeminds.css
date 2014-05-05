@@ -2305,3 +2305,11 @@ table.calendarmonth.calendartable {
     display: none;
 }
 /*end change*/
+
+/*iframe custmisation*/
+
+iframe#resourceobject {
+    border: 0px !important;
+    height: 1600px !important;
+}
+/*end change*/
