@@ -16,16 +16,6 @@
       			url('[[setting:fontwww]]fontawesome-webfont.ttf?v=4.0.0') format('truetype'), 
       			url('[[setting:fontwww]]fontawesome-webfont.svg#fontawesomeregular?v=4.0.0') format('svg');
 }
-@font-face {
-	font-family: 'Dense-Regular';
-	font-weight: normal;
-	font-style: normal;
-	src: url([[font:theme|Dense-Regular.eot]]);
-    src: url([[font:theme|Dense-Regular.eot]]) format('embedded-opentype'),
-	  url([[font:theme|Dense-Regular.woff]]) format('woff'),
-	  url([[font:theme|Dense-Regular.ttf]]) format('truetype'),
-	  url([[font:theme|Dense-Regular.svg]]) format('svg');
-}
 
 body{
     border-top:3px solid [[setting:themecolor]];

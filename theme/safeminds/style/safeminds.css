@@ -3,7 +3,11 @@
  * @package   theme_esse    ntial
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
- 
+
+/*Dense theme licensing requirement*/
+
+@import url("//hello.myfonts.net/count/2aa672");
+
  /* @group Core */
 
 body{
@@ -106,16 +110,18 @@ h3.sectionname {
      font-weight: normal;
      font-style: normal;
  }
+
  @font-face {
-	font-family: 'Dense-Regular';
-	font-weight: normal;
-	font-style: normal;
-	src: url([[font:theme|Dense-Regular.eot]]);
-    src: url([[font:theme|Dense-Regular.eot]]) format('embedded-opentype'),
-	  url([[font:theme|Dense-Regular.woff]]) format('woff'),
-	  url([[font:theme|Dense-Regular.ttf]]) format('truetype'),
-	  url([[font:theme|Dense-Regular.svg]]) format('svg');
+ font-family: 'Dense-Regular';
+ font-weight: normal;
+ font-style: normal;
+ src: url([[font:theme|2AD41F_0_0.eot]]);
+    src: url([[font:theme|2AD41F_0_0.eot]]) format('embedded-opentype'),
+   url([[font:theme|2AD41F_0_0.woff]]) format('woff'),
+   url([[font:theme|2AD41F_0_0.ttf]]) format('truetype'),
+   url([[font:theme|2AD41F_0_0.svg]]) format('svg');   
 }
+
 /* @end */
  
  /* @group Custom */
