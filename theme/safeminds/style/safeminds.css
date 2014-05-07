@@ -2137,13 +2137,12 @@ table.calendarmonth.calendartable {
 .block_login .footer div.lost_pass{float:left; margin-left:-23px; margin-top:33px;}
 .block_course_participants .content ul li div.c1>img{display:none;}
 .block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block; font-size: x-large; color:#DE6B00;}
-.block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
+.block_html .content .no-overflow p span i.fa{color: #083d44; font-size: larger;}
 
 /***following changes are done by sudhanshu*/
 #ie7message{
     display:none;
 }
-.block_html .content .no-overflow p span i.fa{color: #DE6B00; font-size: x-large;}  
 /*SG: for quiz navigation background colors*/
 .path-mod-quiz .qnbutton.correct, .formulation .correct {
     background-color: #dff0d8 !important;
