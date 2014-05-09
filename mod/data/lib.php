@@ -1498,11 +1498,11 @@ function data_rating_validate($params) {
  */
 function data_print_preference_form($data, $perpage, $search, $sort='', $order='ASC', $search_array = '', $advanced = 0, $mode= ''){
     global $CFG, $DB, $PAGE, $OUTPUT;
-
+    $PAGE->requires->js( new moodle_url($CFG->wwwroot . '/mod/data/validation.js') );
     $cm = get_coursemodule_from_instance('data', $data->id);
     $context = context_module::instance($cm->id);
     echo '<br /><div class="datapreferences">';
-    echo '<form id="options" action="view.php" method="get">';
+    echo '<form id="options" action="view.php" method="get" onsubmit="return validation()">';
     echo '<div>';
     echo '<input type="hidden" name="d" value="'.$data->id.'" />';
     if ($mode =='asearch') {
