@@ -11,6 +11,7 @@
  /* @group Core */
 
 body{
+    border-top: 1px solid #FFFFFF !important;
     line-height: 25px;
     text-shadow: none !important;
     color: #444;
@@ -28,25 +29,32 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal !important;
 }
 
+/*Hide page title on Referral matrix* - for emebedding in DEECD website*/
+
 h2 {
-    color: #083d44;
-    font-family: Dense-Regular;
-    font-size: 18pt;
+    color: #FFFFFF;
+    font-family: Signika-Negative;
+    font-size: 10pt;
+    margin-top: 0px;    
+    margin-bottom: 0px;
+    line-height: 1px;
 }
+
+/* end change*/
 
 h3 {
     font-size: 1.4em;
     color: #888;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 a {
     text-decoration: none;
-    color: #083d44 !important;
+    color: #0072BC !important;
 }
 
 a:hover {
-    color: #18a5a5 !important;
+    color: #004579 !important;
     text-decoration: none;
 }
 
@@ -54,13 +62,13 @@ a:hover {
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 /**KA-ADDED HORIZONTAL LINES ON BACKGROUND OF COURSE HEADER*/
 .courseHeader{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background:url([[pix:theme|courseheaderbg]]) repeat-x top right;
 }
 .courseHeaderImg{
     margin-left:auto;
     margin-right:auto;
-    display:block;
+    display:none;
     height:200px;
     /* can control image size here if need be */
 }
@@ -144,13 +152,18 @@ h3.sectionname {
 /* @group Header */
 
 #page-header {
-    padding: 0px 0px 0px 0px;
-    border-bottom: 1px solid #DDD;
-/**KA**Replace image background on header with plain grey background behind logo and changed height**/
-    background-color: #8e8e8e;
-    height: 75px;
-    /*END CHANGE*/
+    display: none;
 }
+
+/*    padding: 0px 0px 0px 0px;
+    border-bottom: 1px solid #DDD;
+}
+*/
+
+p {
+    line-height: 1.25;
+}
+
 
 h2.main,
 #pageheading {
@@ -182,6 +195,7 @@ h2#subtitle {
     letter-spacing: .15em;
     white-space: nowrap;
 }
+
 
 #headerlogo {
     float: left;
@@ -385,11 +399,12 @@ ul.breadcrumb li:last-child:after {
 }
 
 .navbar-inner{
-    border-radius: 0px;
+    display: none;
+}
+
+ /* border-radius: 0px;
     line-height: 0px;
     background-image: none;
-/**KA**change navbar to dark grey**/
-    background-color: #5d5d5d !important;
 /*END CHANGE*/
 }
 
@@ -565,7 +580,7 @@ letter-spacing:0.1em;
 }
 
 .container-fluid {
-    max-width: [[setting:pagewidth]];
+    max-width: 540px;
 }
 
 #region-main {
@@ -1249,13 +1264,25 @@ table#greyboxleft h2 {
 
 /* @group Footer */
 
+/* Hide footer for embedding on DEECD website */
+
 #page-footer {
+    display: none;
+    /*
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 1em;
     padding-top: 10px;
     text-align: left;
+    */
 }
+
+/*Hide 'Back to top' hovering icon'*/
+
+a.back-to-top {
+    visibility: hidden;
+}
+
 
 /*ka-change colour of footer text*/
 #page-footer .footnote a, #page-footer .footnote a:visited {
@@ -1547,6 +1574,11 @@ img.profilepicture
 /* @end */
 
 /* @group Tabs */
+
+/*Hide breacrumbs*/
+div#page-navbar {
+    display: none;
+}
 
 /*ADDED RULE TO EVENLY SPACE TABS*/
 .nav-tabs li{
@@ -2317,3 +2349,20 @@ iframe {
     border: 0px !important;
 }
 /*end change*/
+
+/*Database activity customisation*/
+
+.mod-data-default-template td {
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+/*end change*/
+
+.alert-success {
+    color: #5d5d5d;
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+}
