@@ -2188,3 +2188,8 @@ text-decoration: none;
     margin-left: auto;
     margin-right:auto;
 }
+/*Hide last course from the Froenpage maneu - to prevent the Referral Matrix from being visible.*/
+
+div.coursebox.clearfix.odd.last {
+    display: none;
+}
