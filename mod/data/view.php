@@ -114,8 +114,8 @@
     // reset advanced form
     if (!is_null(optional_param('resetadv', null, PARAM_RAW))) {
         $SESSION->dataprefs[$data->id]['search_array'] = array();
-        // we need the redirect to cleanup the form state properly
-        redirect("view.php?id=$cm->id&amp;mode=$mode&amp;search=&amp;advanced=1");
+        // we need the redirect to cleanup the form state properly - KA - Back to asearch mode
+        redirect("view.php?id=$cm->id&amp;mode=asearch");
     }
 
     $advanced = optional_param('advanced', -1, PARAM_INT);
