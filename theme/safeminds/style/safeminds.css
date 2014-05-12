@@ -10,10 +10,13 @@
 
  /* @group Core */
 
-body{
-    font-family: LatoLight;
-   font-size: 20px;
+p {
+    font-family: Lato !important;
+    font-size: 20px;
     line-height: 28px; 
+} 
+
+body{
     color: #444;
     padding-top: 0px;
 /**KA**CHANGE TOP BORDER AT TOP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
@@ -90,7 +93,7 @@ a:hover {
  
 /*Hide section name from content area on first section*/
 
-h3.sectionname {
+.sectionname {
     display: none;
 }
 /*end*/
@@ -2245,9 +2248,10 @@ table.calendarmonth.calendartable {
     content: "\f0c0";
 }
 
+/*
 .course-content .section li.activity.modtype_label.label .mod-indent-outer {
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
 
 /*OUBLOG - Theme customisations*/
