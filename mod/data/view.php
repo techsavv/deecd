@@ -822,9 +822,9 @@ if ($showactivity) {
         echo $button->to_html(PORTFOLIO_ADD_FULL_FORM);
     }
 
-    //Advanced search form doesn't make sense for single (redirects list view)
-    if (($maxcount || $mode == 'asearch') && $mode != 'single') {
-        data_print_preference_form($data, $perpage, $search, $sort, $order, $search_array, $advanced, $mode);
+    $search_result = $_GET['f_2'];
+    if (($maxcount || $mode == 'asearch') && $mode != 'single' && !isset($search_result)) {
+       data_print_preference_form($data, $perpage, $search, $sort, $order, $search_array, $advanced, $mode);
     }
 }
 
