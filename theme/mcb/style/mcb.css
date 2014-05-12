@@ -1601,6 +1601,7 @@ img.profilepicture
     padding-top: 7px;
     padding-bottom: 7px;
 }
+
 .course-content .section .activity a:hover{ text-decoration:none;}
 
 .section .activity .contentwithoutlink {display:block !important;min-width:150px;}
@@ -2220,10 +2221,13 @@ text-decoration: none;
     content: "\f0c0";
 }
 
+/*Centered label text since images won;t centre in label - unfortunately this centres all label content.*/
+
 .course-content .section li.activity.modtype_label.label .mod-indent-outer {
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
+
 
 /*OUBLOG - Theme customisations*/
  
