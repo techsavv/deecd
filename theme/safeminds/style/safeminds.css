@@ -11,8 +11,9 @@
  /* @group Core */
 
 body{
-    line-height: 25px;
-    text-shadow: none !important;
+    font-family: LatoLight;
+   font-size: 20px;
+    line-height: 28px; 
     color: #444;
     padding-top: 0px;
 /**KA**CHANGE TOP BORDER AT TOP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
@@ -121,6 +122,19 @@ h3.sectionname {
    url([[font:theme|2AD41F_0_0.ttf]]) format('truetype'),
    url([[font:theme|2AD41F_0_0.svg]]) format('svg');   
 }
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Lato-Light.woff') format('woff'), /* Modern Browsers */
+         url('Lato-Light.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
 
 /* @end */
  
