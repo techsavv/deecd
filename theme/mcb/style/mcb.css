@@ -1568,6 +1568,12 @@ img.profilepicture
 
 /*end change*/
 
+/* hide section name on first tab*/
+
+.sectionname {
+    text-align: left;
+}
+
 /*KA CHANGE BORDER around activities*/
 
 .course-content ul.topics{
