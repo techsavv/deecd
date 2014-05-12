@@ -1519,7 +1519,7 @@ img.profilepicture
 
 /**TE**ADDED RULE TO EVENLY SPACE TABS**/
 .nav-tabs li{
-    width: 12.5%; /* 100% width / 6 tabs */
+    width: 14.2857%; /* 100% width / 6 tabs */
 }
 /*END CHANGE*/
 .nav-tabs > li, .nav-pills > li {
