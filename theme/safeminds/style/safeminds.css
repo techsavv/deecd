@@ -10,11 +10,6 @@
 
  /* @group Core */
 
-p {
-    font-family: Lato !important;
-    font-size: 20px;
-    line-height: 28px; 
-} 
 
 body{
     color: #444;
@@ -54,6 +49,9 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    font-family: Lato;
+} 
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 /**KA-ADDED HORIZONTAL LINES ON BACKGROUND OF COURSE HEADER*/
