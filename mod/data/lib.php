@@ -1501,8 +1501,8 @@ function data_print_preference_form($data, $perpage, $search, $sort='', $order='
     $PAGE->requires->js( new moodle_url($CFG->wwwroot . '/mod/data/validation.js') );
     $cm = get_coursemodule_from_instance('data', $data->id);
     $context = context_module::instance($cm->id);
-    echo '<br /><div class="datapreferences">';
-    echo '<form id="options" action="view.php" method="get" onsubmit="return validation()">';
+    echo '<div class="datapreferences">';
+    echo '<form id="options" action="view.php?sresult=1" method="get" onsubmit="return validation()">';
     echo '<div>';
     echo '<input type="hidden" name="d" value="'.$data->id.'" />';
     if ($mode =='asearch') {
@@ -1521,9 +1521,9 @@ function data_print_preference_form($data, $perpage, $search, $sort='', $order='
         $regsearchclass = 'search_inline';
         $advancedsearchclass = 'search_none';
     }
-    echo '<div id="reg_search" class="' . $regsearchclass . '" >&nbsp;&nbsp;&nbsp;';
+    echo '<div id="reg_search" class="' . $regsearchclass . '" >';
     echo '<label for="pref_search">'.get_string('search').'</label> <input type="text" size="16" name="search" id= "pref_search" value="'.s($search).'" /></div>';
-    echo '&nbsp;&nbsp;&nbsp;<label for="pref_sortby">'.get_string('sortby').'</label> ';
+    echo '<label for="pref_sortby">'.get_string('sortby').'</label> ';
     // foreach field, print the option
     echo '<select name="sort" id="pref_sortby">';
     if ($fields = $DB->get_records('data_fields', array('dataid'=>$data->id), 'name')) {
@@ -1576,17 +1576,15 @@ function data_print_preference_form($data, $perpage, $search, $sort='', $order='
         $checked = '';
     }
     $PAGE->requires->js('/mod/data/data.js');
-    echo '&nbsp;<input type="hidden" name="advanced" value="0" />';
-    echo '&nbsp;<input type="hidden" name="filter" value="1" />';
-    echo '&nbsp;<input type="checkbox" id="advancedcheckbox" name="advanced" value="1" '.$checked.' onchange="showHideAdvSearch(this.checked);" /><label for="advancedcheckbox">'.get_string('advancedsearch', 'data').'</label>';
+    echo '<input type="hidden" name="advanced" value="0" />';
+    echo '<input type="hidden" name="filter" value="1" />';
+    echo '<input type="checkbox" id="advancedcheckbox" name="advanced" value="1" '.$checked.' onchange="showHideAdvSearch(this.checked);" /><label for="advancedcheckbox">'.get_string('advancedsearch', 'data').'</label>';
     //echo '&nbsp;<input type="submit" value="'.get_string('savesettings','data').'" />';
 
-    echo '<br />';
     echo '<div class="' . $advancedsearchclass . '" id="data_adv_form">';
     echo '<table class="boxaligncenter">';
 
     // print ASC or DESC
-    echo '<tr><td colspan="2">&nbsp;</td></tr>';
     $i = 0;
 
     // Determine if we are printing all fields for advanced search, or the template for advanced search
