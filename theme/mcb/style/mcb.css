@@ -2314,3 +2314,9 @@ iframe {
 input#id_submitbutton:hover {
     background-color: #DE6B00
 }
+
+/*Hide Module name in 1st tab*/
+
+.sectionname {
+display: none;
+}
