@@ -2310,7 +2310,12 @@ iframe {
 }
 /*end change*/
 
-/* Button hover and active button colour*/
+/* ALL Buttons - background colour - get rid of standard blue background */
+
+input#id_submitbutton {
+    background-color: #DE6B00
+}
+
 input#id_submitbutton:hover {
     background-color: #DE6B00
 }
