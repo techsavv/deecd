@@ -2310,8 +2310,12 @@ iframe {
 }
 /*end change*/
 
-/* Button hover colour*/
+/* Button hover and active button colour*/
 input#id_submitbutton:hover {
+    background-color: #DE6B00
+}
+
+input#id_submitbutton:active {
     background-color: #DE6B00
 }
 
