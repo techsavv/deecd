@@ -566,6 +566,11 @@ letter-spacing:0.1em;
 
 /* @end */
 
+/*Hide Back to top button*/
+a.back-to-top {
+    visibility: hidden;
+}
+
 /* @end */
 
 /* @group Layout */
