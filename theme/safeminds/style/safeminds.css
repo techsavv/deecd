@@ -51,8 +51,6 @@ a:hover {
 
 p {
     font-family: LatoLight;
-    font-size: 20px;
-    line-height: 28px;
 } 
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
@@ -124,20 +122,6 @@ p {
    url([[font:theme|2AD41F_0_0.woff]]) format('woff'),
    url([[font:theme|2AD41F_0_0.ttf]]) format('truetype'),
    url([[font:theme|2AD41F_0_0.svg]]) format('svg');   
-}
-
- @font-face {
- font-family: 'LatoLight';
- font-weight: normal;
- font-style: normal;
- src: url([[font:theme|Lato-Light.eot]]);
-    src: url([[font:theme|Lato-Light.eot]]) format('embedded-opentype'),
-   url([[font:theme|Lato-Light.woff]]) format('woff'),
-   url([[font:theme|Lato-Light.ttf]]) format('truetype'),
-   url([[font:theme|Lato-Light.svg]]) format('svg');   
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
 }
 
 
