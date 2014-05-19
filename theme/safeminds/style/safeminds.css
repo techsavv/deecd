@@ -1620,7 +1620,7 @@ img.profilepicture
 /*KA-CHANGE HOVER STYLE ON ACTIVITIES LIST*/ 
 
 .course-content .section .activity:hover {
-   background-color: #d7e1e2;
+   background-color: #FFFFFF;
     margin-bottom: 5px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
