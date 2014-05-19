@@ -1637,9 +1637,19 @@ img.profilepicture
     padding-top: 7px;
     padding-bottom: 7px;
 }
+
 .course-content .section .activity a:hover{ text-decoration:none;}
 
 .section .activity .contentwithoutlink {display:block !important;min-width:150px;}
+
+/*formatting activity description beneath activity link on course page*/
+
+.section .activity .contentafterlink {
+    margin-top: 0em;
+    margin-left: 25px;
+    font-size: 12px;
+}
+/*end changes*/
 
 .instancename {
     color: #5D5D5D;
