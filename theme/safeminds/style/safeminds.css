@@ -1653,7 +1653,8 @@ img.profilepicture
 
 .instancename {
     color: #5D5D5D;
-}
+    font-weight: bold;
+}   
 
 .instancename:hover {
     color: #5D5D5D;
