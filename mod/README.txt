@@ -1,4 +1,4 @@
-ACTIVITY MODULES
+ACTIVITY MODULES ********
 ----------------
 
 These are main modules in Moodle, allowing various activities.
