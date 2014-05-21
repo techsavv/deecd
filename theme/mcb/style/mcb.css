@@ -2181,7 +2181,7 @@ text-decoration: none;
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-.path-mod-oublog input[type="submit"] {
+.path-mod-tsblog input[type="submit"] {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     background-color:#DE6B00;
@@ -2229,14 +2229,14 @@ text-decoration: none;
 }
 
 
-/*OUBLOG - Theme customisations*/
+/*tsblog - Theme customisations*/
  
-#page-mod-oublog-editpost #id_message {
+#page-mod-tsblog-editpost #id_message {
     width: 600px;
     height: 200px;
 }
 
-#page-mod-oublog-editpost #id_title {
+#page-mod-tsblog-editpost #id_title {
     width: 600px;
 }
 
