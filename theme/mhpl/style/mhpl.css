@@ -2204,6 +2204,7 @@ display:none;
 
 /* OUBLOG - theme customisations */ 
 
+
 #page-mod-oublog-editpost #id_message {
     width: 600px;
     height: 200px;
@@ -2217,7 +2218,7 @@ display:none;
     display: none;
 }
 
-.path-mod-oublog input[type="submit"] {
+.path-mod-oublog input[type="submit"], .path-mod-forum #id_submitbutton {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     background-color:#9c4342;
@@ -2226,7 +2227,7 @@ display:none;
     background-image:-webkit-gradient(linear,0 0,0 100%,from(#9c4342),to(#BB5E5E));
     background-image:-webkit-linear-gradient(top,#9c4342,##BB5E5E);
     background-image:-o-linear-gradient(top,#9c4342,#BB5E5E);
-    background-image:linear-gradient(to bottom,#9c4342,#BB5E5E);
+    background-image:linear-gradient(to bottom,#9c4342,#BB5E5E) !important;
     background-repeat:repeat-x;
     border-color:#51a351 #51a351 #387038;
     border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
@@ -2234,11 +2235,23 @@ display:none;
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-/*Enrol page customisations*/
-#page-enrol-index #notice{
-    text-align: center;
-    margin-bottom: 20px;
+input#id_submitbutton {
+    background-color: #9c4342 
 }
+
+input#id_submitbutton:hover {
+    background-color: #9c4342 
+}
+
+input#id_submitbutton:active {
+    background-color: #9c4342 
+}
+
+input#id_submitbutton:focus {
+    background-color: #9c4342 
+}
+
+
 
 .path-enrol input[type="submit"] {
     color:#fff;
