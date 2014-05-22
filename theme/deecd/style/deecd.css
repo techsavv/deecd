@@ -303,7 +303,7 @@ ul.socials {
 .dropdown-submenu:focus > a {
     color: #ffffff !important;
     text-decoration: none;
-    background-image: linear-gradient(to bottom, #5d5d5d, #5d5d5d) !important;
+    background-image: linear-gradient(to bottom, #BFD8DC, #BFD8DC) !important;
     background-color: #FFFFFF !important;
 }
 
@@ -933,7 +933,7 @@ table#greyboxleft h2 {
 
 .block_login input:hover {
     text-decoration: none;
-    background: #5d5d5d !important;
+    background: #BFD8DC !important;
     color: #fff;
 }
 
@@ -1178,7 +1178,7 @@ table#greyboxleft h2 {
 
 /*KA-ADDED HOVER COLOUR TO COURSE BUTTONS ON HOME PAGE*/
 .coursebox:hover {
-    background-color: #5d5d5d !important;
+    background-color: #BFD8DC !important;
 }
 
 /* @group Home News Boxes */
@@ -1229,7 +1229,7 @@ color: #ffffff !important;
 }
 
 #page-footer .footnote a:hover {
-color: #5d5d5d !important;
+color: #BFD8DC !important;
 }
 /*end change*/
 
@@ -1240,7 +1240,7 @@ color: #5d5d5d !important;
 }
 
 .helplink a {
-    color: #5d5d5d  !important;
+    color: #BFD8DC  !important;
 }
 .helplink a:hover{color:#8E8E8E !important}
 
@@ -1596,7 +1596,7 @@ img.profilepicture
 }
 
 .instancename:hover {
-    color: #5D5D5D;
+    color: #BFD8DC;
 }
 
 .path-course-view li.activity span.autocompletion img {
@@ -1988,7 +1988,7 @@ table.calendarmonth.calendartable {
 
 /*CHANGE COLOUR OF HOVER IN 'YOU ARE LOGGED IN AS' TEXT*/
 .logininfo a:hover {
-    color: #5d5d5d !important;
+    color: #BFD8DC !important;
     text-decoration: none;
 }
 /*end change*/
@@ -2053,7 +2053,7 @@ text-decoration: none;
 /*KA - QUIZ FORMATTING*/
 .que .formulation {
     background-color: #F7DABF;
-    border-color: #5d5d5d;
+    border-color: #BFD8DC;
 }
 
 #page-mod-quiz-attempt .courseHeader {
@@ -2104,7 +2104,7 @@ text-decoration: none;
 .block_login .footer div.lost_pass a:hover{ text-decoration:underline !important;}
 .block_login .footer div.lost_pass{float:left; margin-left:-23px; margin-top:33px;}
 .block_course_participants .content ul li div.c1>img{display:none;}
-.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block; font-size: x-large; color:#5d5d5d;}
+.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block; font-size: x-large; color:#BFD8DC;}
 .course-content ul.topics{border: 1px solid #9c4342;}
 .block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
 
