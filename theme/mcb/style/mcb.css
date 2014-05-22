@@ -2357,6 +2357,10 @@ input#id_submitbutton:active {
     background-color: #DE6B00
 }
 
+input#id_submitbutton:focus {
+    background-color: #DE6B00
+}
+
 /*Hide Module name in 1st tab*/
 
 .sectionname {
