@@ -303,7 +303,7 @@ ul.socials {
 .dropdown-submenu:focus > a {
     color: #ffffff !important;
     text-decoration: none;
-    background-image: linear-gradient(to bottom, #BFD8DC, #BFD8DC) !important;
+    background-image: linear-gradient(to bottom, #5d5d5d, #5d5d5d) !important;
     background-color: #FFFFFF !important;
 }
 
@@ -933,7 +933,7 @@ table#greyboxleft h2 {
 
 .block_login input:hover {
     text-decoration: none;
-    background: #BFD8DC !important;
+    background: #5d5d5d !important;
     color: #fff;
 }
 
@@ -1178,7 +1178,7 @@ table#greyboxleft h2 {
 
 /*KA-ADDED HOVER COLOUR TO COURSE BUTTONS ON HOME PAGE*/
 .coursebox:hover {
-    background-color: #BFD8DC !important;
+    background-color: #5d5d5d !important;
 }
 
 /* @group Home News Boxes */
@@ -1229,7 +1229,7 @@ color: #ffffff !important;
 }
 
 #page-footer .footnote a:hover {
-color: #bfd8dc !important;
+color: #5d5d5d !important;
 }
 /*end change*/
 
@@ -1240,7 +1240,7 @@ color: #bfd8dc !important;
 }
 
 .helplink a {
-    color: #BFD8DC  !important;
+    color: #5d5d5d  !important;
 }
 .helplink a:hover{color:#8E8E8E !important}
 
@@ -1545,21 +1545,21 @@ img.profilepicture
     border: 1px solid #ddd;
     font-family: Signika Negative;   
     background-color: #037F8F !important;
-    border-bottom-color: #DE6B00 !important;
+    border-bottom-color: #5d5d5d !important;
     border-bottom-width: 2px;
 }
 /* @end */
 
 /*KA - change BACKGROUND COLOUR ON ACTIVE TAB AND TAB HOVER*/
 .nav-tabs>li>a:hover {
-    background-color: #DE6B00 !important;
-    border-bottom-color: #DE6B00 !important;
+    background-color: #5d5d5d !important;
+    border-bottom-color: #5d5d5d !important;
     border-bottom-width: 2px !important;
 }
 
 .nav-tabs>.active>a {
-    background-color: #DE6B00 !important;
-    border-bottom-color: #DE6B00 !important;
+    background-color: #5d5d5d !important;
+    border-bottom-color: #5d5d5d !important;
     border-bottom-width: 2px !important;
 }
 
@@ -1988,7 +1988,7 @@ table.calendarmonth.calendartable {
 
 /*CHANGE COLOUR OF HOVER IN 'YOU ARE LOGGED IN AS' TEXT*/
 .logininfo a:hover {
-    color: #BFD8DC !important;
+    color: #5d5d5d !important;
     text-decoration: none;
 }
 /*end change*/
@@ -2053,7 +2053,7 @@ text-decoration: none;
 /*KA - QUIZ FORMATTING*/
 .que .formulation {
     background-color: #F7DABF;
-    border-color: #DE6B00;
+    border-color: #5d5d5d;
 }
 
 #page-mod-quiz-attempt .courseHeader {
@@ -2104,7 +2104,7 @@ text-decoration: none;
 .block_login .footer div.lost_pass a:hover{ text-decoration:underline !important;}
 .block_login .footer div.lost_pass{float:left; margin-left:-23px; margin-top:33px;}
 .block_course_participants .content ul li div.c1>img{display:none;}
-.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block; font-size: x-large; color:#DE6B00;}
+.block_course_participants .content ul li div.c1 a:before{content:"\f18e"; font-family: FontAwesome; padding-right:5px; display:inline-block; font-size: x-large; color:#5d5d5d;}
 .course-content ul.topics{border: 1px solid #9c4342;}
 .block_html .content .no-overflow p span i.fa{color: #CC8686; font-size: large;}
 
@@ -2112,7 +2112,7 @@ text-decoration: none;
 #ie7message{
     display:none;
 }
-.block_html .content .no-overflow p span i.fa{color: #DE6B00; font-size: x-large;}  
+.block_html .content .no-overflow p span i.fa{color: #5d5d5d; font-size: x-large;}  
 /*SG: for quiz navigation background colors*/
 .path-mod-quiz .qnbutton.correct, .formulation .correct {
     background-color: #dff0d8 !important;
@@ -2124,13 +2124,13 @@ text-decoration: none;
 .path-mod-quiz input[type="submit"] {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-    background-color:#DE6B00;
+    background-color:#5d5d5d;
     *background-color:#E4862E;
-    background-image:-moz-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#E4862E));
-    background-image:-webkit-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-o-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:linear-gradient(to bottom,#DE6B00,#E4862E);
+    background-image:-moz-linear-gradient(top,#5d5d5d,#E4862E);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#5d5d5d),to(#E4862E));
+    background-image:-webkit-linear-gradient(top,#5d5d5d,#E4862E);
+    background-image:-o-linear-gradient(top,#5d5d5d,#E4862E);
+    background-image:linear-gradient(to bottom,#5d5d5d,#E4862E);
     background-repeat:repeat-x;
     border-color:#51a351 #51a351 #387038;
     border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
@@ -2143,19 +2143,19 @@ text-decoration: none;
     font-size: 20pt;
     margin-right: .3em;
     content: "\f047";
-	color:#DE6B00 !important;
+	color:#5d5d5d !important;
 }
 
 .path-mod-forum #region-main input[type="submit"], .path-mod-forum #id_submitbutton {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-    background-color:#DE6B00;
+    background-color:#5d5d5d;
     *background-color:#E4862E;
-    background-image:-moz-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#E4862E));
-    background-image:-webkit-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:-o-linear-gradient(top,#DE6B00,#E4862E);
-    background-image:linear-gradient(to bottom,#DE6B00,#E4862E) !important;
+    background-image:-moz-linear-gradient(top,#5d5d5d,#E4862E);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#5d5d5d),to(#E4862E));
+    background-image:-webkit-linear-gradient(top,#5d5d5d,#E4862E);
+    background-image:-o-linear-gradient(top,#5d5d5d,#E4862E);
+    background-image:linear-gradient(to bottom,#5d5d5d,#E4862E) !important;
     background-repeat:repeat-x;
     border-color:#51a351 #51a351 #387038;
     border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
@@ -2166,7 +2166,7 @@ text-decoration: none;
 .pagelayout-redirect .alert-info {
     font-family: "Signika Negative",sans-serif;
     color: #027e8e;
-    background-color: #BFD8DC;
+    background-color: #5d5d5d;
     border-color: #bce8f1;
     font-size: 28px;
     margin-top: 20%;
