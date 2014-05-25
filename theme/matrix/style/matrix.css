@@ -14,8 +14,9 @@ body{
     border-top: 1px solid #FFFFFF !important;
     line-height: 25px;
     text-shadow: none !important;
-    color: #444;
+    color: #676767;
     padding-top: 0px;
+    text-align: left; 
 /**KA**CHANGE TOP BORDER AT TOP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
     background: #8e8e8e;
 /*END CHANGE*/
@@ -31,21 +32,40 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Hide page title on Referral matrix* - for emebedding in DEECD website*/
 
+h1 {
+    color: #0072BC;
+    font-family: MetaWeb-Normal !important;
+    font-size: 1.76923em;
+    margin-top: 0px;    
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
 h2 {
     color: #FFFFFF;
-    font-family: Signika-Negative;
     font-size: 10pt;
     margin-top: 0px;    
     margin-bottom: 0px;
-    line-height: 1px;
+    line-height: 0px;
 }
 
 /* end change*/
 
 h3 {
-    font-size: 1.4em;
-    color: #888;
+    font-family: MetaWeb-Normal !important;
+    font-size: 1.2em;
+    color: #0072BC;
     line-height: 25px;
+    text-align: left;
+}
+
+h4 {
+    color: #0072BC;
+    font-family: Arial !important;
+    font-size: 13px;
+    margin-top: 6px;
+    line-height: 15.6px !important; 
+    font-weight: bold !important;
 }
 
 a {
@@ -58,6 +78,17 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    font-size: 13px;
+    line-height: 15.6px;
+    color: #444444;
+}
+
+li {
+    font-size: 13px;
+    line-height: 15.6px;
+    color: #444444;
+}
 
 /**TE**ADDED RULES FOR COURSE HEADER STYLING**/
 /**KA-ADDED HORIZONTAL LINES ON BACKGROUND OF COURSE HEADER*/
@@ -120,15 +151,27 @@ h3.sectionname {
  }
 
  @font-face {
- font-family: 'Dense-Regular';
+ font-family: 'MetaWeb-Bold';
  font-weight: normal;
  font-style: normal;
- src: url([[font:theme|2AD41F_0_0.eot]]);
-    src: url([[font:theme|2AD41F_0_0.eot]]) format('embedded-opentype'),
-   url([[font:theme|2AD41F_0_0.woff]]) format('woff'),
-   url([[font:theme|2AD41F_0_0.ttf]]) format('truetype'),
-   url([[font:theme|2AD41F_0_0.svg]]) format('svg');   
+ src: url([[font:theme|MetaWeb-Bold.eot]]);
+    src: url([[font:theme|MetaWeb-Bold.eot]]) format('embedded-opentype'),
+   url([[font:theme|MetaWeb-Bold.woff]]) format('woff'),
+   url([[font:theme|MetaWeb-Bold.ttf]]) format('truetype'),
+   url([[font:theme|MetaWeb-Bold.svg]]) format('svg');   
 }
+
+ @font-face {
+ font-family: 'MetaWeb-Normal';
+ font-weight: normal;
+ font-style: normal;
+ src: url([[font:theme|MetaWeb-Normal.eot]]);
+    src: url([[font:theme|MetaWeb-Normal.eot]]) format('embedded-opentype'),
+   url([[font:theme|MetaWeb-Normal.woff]]) format('woff'),
+   url([[font:theme|MetaWeb-Normal.ttf]]) format('truetype'),
+   url([[font:theme|MetaWeb-Normal.svg]]) format('svg');   
+}
+
 
 /* @end */
  
@@ -2183,20 +2226,52 @@ table.calendarmonth.calendartable {
     background-color: #f2dede !important;
 }
 
+.path-mod-data input[type="submit"] {
+    color:#fff;
+    font-family: MetaWeb-Bold !important;
+    border-radius: 0px;
+    text-shadow: 0px 0 rgba(0,0,0,0);
+    background-color:#0063ae;
+    *background-color:#0063ae;
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#004579),to(#004579));
+    background-image:-webkit-linear-gradient(top,#004579,#004579);
+    background-image:-o-linear-gradient(top,#004579,#004579);
+    background-image:linear-gradient(to bottom,#0063ae,#0063ae);
+    background-repeat:repeat-x;
+    border-color:#0063ae #0063ae #0063ae;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+
+
+.path-mod-tsdata input[type="submit"] {
+    color:#fff;
+    font-family: MetaWeb-Bold !important;
+    border-radius: 0px;
+    text-shadow: 0px 0 rgba(0,0,0,0);
+    background-color:#0063ae;
+    *background-color:#0063ae;
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#004579),to(#004579));
+    background-image:-webkit-linear-gradient(top,#004579,#004579);
+    background-image:-o-linear-gradient(top,#004579,#004579);
+    background-image:linear-gradient(to bottom,#0063ae,#0063ae);
+    background-repeat:repeat-x;
+    border-color:#0063ae #0063ae #0063ae;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
 .path-mod-quiz input[type="submit"] {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-    background-color:#d88900;
-    *background-color:#d88900;
-    background-image:-moz-linear-gradient(top,#d88900,#d88900);
-    background-image:-webkit-gradient(linear,0 0,0 100%,from(#d88900),to(#d88900));
-    background-image:-webkit-linear-gradient(top,#d88900,#d88900);
-    background-image:-o-linear-gradient(top,#d88900,#d88900);
-    background-image:linear-gradient(to bottom,#d88900,#d88900);
+    background-color:#0063ae;
+    *background-color:#0063ae;
+    background-image:-moz-linear-gradient(top,#0063ae,#0063ae);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#0063ae),to(#0063ae));
+    background-image:-webkit-linear-gradient(top,#0063ae,#0063ae);
+    background-image:-o-linear-gradient(top,#0063ae,#0063ae);
+    background-image:linear-gradient(to bottom,#0063ae,#0063ae);
     background-repeat:repeat-x;
-    border-color:#51a351 #d88900 #d88900;
+    border-color:#0063ae #0063ae #0063ae;
     border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd88900',endColorstr='#ffd88900',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0063ae',endColorstr='#ff0063ae',GradientType=0);
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
@@ -2354,7 +2429,7 @@ iframe {
 
 .mod-data-default-template td {
     vertical-align: top;
-    padding-left: 20px;
+    padding-left: 2px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 5px;
