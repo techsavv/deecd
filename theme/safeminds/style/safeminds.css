@@ -2286,7 +2286,7 @@ table.calendarmonth.calendartable {
     margin-bottom: 20px;
 }
 
-.path-enrol input[type="submit"] {
+.path-enrol input[type="submit"] .path-enrol #id_submitbutton  {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     background-color:#d88900;
@@ -2345,3 +2345,24 @@ iframe {
     border: 0px !important;
 }
 /*end change*/
+
+input#id_submitbutton {
+    background-color: #d88900; 
+    background-image:linear-gradient(to bottom,#d88900,#d88900) !important;
+}
+
+input#id_submitbutton2 {
+    background-color: #d88900; 
+}
+
+input#id_submitbutton:hover {
+    background-color: #d88900; 
+}
+
+input#id_submitbutton:active {
+    background-color: #d88900; 
+}
+
+input#id_submitbutton:focus {
+    background-color: #d88900; 
+}

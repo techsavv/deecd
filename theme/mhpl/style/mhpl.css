@@ -1239,7 +1239,7 @@ color: #bfd8dc !important;
     color: #BFD8DC  !important;
 }
 .helplink a:hover{
-    color: #8E8E8E !important
+    color: #BFD8DC !important
 }
 
 #page-footer .footnote a {
@@ -2236,24 +2236,27 @@ display:none;
 }
 
 input#id_submitbutton {
-    background-color: #9c4342 
+    background-color: #9c4342; 
+    background-image:linear-gradient(to bottom,#9c4342,#BB5E5E);
+}
+
+input#id_submitbutton2 {
+    background-color: #9c4342; 
 }
 
 input#id_submitbutton:hover {
-    background-color: #9c4342 
+    background-color: #9c4342; 
 }
 
 input#id_submitbutton:active {
-    background-color: #9c4342 
+    background-color: #9c4342; 
 }
 
 input#id_submitbutton:focus {
-    background-color: #9c4342 
+    background-color: #9c4342; 
 }
 
-
-
-.path-enrol input[type="submit"] {
+.path-enrol input[type="submit"] .path-enrol #id_submitbutton {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     background-color:#9c4342;
