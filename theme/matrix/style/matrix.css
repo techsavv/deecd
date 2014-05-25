@@ -2243,7 +2243,7 @@ table.calendarmonth.calendartable {
 }
 
 
-.path-mod-tsdata input[type="submit"] {
+.path-mod-tsdatabase input[type="submit"] {
     color:#fff;
     font-family: MetaWeb-Bold !important;
     border-radius: 0px;
@@ -2428,6 +2428,15 @@ iframe {
 /*Database activity customisation*/
 
 .mod-data-default-template td {
+    vertical-align: top;
+    padding-left: 2px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+/*end change*/
+
+.mod-tsdatabase-default-template td {
     vertical-align: top;
     padding-left: 2px;
     padding-right: 20px;
