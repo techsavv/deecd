@@ -4,9 +4,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/*Dense theme licensing requirement*/
-
-@import url("//hello.myfonts.net/count/2aa672");
 
  /* @group Core */
 
@@ -17,20 +14,15 @@ body{
     color: #676767;
     padding-top: 0px;
     text-align: left; 
-/**KA**CHANGE TOP BORDER AT TOP OF PAGE TO NOT MATCH THEME COLOUR - CHANGED TO GREY**/
     background: #8e8e8e;
-/*END CHANGE*/
-/**TE**ADDED RULES FOR COURSE HEADER STYLING**/
     background-size: 100% !important;
     background-position-y: 120px !important; /* offset from page header */
-/*END CHANGE */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal !important;
 }
 
-/*Hide page title on Referral matrix* - for emebedding in DEECD website*/
 
 h1 {
     color: #0072BC;
@@ -49,11 +41,10 @@ h2 {
     line-height: 0px;
 }
 
-/* end change*/
 
 h3 {
     font-family: MetaWeb-Normal !important;
-    font-size: 1.2em;
+    font-size: 20px;
     color: #0072BC;
     line-height: 25px;
     text-align: left;
