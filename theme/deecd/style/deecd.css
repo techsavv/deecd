@@ -2188,9 +2188,8 @@ text-decoration: none;
     margin-left: auto;
     margin-right:auto;
 }
-/*Hide last course from the Frontpage maneu - to prevent the Referral Matrix from being visible.*/
-
-/*div.coursebox.clearfix.odd.last {
+/*Hide 'All courses' link at the bottom of the Frontpage maneu - to prevent the Referral Matrix from being visible.*/
+.pagelayout-frontpage .courses>.paging.paging-morelink {
     display: none;
 }
-*/
+/*
