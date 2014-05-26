@@ -2443,7 +2443,7 @@ iframe {
 }
 
 
-/* Fix width of drop-down menus*/
+/* Fix width of drop-down menus
 
 select {
     width: 220px;
