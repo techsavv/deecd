@@ -2441,3 +2441,19 @@ iframe {
     background-color: #ECECEC;
     border-color: #ECECEC;
 }
+
+
+/* Fix width of drop-down menus*/
+
+select {
+    width: 220px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 360px !important;
+    text-align: left !important;
+}
+
+.boxaligncenter {
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
