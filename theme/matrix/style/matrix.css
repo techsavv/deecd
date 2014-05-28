@@ -2457,3 +2457,11 @@ select {
     margin-right: 0px; 
     margin-left: 0px; 
 }
+
+/*Add DEECD external link icon to hyperlinks in service descroption*/
+td.template-token.cell.c1.lastcol a {
+    display: inline;
+    padding-right: 20px;
+    line-height: normal;
+    background: url(http://www.education.vic.gov.au/Style%20Library/education/images/icons/EXTERNAL-LINK.png) no-repeat 100% !important;
+}
