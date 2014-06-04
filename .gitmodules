@@ -1,3 +1,6 @@
 [submodule "mod/tsdatabase"]
 	path = mod/tsdatabase
 	url = git@bitbucket.org:techsavvy/mod-tsdatabase.git
+[submodule "mod/tssurvey"]
+	path = mod/tssurvey
+	url = git@bitbucket.org:techsavvy/mod-tssurvey.git
