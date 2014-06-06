@@ -2202,6 +2202,27 @@ display:none;
     margin-right:auto;
 }
 
+/* TSBLOG - theme customisations */ 
+
+
+#page-mod-tsblog-editpost #id_message {
+    width: 600px;
+    height: 200px;
+}
+
+#page-mod-tsblog-editpost #id_title {
+    width: 600px;
+}
+
+#fitem_id_tags {
+    display: none;
+}
+
+.tsblog-views {
+    display: none;
+}
+
+
 /* OUBLOG - theme customisations */ 
 
 
@@ -2215,6 +2236,10 @@ display:none;
 }
 
 #fitem_id_tags {
+    display: none;
+}
+
+.oublog-views {
     display: none;
 }
 
