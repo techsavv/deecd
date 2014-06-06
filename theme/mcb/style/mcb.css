@@ -2164,6 +2164,23 @@ text-decoration: none;
     color:#DE6B00 !important;
 }
 
+button {
+    color:#fff !important;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color:#DE6B00 !important;
+    *background-color:#E4862E !important;
+    background-image:-moz-linear-gradient(top,#DE6B00,#E4862E) !important;
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#E4862E)) !important;
+    background-image:-webkit-linear-gradient(top,#DE6B00,#E4862E) !important;
+    background-image:-o-linear-gradient(top,#DE6B00,#E4862E) !important;
+    background-image:linear-gradient(to bottom,#DE6B00,#E4862E) !important;
+    background-repeat:repeat-x;
+    border-color:#51a351 #51a351 #387038 !important;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25) !important;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
 .path-mod-forum #region-main input[type="submit"], .path-mod-forum #id_submitbutton {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
@@ -2181,7 +2198,24 @@ text-decoration: none;
     filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-.path-mod-tsblog input[type="submit"] {
+.path-mod-tssurvey input[type="submit"], .path-mod-tssurvey #id_submitbutton {
+    color:#fff !important;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25) !important;
+    background-color:#DE6B00 !important;
+    *background-color:#E4862E !important;
+    background-image:-moz-linear-gradient(top,#DE6B00,#E4862E) !important;
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#DE6B00),to(#E4862E)) !important;
+    background-image:-webkit-linear-gradient(top,#DE6B00,#E4862E) !important;
+    background-image:-o-linear-gradient(top,#DE6B00,#E4862E) !important;
+    background-image:linear-gradient(to bottom,#DE6B00,#E4862E) !important;
+    background-repeat:repeat-x;
+    border-color:#51a351 #51a351 #387038;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDE6B00',endColorstr='#ffE4862E',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.path-mod-tsblog input[type="submit"], .path-mod-tsblog #id_submitbutton {
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     background-color:#DE6B00;
