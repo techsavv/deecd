@@ -2295,6 +2295,10 @@ button {
     display: none;
 }
 
+.tsblog-views {
+    display: none;
+}
+
 /*oublog - Theme customisations*/
  
 #page-mod-oublog-editpost #id_message {
@@ -2310,6 +2314,9 @@ button {
     display: none;
 }
 
+.oublog-views {
+    display: none;
+}
 
 /*Enrol page customisations*/
 #page-enrol-index #notice{
