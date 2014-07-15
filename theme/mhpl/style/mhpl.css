@@ -2430,3 +2430,9 @@ iframe {
     border: 0px !important;
 }
 /*end change*/
+
+/*Hide individual user view in Statistics report*/
+
+.singleselect select {
+    visibility: hidden;
+}

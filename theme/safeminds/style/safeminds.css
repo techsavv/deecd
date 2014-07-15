@@ -2366,3 +2366,9 @@ input#id_submitbutton:active {
 input#id_submitbutton:focus {
     background-color: #d88900; 
 }
+
+/*Hide individual user view in STatistics report*/
+
+.singleselect select {
+    visibility: hidden;
+}
