@@ -2428,3 +2428,9 @@ display: none;
 }
 
 /*end change*/
+
+/*Hide individual user view in Statistics report*/
+
+.singleselect select {
+    visibility: hidden;
+}
