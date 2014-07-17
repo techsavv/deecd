@@ -320,16 +320,10 @@ if (!$csv) {
             get_string('lastname');
     }
     print '</th>';
-
-    // Print user identity columns
-    foreach ($extrafields as $field) {
-        echo '<th scope="col" class="completion-identifyfield">' .
-                get_user_field_name($field) . '</th>';
-    }
 } else {
-	//-------------- USER ROLE - CSV HEADER----------------//
-	echo $sep . csv_quote('Role');
-	//-------------- USER ROLE - CSV HEADER----------------//
+  //-------------- USER ROLE - CSV HEADER----------------//
+  echo $sep . csv_quote('Role');
+  //-------------- USER ROLE - CSV HEADER----------------//
     foreach ($extrafields as $field) {
         echo $sep . csv_quote(get_user_field_name($field));
     }
@@ -392,45 +386,48 @@ foreach($progress as $user) {
         print csv_quote(fullname($user));
         //************************** ADDED/UPDATED USER ROLE *****************************//
         $userrole = null;
-	    $sql = "SELECT id FROM {user_info_field} WHERE " . $DB->sql_compare_text('name') . " = " . $DB->sql_compare_text(':name') . "";
-	    if($role_fieldid = $DB->get_field_sql($sql, array('name' => 'role'))) {
-	    	$rolesql = "SELECT data FROM {$CFG->prefix}user_info_data WHERE userid = $user->id AND fieldid = $role_fieldid";
-			$userrole = $DB->get_field_sql($rolesql);
-	    }
-	    print $sep.csv_quote($userrole);
-	    //************************** ADDED/UPDATED USER ROLE *****************************//
-		
+      $sql = "SELECT id FROM {user_info_field} WHERE " . $DB->sql_compare_text('name') . " = " . $DB->sql_compare_text(':name') . "";
+      if($role_fieldid = $DB->get_field_sql($sql, array('name' => 'role'))) {
+        $rolesql = "SELECT data FROM {$CFG->prefix}user_info_data WHERE userid = $user->id AND fieldid = $role_fieldid";
+      $userrole = $DB->get_field_sql($rolesql);
+      }
+      print $sep.csv_quote($userrole);
+      //************************** ADDED/UPDATED USER ROLE *****************************//
+    
         foreach ($extrafields as $field) {
             echo $sep . csv_quote($user->{$field});
         }
     } else {
         print '<tr><th scope="row"><a href="'.$CFG->wwwroot.'/user/view.php?id='.
             $user->id.'&amp;course='.$course->id.'">'.fullname($user).'</a></th>';
-        foreach ($extrafields as $field) {
-            echo '<td>' . s($user->{$field}) . '</td>';
-        }
     }
 
     //**************************************** ADDED/UPDATED*****************************************//
     if($csv) {
-    	$sql = "SELECT GROUP_CONCAT(g.name) AS groupname, g.idnumber, g.region, g.network, g.schooltype
-    	        FROM {groups} g, {groups_members} gm 
-				WHERE g.id = gm.groupid AND g.courseid = $course->id AND gm.userid = $user->id 
-				GROUP BY gm.userid";
+      $sql = "SELECT GROUP_CONCAT(g.name) AS groupname, g.idnumber, g.region, g.network, g.schooltype
+              FROM {groups} g, {groups_members} gm 
+        WHERE g.id = gm.groupid AND g.courseid = $course->id AND gm.userid = $user->id 
+        GROUP BY gm.userid";
 
-		if($groups = $DB->get_record_sql($sql)) {
-			$groupidnumber = isset($groups->idnumber) && !empty($groups->idnumber) ? $groups->idnumber : null;
-			$groupname = isset($groups->groupname) && !empty($groups->groupname) ? $groups->groupname : null;
-			$groupregion = isset($groups->region) && !empty($groups->region) ? $groups->region : null;
-			$groupnetwork = isset($groups->network) && !empty($groups->network) ? $groups->network : null;
-			$groupschooltype = isset($groups->schooltype) && !empty($groups->schooltype) ? $groups->schooltype : null;
-			
-			print $sep.csv_quote($groupname);
-			print $sep.csv_quote($groupidnumber);
-			print $sep.csv_quote($groupregion);
-			print $sep.csv_quote($groupnetwork);
-			print $sep.csv_quote($groupschooltype);
-		}
+        if($groups = $DB->get_record_sql($sql)) {
+          $groupidnumber = isset($groups->idnumber) && !empty($groups->idnumber) ? $groups->idnumber : null;
+          $groupname = isset($groups->groupname) && !empty($groups->groupname) ? $groups->groupname : null;
+          $groupregion = isset($groups->region) && !empty($groups->region) ? $groups->region : null;
+          $groupnetwork = isset($groups->network) && !empty($groups->network) ? $groups->network : null;
+          $groupschooltype = isset($groups->schooltype) && !empty($groups->schooltype) ? $groups->schooltype : null;
+          
+          print $sep.csv_quote($groupname);
+          print $sep.csv_quote($groupidnumber);
+          print $sep.csv_quote($groupregion);
+          print $sep.csv_quote($groupnetwork);
+          print $sep.csv_quote($groupschooltype);
+        } else {
+            print $sep.csv_quote('');
+          print $sep.csv_quote('');
+          print $sep.csv_quote('');
+          print $sep.csv_quote('');
+          print $sep.csv_quote('');
+        }
     }
     //**************************************** ADDED/UPDATED*****************************************//
     
