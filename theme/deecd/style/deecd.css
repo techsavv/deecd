@@ -2188,8 +2188,15 @@ text-decoration: none;
     margin-left: auto;
     margin-right:auto;
 }
-/*Hide 'All courses' link at the bottom of the Frontpage maneu - to prevent the Referral Matrix from being visible.*/
+/*Hide 'All courses' link at the bottom of the Frontpage menu - to prevent the Referral Matrix from being visible.*/
 .pagelayout-frontpage .courses>.paging.paging-morelink {
     display: none;
 }
-/*
+/* end
+
+/* Hide category picker on Courses page */
+#page-course-index-category .categorypicker {
+    display: none;
+}
+/* end
+
