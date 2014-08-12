@@ -2369,6 +2369,6 @@ input#id_submitbutton:focus {
 
 /*Hide individual user view in STatistics report*/
 
-.singleselect select {
+body#page-report-stats-index .singleselect {
     visibility: hidden;
 }

@@ -2433,6 +2433,6 @@ iframe {
 
 /*Hide individual user view in Statistics report*/
 
-.singleselect select {
+body#page-report-stats-index .singleselect {
     visibility: hidden;
 }
