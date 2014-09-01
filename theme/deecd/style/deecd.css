@@ -2200,3 +2200,20 @@ text-decoration: none;
 }
 /* end
 
+/*Customise submit button on sign-up form */
+input#id_submitbutton {
+    color:#fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color:#037F8F !important;
+    *background-color:#037F8F;
+    background-image:-moz-linear-gradient(top,#BFD8DC,#037F8F);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#BFD8DC),to(#037F8F));
+    background-image:-webkit-linear-gradient(top,#BFD8DC,#037F8F);
+    background-image:-o-linear-gradient(top,#BFD8DC,#037F8F);
+    background-image:linear-gradient(to bottom,#BFD8DC,#037F8F) !important;
+    background-repeat:repeat-x;
+    border-color:#51a351 #51a351 #387038;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffBFD8DC',endColorstr='#ff037F8F',GradientType=0);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
