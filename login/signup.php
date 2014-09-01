@@ -27,6 +27,14 @@
 require('../config.php');
 require_once($CFG->dirroot . '/user/editlib.php');
 
+/* This logs the user out (in case they are logged in with guest access) to ensure they are required to enter all profile fields before registering */
+$logoutContext=  context_course::instance(1);
+if(isloggedin() && is_guest($logoutContext)) {
+    $redirect_url=new moodle_url('/login/signup.php');
+    require_logout();
+    redirect($redirect_url);
+}
+
 // Try to prevent searching for sites that allow sign-up.
 if (!isset($CFG->additionalhtmlhead)) {
     $CFG->additionalhtmlhead = '';
