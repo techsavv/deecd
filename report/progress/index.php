@@ -323,6 +323,9 @@ if (!$csv) {
 } else {
   //-------------- USER ROLE - CSV HEADER----------------//
   echo $sep . csv_quote('Role');
+  echo $sep . csv_quote('Setting');
+  echo $sep . csv_quote('Sector');
+  echo $sep . csv_quote('Region');
   //-------------- USER ROLE - CSV HEADER----------------//
     foreach ($extrafields as $field) {
         echo $sep . csv_quote(get_user_field_name($field));
@@ -330,9 +333,9 @@ if (!$csv) {
     //------------------------ GROUP/REGION/NETWORK CSV HEADER-----------------------//
     echo $sep . csv_quote('Group');
     echo $sep . csv_quote('Group ID');
-    echo $sep . csv_quote('Region');
-    echo $sep . csv_quote('Network');
-    echo $sep . csv_quote('School Type');
+    echo $sep . csv_quote('Group Region');
+    echo $sep . csv_quote('Group Network');
+    echo $sep . csv_quote('Group School Type');
     //------------------------ GROUP/REGION/NETWORK CSV HEADER-----------------------//
 }
 
@@ -392,8 +395,35 @@ foreach($progress as $user) {
       $userrole = $DB->get_field_sql($rolesql);
       }
       print $sep.csv_quote($userrole);
-      //************************** ADDED/UPDATED USER ROLE *****************************//
-    
+      //************************** ADDED/UPDATED USER SETTING *****************************//
+        $usersetting = null;
+      $sql = "SELECT id FROM {user_info_field} WHERE " . $DB->sql_compare_text('name') . " = " . $DB->sql_compare_text(':name') . "";
+      if($setting_fieldid = $DB->get_field_sql($sql, array('name' => 'setting'))) {
+        $settingsql = "SELECT data FROM {$CFG->prefix}user_info_data WHERE userid = $user->id AND fieldid = $setting_fieldid";
+      $usersetting = $DB->get_field_sql($settingsql);
+      }
+      print $sep.csv_quote($usersetting);
+
+      //************************** ADDED/UPDATED USER SECTOR *****************************//
+        $usersector = null;
+      $sql = "SELECT id FROM {user_info_field} WHERE " . $DB->sql_compare_text('name') . " = " . $DB->sql_compare_text(':name') . "";
+      if($sector_fieldid = $DB->get_field_sql($sql, array('name' => 'sector'))) {
+        $sectorsql = "SELECT data FROM {$CFG->prefix}user_info_data WHERE userid = $user->id AND fieldid = $sector_fieldid";
+      $usersector = $DB->get_field_sql($sectorsql);
+      }
+      print $sep.csv_quote($usersector);
+
+      //************************** ADDED/UPDATED USER REGION *****************************//
+        $userregion = null;
+      $sql = "SELECT id FROM {user_info_field} WHERE " . $DB->sql_compare_text('name') . " = " . $DB->sql_compare_text(':name') . "";
+      if($region_fieldid = $DB->get_field_sql($sql, array('name' => 'region'))) {
+        $regionsql = "SELECT data FROM {$CFG->prefix}user_info_data WHERE userid = $user->id AND fieldid = $region_fieldid";
+      $userregion = $DB->get_field_sql($regionsql);
+      }
+      print $sep.csv_quote($userregion);
+
+      /*****END CHANGE***///
+
         foreach ($extrafields as $field) {
             echo $sep . csv_quote($user->{$field});
         }
